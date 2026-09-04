@@ -1,4 +1,47 @@
-[404]         9 B  https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9/catalog.json
-[404]         9 B  https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9/data/exp-854470100.json
-[404]         9 B  https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9/catalog.json
-[404]         9 B  https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9/data/exp-854470100.json
+HTTP 200 559820 chars
+  var EMBEDDED at 9293  -> 'const EMBEDDED = {"catalog.json":{"items":[{"id":"exp-853224000","code":"853224000","name"'
+  var GCOLORS at 522802  -> "const GCOLORS=['#7fb8e8','#e4b45f','#74d39b','#c78bd8','#ff9d9d','#9aa7b3'];\n\nfunction el("
+  var arr at 523982  -> 'const arr=[...groups.values()].sort((a,b)=> (a.year-b.year)||((a.quarter||0)-(b.quarter||0'
+  var modeButtons at 525089  -> "const modeButtons=[...document.querySelectorAll('#'+cfg.modeControlsId+' .chart-btn')];\n  "
+  var SERIES at 525201  -> "const SERIES=[{key:'yoy',name:'금액 YoY',color:'#7fb8e8'},{key:'yoyKg',name:'중량 YoY',color:'"
+  var vals at 525720  -> 'const vals=[]; SERIES.forEach(s=>arr.forEach(g=>{ if(g[s.key]!=null&&isFinite(g[s.key])) v'
+  var modeButtons at 528121  -> "const modeButtons = [...document.querySelectorAll('#'+cfg.modeControlsId+' .chart-btn')];\n"
+  var rangeButtons at 528213  -> "const rangeButtons = [...document.querySelectorAll('#'+cfg.rangeControlsId+' .chart-btn')]"
+  var tableButtons at 528307  -> "const tableButtons = [...document.querySelectorAll('#'+cfg.tableControlsId+' .chart-btn')]"
+  var pts at 531659  -> 'const pts=[]; arr.forEach((d,i)=>{ if(d.yoy!==null && Number.isFinite(d.yoy)) pts.push([CL'
+  var modeButtons at 534526  -> "const modeButtons=[...document.querySelectorAll('#'+cfg.modeControlsId+' .chart-btn')];\n  "
+  var arr at 535354  -> 'const arr=[...m.values()].sort((a,b)=>(a.year!==b.year)?a.year-b.year:(a.quarter||0)-(b.qu'
+  var modeButtons at 538666  -> "const modeButtons = [...document.querySelectorAll('#'+cfg.modeControlsId+' .chart-btn')];\n"
+  var periods at 539806  -> 'const periods=[...pmap.values()], values={};\n    order.forEach(nm=>{ const arr=new Array(p'
+  var years at 543418  -> 'const years={}; data.forEach(d=>{(years[d.year]=years[d.year]||{v:0,ms:[]});years[d.year].'
+  var CATALOG at 549744  -> 'let CATALOG = [], ITEM = null, DATA = [], GROUPS = {order:[],series:{}}, HL_YEAR = new Dat'
+  var RQ_LABEL at 556624  -> "const RQ_LABEL = {pending:'대기 중', running:'수집 중', done:'완료', error:'실패'};\n\nfunction rqRend"
+
+=== 코드별 블록 위치 ===
+  854470100: 2 hits at [10740, 267292]
+  854470910: 2 hits at [11040, 317651]
+  900110100: 2 hits at [10167, 166602]
+
+=== 카탈로그 항목 ===
+  853224000 | MLCC | 수출 | latest 2026/07 | 115개월 | tags=['TDK', '타이요유덴', '무라타']
+  854232921 | NAND | 수출 | latest 2026/07 | 115개월 | tags=['키옥시아']
+  910221000 | 기계식자동감기(세이코, 시티즌) | 수출 | latest 2026/07 | 115개월 | tags=['세이코']
+  900110100 | 미가공 광섬유·번들 — 유리제(후지쿠라/스미토모) | 수출 | latest 2026/07 | 115개월 | tags=['스미토모전기', '후지쿠라']
+  950300000 | 완구 | 수출 | latest 2026/07 | 112개월 | tags=['반다이남코', '타카라토미']
+  854470100 | 완성 광파이버 케이블 — 유리제(후지쿠라/스미토모) | 수출 | latest 2026/07 | 115개월 | tags=['스미토모전기', '후지쿠라']
+  854470910 | 완성 광파이버 케이블 — 접속자(커넥터) 부착(후지쿠라/스미토모) | 수출 | latest 2026/07 | 115개월 | tags=['스미토모전기', '후지쿠라']
+  910212000 | 전기식,디지털표시만(카시오중심) | 수출 | latest 2026/07 | 115개월 | tags=['카시오']
+  950440000 | 카드 | 수출 | latest 2026/07 | 115개월 | tags=['반다이남코']
+
+=== 854470100 주변 원문 ===
+은 서버가 있어야 하므로 404를 돌려주고,
+   페이지는 그걸 감지해 요청 패널을 자동으로 숨긴다. */
+const EMBEDDED = {"catalog.json":{"items":[{"id":"exp-853224000","code":"853224000","name":"MLCC","direction":"수출","impkbn":"1","latest_ym":"2026/07","months":115,"rank_year":2025,"updated_at":"2026-09-04 08:37","file":"data/exp-853224000.json","tags":[{"code":"6762","label":"TDK"},{"code":"6976","label":"타이요유덴"},{"code":"6981","label":"무라타"}]},{"id":"exp-854232921","code":"854232921","name":"NAND","direction":"수출","impkbn":"1","latest_ym":"2026/07","months":115,"rank_year":2025,"updated_at":"2026-09-04 08:58","file":"data/exp-854232921.json","tags":[{"code":"285A","label":"키옥시아"}]},{"id":"exp-910221000","code":"910221000","name":"기계식자동감기(세이코, 시티즌)","direction":"수출","impkbn":"1","latest_ym":"2026/07","months":115,"rank_year":2025,"updated_at":"2026-09-04 09:12","file":"data/exp-910221000.json","tags":[{"code":"8050","label":"세이코"}]},{"id":"exp-900110100","code":"900110100","name":"미가공 광섬유·번들 — 유리제(후지쿠라/스미토모)","direction":"수출","impkbn":"1","latest_ym":"2026/07","months":115,"rank_year":2025,"updated_at":"2026-09-04 10:02","file":"data/exp-900110100.json","tags":[{"code":"5802","label":"스미토모전기"},{"code":"5803","label":"후지쿠라"}]},{"id":"exp-950300000","code":"950300000","name":"완구","direction":"수출","impkbn":"1","latest_ym":"2026/07","months":112,"rank_year":2025,"updated_at":"2026-09-04 08:41","file":"data/exp-950300000.json","tags":[{"code":"7832","label":"반다이남코"},{"code":"7867","label":"타카라토미"}]},{"id":"exp-854470100","code":"854470100","name":"완성 광파이버 케이블 — 유리제(후지쿠라/스미토모)","direction":"수출","impkbn":"1","latest_ym":"2026/07","months":115,"rank_year":2025,"updated_at":"2026-09-04 09:58","file":"data/exp-854470100.json","tags":[{"code":"5802","label":"스미토모전기"},{"code":"5803","label":"후지쿠라"}]},{"id":"exp-854470910","code":"854470910","name":"완성 광파이버 케이블 — 접속자(커넥터) 부착(후지쿠라/스미토모)","direction":"수출","impkbn":"1","latest_ym":"2026/07","months":115,"rank_year":2025,"updated_at":"2026-09-04 10:00","file":"data/exp-854470910.json","tags":[{"code":"5802","label":"스미토모전기"},{"code":"5803","label":"후지쿠라"}]},{"id":"exp-910211000","code":"910211000","name":"전기식 쿼츠 아날로그 시계","tags":[{"code":"6952","label":"카시오"},{"code":"7762","label":"시티즌"},{"code":"8050","label":"세이코"}],"direction":"수출","impkbn":"1","latest_ym":"2026/07","months":115,"rank_year":2025,"updated_at":"2026-09-04 13:56","file":"data/exp-910211000.json"},{"
+
+=== 세관 관련 표기 ===
+  '税関': 0
+  '세관': 1
+  'customs': 2
+  '横浜': 0
+  '요코하마': 0
+  'Yokohama': 0
