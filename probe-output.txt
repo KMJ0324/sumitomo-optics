@@ -1,26 +1,17 @@
-[200]   205749 B  https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js
-[404]      146 B  https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.js
-[404]      146 B  https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.min.js
-
-cdnjs latest=4.5.1 umd-ish files=[]
-
 ========================================================================
-performance HTTP 200 185405B
-
---- table #0 (8 rows)
-     | 売上高 （百万円） | 売上総利益 （百万円） | 粗利率 | 営業利益 （百万円） | 営業利益率 | 経常利益 （百万円） | 経常利益率 | 純利益 （百万円） | 会計方式 | 財務数値 更新日
-    2027年3月期 （会社予想） | 5,400,000 | --- | --- | 450,000 | 8.33 % | 460,000 | 8.52 % | 340,000 | 日本会計基準 | 2026/7/31
-    2026年3月期 | 5,110,171 | 1,034,031 | 20.23 % | 418,173 | 8.18 % | 431,274 | 8.44 % | 369,508 | 日本会計基準 | 2026/6/26
-    2025年3月期 | 4,679,789 | 880,126 | 18.81 % | 320,663 | 6.85 % | 309,496 | 6.61 % | 193,771 | 日本会計基準 | 2025/6/26
-    2024年3月期 | 4,402,814 | 767,588 | 17.43 % | 226,618 | 5.15 % | 215,341 | 4.89 % | 149,723 | 日本会計基準 | 2024/6/26
-    0000年0月期 | 000 | 000 | 0.0 % | 000 | 0.0 % | 000 | 0.0 % | 000 | 000 | 0000/0/0
-    0000年0月期 | 000 | 000 | 0.0 % | 000 | 0.0 % | 000 | 0.0 % | 000 | 000 | 0000/0/0
-    0000年0月期 | 000 | 000 | 0.0 % | 000 | 0.0 % | 000 | 0.0 % | 000 | 000 | 0000/0/0
-
---- table #1 (6 rows)
-     | 予想発表期 | 売上高（百万円） | 営業利益（百万円） | 経常利益（百万円） | 純利益（百万円）
-    2027年3月期 | 2026年6月期 | 5,400,000 |  | 450,000 |  | 460,000 |  | 340,000 | 
-    2026年3月期 | 5,300,000 | － | 425,000 | － | 432,000 | － | 320,000 | －
-    00年0月期 | 00年0月期 | 000 | － | 000 | － | 000 | － | 000 | －
-    00年0月期 | 00年0月期 | 000 | － | 000 | － | 000 | － | 000 | －
-    00年0月期 | 00年0月期 | 000 | － | 000 | － | 000 | － | 000 | －
+[yahoo-perf-q] https://finance.yahoo.co.jp/quote/5802.T/performance?styl=quarter
+    HTTP 200 185501B final=https://finance.yahoo.co.jp/quote/5802.T/performance?styl=quarter
+  (yahoo-perf-q: 분기 표 없음)
+========================================================================
+[yahoo-perf-qb] https://finance.yahoo.co.jp/quote/5802.T/performance?styl=qb
+    HTTP 200 185455B final=https://finance.yahoo.co.jp/quote/5802.T/performance?styl=qb
+  (yahoo-perf-qb: 분기 표 없음)
+========================================================================
+[ir-en] https://sumitomoelectric.com/ir/library/results
+    HTTP 404 136283B final=https://sumitomoelectric.com/ir/library/results
+========================================================================
+[ir-en2] https://sumitomoelectric.com/ir/financial-data
+    HTTP 404 136281B final=https://sumitomoelectric.com/ir/financial-data
+========================================================================
+[ir-jp] https://sumitomoelectric.com/jp/ir/library/results
+    HTTP 404 155328B final=https://sumitomoelectric.com/jp/ir/library/results
