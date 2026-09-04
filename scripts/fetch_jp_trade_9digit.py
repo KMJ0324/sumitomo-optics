@@ -159,7 +159,7 @@ def main():
         code = str(cat["code"])
         blob = blocks.get(code)
         if not blob:
-            print(f"    WARN: {code} ({cat['label']}) 블록 없음 - 기존 값 유지")
+            print(f"    - {code} ({cat['label']}): 소스에 없음, 건너뜀")
             continue
         try:
             converted = convert(blob)
