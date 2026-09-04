@@ -1,12 +1,13 @@
-"""Discovery probe, round 2: the month dimension, the customs dimension,
-and a real data pull for 381800900.
+"""Discovery probe, round 3 - the last unknowns before writing the collector.
 
-Round 1 found the two tables that matter:
-  0004049306  品別国別表 輸出 2026        (9-digit commodity x country)
-  0004002162  税関別品別国別表 輸出 2023-2026 (adds the customs office)
-Both are annual tables, so the months must live inside cat02 - confirm
-that, find Yokohama's code in the customs dimension, and prove a real
-getStatsData call returns the silicon-excluded substrate series.
+Known: cat01 is the 9-digit code (381800100 silicon / 381800900 the rest),
+cat02 carries the months (170 = January value, +30 per month), cat03 on the
+customs table is 税関 with 50200 = 横浜.
+
+Left to pin down: which `area` code is the world total, and what the actual
+monthly figures look like - both for the substrate line and for Yokohama's
+share of the optical cable line, so the numbers can be sanity-checked
+against what is already on the dashboard before anything is built on them.
 """
 import os
 import sys
@@ -14,9 +15,10 @@ import sys
 import requests
 
 BASE = "https://api.e-stat.go.jp/rest/3.0/app/json"
-COMMODITY_2026 = "0004049306"
-CUSTOMS_TABLE = "0004002162"
-SUBSTRATE = "381800900"
+COMMODITY = "0004049306"   # 品別国別表 輸出 2026
+CUSTOMS = "0004002162"     # 税関別品別国別表 輸出 2023-2026
+MONTH_VALUE = {m: 170 + (m - 1) * 30 for m in range(1, 13)}   # m月_金額
+MONTH_QTY2 = {m: 160 + (m - 1) * 30 for m in range(1, 13)}    # m月_数量2 (KG)
 
 
 def call(path, **params):
@@ -26,50 +28,53 @@ def call(path, **params):
     return r.json()
 
 
-def classes_of(table):
-    meta = call("getMetaInfo", statsDataId=table)
-    obj = meta["GET_META_INFO"]["METADATA_INF"]["CLASS_INF"]["CLASS_OBJ"]
-    return obj if isinstance(obj, list) else [obj]
+def values(res):
+    root = res["GET_STATS_DATA"]
+    st = root["RESULT"]
+    if st["STATUS"] != 0:
+        print(f"    ERROR {st['STATUS']} {st.get('ERROR_MSG')}")
+        return []
+    v = root.get("STATISTICAL_DATA", {}).get("DATA_INF", {}).get("VALUE", [])
+    return v if isinstance(v, list) else [v]
 
 
 def main():
     if not os.environ.get("ESTAT_APP_ID"):
-        print("ERROR: ESTAT_APP_ID 미설정", file=sys.stderr)
-        sys.exit(1)
+        print("ERROR: ESTAT_APP_ID 미설정", file=sys.stderr); sys.exit(1)
 
-    print(f"=== {COMMODITY_2026} 品別国別表 輸出 2026 ===")
-    for c in classes_of(COMMODITY_2026):
-        items = c.get("CLASS", [])
+    print("=== area 차원 (国) 앞부분 ===")
+    meta = call("getMetaInfo", statsDataId=COMMODITY)
+    for c in meta["GET_META_INFO"]["METADATA_INF"]["CLASS_INF"]["CLASS_OBJ"]:
+        if c.get("@id") != "area":
+            continue
+        items = c["CLASS"]
         items = items if isinstance(items, list) else [items]
-        print(f"\n  @id={c.get('@id')} @name={c.get('@name')} ({len(items)}개)")
-        if c.get("@id") in ("cat02", "time"):
-            for i in items:
-                print(f"      {i.get('@code')} = {i.get('@name')}")
-        if c.get("@id") == "cat01":
-            hit = [i for i in items if str(i.get("@code")).startswith("3818")]
-            print(f"      3818 계열: {[(i.get('@code'), i.get('@name')) for i in hit]}")
+        for i in items[:14]:
+            print(f"    {i.get('@code')} = {i.get('@name')}")
+        tot = [i for i in items if "総" in str(i.get("@name", "")) or "計" in str(i.get("@name", ""))]
+        print(f"    합계로 보이는 항목: {[(i.get('@code'), i.get('@name')) for i in tot[:5]]}")
 
-    print(f"\n=== {CUSTOMS_TABLE} 税関別品別国別表 輸出 ===")
-    for c in classes_of(CUSTOMS_TABLE):
-        items = c.get("CLASS", [])
-        items = items if isinstance(items, list) else [items]
-        print(f"  @id={c.get('@id')} @name={c.get('@name')} ({len(items)}개)")
-        names = " ".join(str(i.get("@name", "")) for i in items[:80])
-        if "税関" in names or "横浜" in names:
-            print(f"    *** 세관 차원. 전체: {[(i.get('@code'), i.get('@name')) for i in items[:30]]}")
-        if c.get("@id") == "time":
-            print(f"    시간: {[i.get('@name') for i in items[:8]]}")
+    codes = ",".join(str(MONTH_VALUE[m]) for m in range(1, 8))
+    print(f"\n=== 381800900 (실리콘 제외) 2026년 1~7월 금액, area별 상위 ===")
+    rows = values(call("getStatsData", statsDataId=COMMODITY,
+                       cdCat01="381800900", cdCat02=codes, limit="500"))
+    print(f"  {len(rows)}행")
+    for r in rows[:12]:
+        print(f"    area={r.get('@area')} cat02={r.get('@cat02')} = {r.get('$')} {r.get('@unit','')}")
 
-    print(f"\n=== 실제 데이터: {SUBSTRATE} (실리콘 제외 화합물 기판), 전세계 ===")
-    res = call("getStatsData", statsDataId=COMMODITY_2026, cdCat01=SUBSTRATE, limit="200")
-    root = res["GET_STATS_DATA"]
-    print(f"  RESULT {root['RESULT']['STATUS']} {root['RESULT'].get('ERROR_MSG','')}")
-    inf = root.get("STATISTICAL_DATA", {}).get("RESULT_INF", {})
-    print(f"  TOTAL_NUMBER={inf.get('TOTAL_NUMBER')}")
-    values = root.get("STATISTICAL_DATA", {}).get("DATA_INF", {}).get("VALUE", [])
-    values = values if isinstance(values, list) else [values]
-    for v in values[:25]:
-        print(f"    cat01={v.get('@cat01')} cat02={v.get('@cat02')} area={v.get('@area')} time={v.get('@time')} = {v.get('$')} {v.get('@unit','')}")
+    print(f"\n=== 381800100 (실리콘) 비교용 ===")
+    rows2 = values(call("getStatsData", statsDataId=COMMODITY,
+                        cdCat01="381800100", cdCat02=str(MONTH_VALUE[7]), limit="20"))
+    for r in rows2[:6]:
+        print(f"    area={r.get('@area')} = {r.get('$')} {r.get('@unit','')}")
+
+    print(f"\n=== 横浜(50200) 세관, 854470100 완성 광케이블 2026 ===")
+    rows3 = values(call("getStatsData", statsDataId=CUSTOMS,
+                        cdCat01="854470100", cdCat03="50200",
+                        cdCat02=codes, cdTime="2026000000", limit="300"))
+    print(f"  {len(rows3)}행")
+    for r in rows3[:12]:
+        print(f"    area={r.get('@area')} cat02={r.get('@cat02')} = {r.get('$')} {r.get('@unit','')}")
 
 
 if __name__ == "__main__":
