@@ -1,68 +1,60 @@
-"""Throwaway probe: the must-charts catalog and one data file.
+"""Throwaway probe: pull the embedded structure out of the standalone page.
 
-The page embeds a catalog of 9-digit Japanese statistical codes with
-per-code JSON files (data/exp-*.json). Confirm the catalog is fetchable on
-its own, what optical codes it carries, what `value_bn` is denominated in,
-and - the question that decides how far this can go - whether anything in
-it breaks out 税関 (customs office), since Sumitomo ships through Yokohama.
+catalog.json / data/exp-*.json 404 - the standalone build inlines everything
+into the 563 KB HTML. Find where a given 9-digit code's block starts and dump
+enough around it to write a parser: what the value field is denominated in,
+whether weight and destinations ride along, and whether anything carries 税関.
 """
 import json
 import re
 
 import requests
 
-BASE = "https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9"
+URL = "https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9"
 BROWSER = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/125.0 Safari/537.36"}
 
 
-def get(url):
-    r = requests.get(url, headers=BROWSER, timeout=45)
-    print(f"[{r.status_code}] {len(r.content):>9} B  {url}")
-    return r
-
-
 def main():
-    for path in ("/catalog.json", "/data/exp-854470100.json"):
-        try:
-            get(BASE + path)
-        except Exception as err:  # noqa: BLE001
-            print(f"    EXC {err}")
+    r = requests.get(URL, headers=BROWSER, timeout=60)
+    text = r.text
+    print(f"HTTP {r.status_code} {len(text)} chars")
 
-    r = get(BASE + "/catalog.json")
-    if r.status_code == 200:
-        try:
-            cat = r.json()
-            items = cat if isinstance(cat, list) else cat.get("items") or cat.get("charts") or []
-            print(f"\ncatalog entries: {len(items)}")
-            for it in items:
-                if not isinstance(it, dict):
-                    continue
-                code = str(it.get("code", ""))
-                if code.startswith(("8544", "9001", "8536", "8541", "3818")):
-                    print(f"  {it.get('id')}  {code}  {it.get('name')}  "
-                          f"dir={it.get('direction')} latest={it.get('latest_ym')} months={it.get('months')} "
-                          f"file={it.get('file')} tags={[t.get('label') for t in it.get('tags', [])]}")
-            print("\n  (전체 코드 목록)")
-            print("   ", [str(i.get("code")) for i in items if isinstance(i, dict)][:40])
-        except Exception as err:  # noqa: BLE001
-            print(f"  catalog parse: {err}: {r.text[:200]}")
+    # 인라인 JSON 덩어리를 찾습니다: <script> 안의 큰 객체/배열
+    for m in list(re.finditer(r"(?:const|let|var|window\.)\s*([A-Za-z_$][\w$]*)\s*=\s*(\[|\{)", text))[:40]:
+        name = m.group(1)
+        if len(name) < 3:
+            continue
+        print(f"  var {name} at {m.start()}  -> {text[m.start():m.start()+90]!r}")
 
-    d = get(BASE + "/data/exp-854470100.json")
-    if d.status_code == 200:
-        j = d.json()
-        print("\ntop-level keys:", list(j.keys()))
-        for k in ("code", "name", "unit", "unit_label", "value_unit", "direction", "latest_ym", "months", "source", "note", "updated_at"):
-            if k in j:
-                print(f"  {k}: {j[k]}")
-        rows = j.get("data", [])
-        print(f"  data rows: {len(rows)}; first={rows[0] if rows else None}")
-        print(f"  last 3: {rows[-3:]}")
-        g = j.get("groups", {})
-        print(f"  groups keys: {list(g.keys())[:6]}; order={g.get('order')}")
-        # 세관 관련 필드가 있는지
-        flat = json.dumps(j, ensure_ascii=False)
-        for term in ("税関", "세관", "customs", "yokohama", "横浜", "요코하마", "port"):
-            print(f"  {term!r}: {flat.count(term)}")
+    print("\n=== 코드별 블록 위치 ===")
+    for code in ("854470100", "854470910", "900110100"):
+        idx = [m.start() for m in re.finditer(f'"{code}"', text)]
+        print(f"  {code}: {len(idx)} hits at {idx[:6]}")
+
+    # 카탈로그 항목 전체를 뽑아봅니다
+    print("\n=== 카탈로그 항목 ===")
+    for m in re.finditer(r'\{"id":"(?:exp|imp)-\d{9}".{0,400}?\}\]?\}', text):
+        chunk = m.group(0)
+        try:
+            name = re.search(r'"name":"([^"]*)"', chunk).group(1)
+            code = re.search(r'"code":"(\d{9})"', chunk).group(1)
+            direction = re.search(r'"direction":"([^"]*)"', chunk)
+            latest = re.search(r'"latest_ym":"([^"]*)"', chunk)
+            months = re.search(r'"months":(\d+)', chunk)
+            tags = re.findall(r'"label":"([^"]*)"', chunk)
+            print(f"  {code} | {name} | {direction.group(1) if direction else '?'} | "
+                  f"latest {latest.group(1) if latest else '?'} | {months.group(1) if months else '?'}개월 | tags={tags}")
+        except AttributeError:
+            continue
+
+    print("\n=== 854470100 주변 원문 ===")
+    i = text.find('"code":"854470100"')
+    if i > 0:
+        print(text[max(0, i - 1500):i + 900])
+
+    print("\n=== 세관 관련 표기 ===")
+    for term in ("税関", "세관", "customs", "横浜", "요코하마", "Yokohama"):
+        print(f"  {term!r}: {text.count(term)}")
 
 
 if __name__ == "__main__":
