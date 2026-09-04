@@ -1,49 +1,55 @@
-"""Throwaway probe: does Japan split HS 3818.00 at nine digits?
+"""Throwaway probe: find chapter 38 of Japan's export statistical schedule.
 
-The user wants silicon wafers out of the substrate line. That is only
-possible if Japan's export statistical schedule breaks 3818.00 into
-sub-codes (e.g. silicon vs other). The schedule itself is published on
-customs.go.jp, so ask it directly rather than guessing. Chapter 38 for a
-few recent years, since the schedule is reissued annually.
+Whether silicon can be separated from InP comes down to one fact: does
+Japan assign more than one 9-digit code under 3818.00? The schedule says so
+directly, so locate its chapter-38 page from the index instead of guessing
+URLs.
 """
 import re
 
 import requests
 
 BROWSER = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/125.0 Safari/537.36"}
-CANDIDATES = [
-    "https://www.customs.go.jp/yusyutu/2026_1/data/j_38.htm",
-    "https://www.customs.go.jp/yusyutu/2025_4/data/j_38.htm",
-    "https://www.customs.go.jp/yusyutu/2025_1/data/j_38.htm",
-    "https://www.customs.go.jp/yusyutu/index.htm",
-]
+INDEX = "https://www.customs.go.jp/yusyutu/index.htm"
 
 
 def main():
-    for url in CANDIDATES:
-        print("=" * 74)
-        print(f"[GET] {url}")
-        try:
-            r = requests.get(url, headers=BROWSER, timeout=45)
-        except Exception as err:  # noqa: BLE001
-            print(f"    EXC {err}")
-            continue
-        r.encoding = r.apparent_encoding or "utf-8"
-        print(f"    HTTP {r.status_code} {len(r.content)}B enc={r.encoding}")
-        if r.status_code != 200:
-            continue
-        text = r.text
-        if "index.htm" in url:
-            links = sorted(set(re.findall(r'href="([^"]*yusyutu[^"]*)"', text)))[:12]
-            print(f"    yusyutu 링크: {links}")
-            continue
+    r = requests.get(INDEX, headers=BROWSER, timeout=45)
+    r.encoding = "shift_jis"
+    print(f"index HTTP {r.status_code} {len(r.content)}B")
+    hrefs = sorted(set(re.findall(r'href="([^"]+)"', r.text)))
+    print(f"  {len(hrefs)} links:")
+    for h in hrefs[:50]:
+        print(f"    {h}")
 
-        i = text.find("3818")
-        print(f"    '3818' 등장: {text.count('3818')}회")
-        if i > 0:
-            flat = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text[max(0, i - 1200):i + 2500]))
-            print("    --- 3818 주변 ---")
-            print("    " + flat[:1800])
+    # 챕터 목록 페이지로 보이는 링크를 따라가 38류를 찾습니다
+    for h in hrefs:
+        if not re.search(r"(20\d\d|data|index)", h):
+            continue
+        url = requests.compat.urljoin(INDEX, h)
+        try:
+            p = requests.get(url, headers=BROWSER, timeout=30)
+        except Exception:  # noqa: BLE001
+            continue
+        p.encoding = "shift_jis"
+        if p.status_code != 200:
+            continue
+        ch38 = re.findall(r'href="([^"]*(?:_38|38_|j_38)[^"]*)"', p.text)
+        if ch38:
+            print(f"\n  38류 링크 발견 @ {url}: {ch38[:5]}")
+            target = requests.compat.urljoin(url, ch38[0])
+            t = requests.get(target, headers=BROWSER, timeout=45)
+            t.encoding = "shift_jis"
+            print(f"  [GET] {target} -> HTTP {t.status_code} {len(t.content)}B")
+            txt = t.text
+            print(f"  '3818' {txt.count('3818')}회")
+            i = txt.find("3818")
+            if i > 0:
+                flat = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", txt[max(0, i - 800):i + 2200]))
+                print("  --- 3818 주변 ---")
+                print("  " + flat[:1600])
+            return
+    print("\n  38류 페이지를 찾지 못했습니다")
 
 
 if __name__ == "__main__":
