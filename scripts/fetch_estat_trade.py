@@ -258,6 +258,7 @@ def main():
             "code": code,
             "hs": [code],
             "caveat": cat.get("caveat", ""),
+            "reference_only": bool(cat.get("reference_only")),
             "monthly": [monthly[m] for m in sorted(monthly)],
             "partners": partners,
             "customs": ({"name": office.get("name"), "code": office.get("code"),

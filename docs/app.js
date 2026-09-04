@@ -61,6 +61,9 @@ function render() {
   const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   
   const catIds = Object.keys(EXPORTS.categories);
+  // 규모가 자릿수 단위로 다른 계열은 같은 축에 두면 나머지를 바닥에 깔아버립니다.
+  // 타일과 표에는 남기고 공유 축 차트에서만 뺍니다.
+  const chartIds = catIds.filter((id) => !EXPORTS.categories[id].reference_only);
   const catColor = (id) => css(SERIES_VARS[catIds.indexOf(id) % SERIES_VARS.length]);
   
   const UNIT = EXPORTS.value_unit_label || "USD";
@@ -143,6 +146,8 @@ function render() {
     const hasWeight = filled >= 12 && filled >= weights.length * 0.5;
     cats[id] = {
       id, label: c.label, hs: c.hs, caveat: c.caveat,
+      referenceOnly: !!c.reference_only,
+      customs: c.customs || null,
       values, weights, hasWeight, weightFilled: filled,
       asp: values.map((v, i) => (v == null || !weights[i] ? null : v / weights[i])),
       yoy: yoy(mma(values)),
@@ -441,22 +446,22 @@ function render() {
       `기판은 전자용 도핑 웨이퍼 전체라 실리콘이 대부분입니다. 각 품목의 유의점은 아래 표 밑에 적혀 있습니다.`;
   
   const legendHost = document.getElementById("cat-legend");
-  for (const id of catIds) {
+  for (const id of chartIds) {
     const c = cats[id];
     const s = document.createElement("span");
     s.innerHTML = `<i style="background:${c.color}"></i>${c.label}`;
     legendHost.append(s);
   }
   
-  makePlot("plot-value", catIds.map((id) => line(cats[id].label, mma(cats[id].values).map((v) => (v == null ? null : v / SCALE)), cats[id].color)), {
+  makePlot("plot-value", chartIds.map((id) => line(cats[id].label, mma(cats[id].values).map((v) => (v == null ? null : v / SCALE)), cats[id].color)), {
     labels, yFormat: (v) => fmt.num(v, 0), yTitle: SCALE_LABEL, legend: false,
   });
-  makePlot("plot-yoy", catIds.map((id) => line(cats[id].label, cats[id].yoy.map((v) => (v == null ? null : v * 100)), cats[id].color)), {
+  makePlot("plot-yoy", chartIds.map((id) => line(cats[id].label, cats[id].yoy.map((v) => (v == null ? null : v * 100)), cats[id].color)), {
     labels, yFormat: (v) => `${fmt.num(v, 0)}%`, yTitle: "YoY", legend: false,
   });
   
-  const aspIds = catIds.filter((id) => cats[id].hasWeight);
-  const noWeight = catIds.filter((id) => !cats[id].hasWeight).map((id) => cats[id].label);
+  const aspIds = chartIds.filter((id) => cats[id].hasWeight);
+  const noWeight = chartIds.filter((id) => !cats[id].hasWeight).map((id) => cats[id].label);
   document.getElementById("asp-sub").textContent =
     `${UNIT}/kg · 3개월 이동평균` +
     (noWeight.length ? ` · ${noWeight.join(", ")} 는 원자료에 중량이 거의 보고되지 않아 제외` : "");
@@ -464,10 +469,45 @@ function render() {
     labels, yFormat: (v) => fmt.num(v, 0), yTitle: `${UNIT}/kg`,
   });
   
+  // ---- 세관별 (요코하마) ------------------------------------------------------
+  const customsHost = document.getElementById("customs-section");
+  const withCustoms = chartIds.filter((id) => cats[id].customs && cats[id].customs.monthly.length);
+  if (customsHost && withCustoms.length) {
+    const officeName = cats[withCustoms[0]].customs.name || "해당 세관";
+    const shareRows = withCustoms.map((id) => {
+      const c = cats[id];
+      const nat = new Map(months.map((m, i) => [m, c.values[i]]));
+      const rows = c.customs.monthly.filter((r) => nat.get(r.month));
+      const recent = rows.slice(-12);
+      const office = recent.reduce((a, r) => a + r.value, 0);
+      const total = recent.reduce((a, r) => a + nat.get(r.month), 0);
+      return { id, label: c.label, color: c.color, share: total ? office / total : null,
+               series: months.map((m) => {
+                 const hit = c.customs.monthly.find((r) => r.month === m);
+                 return hit ? hit.value : null;
+               }) };
+    }).sort((a, b) => (b.share || 0) - (a.share || 0));
+  
+    document.getElementById("customs-sub").textContent =
+      `${officeName} 세관 통관분 · ${SCALE_LABEL} · 2023년부터 제공`;
+    makePlot("plot-customs", shareRows.map((r) =>
+      line(r.label, r.series.map((v) => (v == null ? null : v / SCALE)), r.color)), {
+      labels, yFormat: (v) => fmt.num(v, 1), yTitle: SCALE_LABEL,
+    });
+  
+    document.getElementById("customs-table").innerHTML =
+      `<table><caption>${officeName} 세관 비중 <span class="tile-hs">최근 12개월 누계</span></caption>` +
+      `<thead><tr><th>품목</th><th>${officeName} 비중</th></tr></thead><tbody>` +
+      shareRows.map((r) =>
+        `<tr><td>${r.label}</td><td class="bar-cell">${r.share == null ? "—" : (r.share * 100).toFixed(1) + "%"}` +
+        `<span class="bar" style="width:${Math.max(0, Math.min(1, r.share || 0)) * 46}px;background:${r.color}"></span></td></tr>`
+      ).join("") + `</tbody></table>`;
+  }
+  
   // ---- 목적지 표 --------------------------------------------------------------
   const destHost = document.getElementById("dest-section");
   const last12 = new Set(months.slice(-12));
-  for (const id of catIds) {
+  for (const id of chartIds) {
     const c = cats[id];
     const entries = Object.entries(c.partners);
     if (!entries.length) continue;
