@@ -7,6 +7,7 @@
         "900110100"
       ],
       "caveat": "유리제 미가공 광섬유·번들. 스미토모전기·후지쿠라가 주된 수출자입니다.",
+      "reference_only": false,
       "monthly": [
         {
           "month": "2019-01",
@@ -3866,6 +3867,7 @@
         "854470100"
       ],
       "caveat": "유리제 완성 광케이블(커넥터 미부착).",
+      "reference_only": false,
       "monthly": [
         {
           "month": "2019-01",
@@ -7669,6 +7671,7 @@
         "854470910"
       ],
       "caveat": "접속자가 달린 완성 광케이블. 금액은 작지만 단가가 높습니다.",
+      "reference_only": false,
       "monthly": [
         {
           "month": "2019-01",
@@ -12004,6 +12007,7 @@
         "381800900"
       ],
       "caveat": "HS 3818.00 중 -900(その他のもの). 신에쓰·SUMCO의 실리콘 웨이퍼(-100)가 빠진 InP·GaAs·GaN 기판입니다.",
+      "reference_only": false,
       "monthly": [
         {
           "month": "2019-01",
@@ -16123,6 +16127,7 @@
         "381800100"
       ],
       "caveat": "HS 3818.00 중 -100(けい素のもの). 비교용으로만 둡니다 — 규모가 화합물 기판의 수십 배라 같은 차트에 겹치면 나머지가 안 보입니다.",
+      "reference_only": true,
       "monthly": [
         {
           "month": "2019-01",
@@ -20641,11 +20646,10 @@
             "value": 62165000.0
           }
         ]
-      },
-      "reference_only": true
+      }
     }
   },
-  "updated_at": "2026-09-04T08:21:12+00:00",
+  "updated_at": "2026-09-04T08:32:23+00:00",
   "source": "e-Stat 재무성 무역통계 품별국별표(9단위 통계품목번호)",
   "source_url": "https://www.e-stat.go.jp/",
   "value_unit": "JPY",
