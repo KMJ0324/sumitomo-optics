@@ -312,7 +312,7 @@
     </div>
     <figure>
       <figcaption>
-        <span class="fig-title">2021년 1월 = 100</span>
+        <span class="fig-title" id="index-title">지수 비교</span>
         <span class="fig-sub" id="index-sub"></span>
       </figcaption>
       <div class="plot" id="plot-index"></div>
@@ -333,13 +333,23 @@
         <div class="plot short" id="plot-price"></div>
       </figure>
     </div>
-    <figure>
-      <figcaption>
-        <span class="fig-title">분기 수출 합계</span>
-        <span class="fig-sub" id="quarter-sub"></span>
-      </figcaption>
-      <div class="plot short" id="plot-quarter"></div>
-    </figure>
+    <div class="grid-2">
+      <figure>
+        <figcaption>
+          <span class="fig-title">분기 수출 합계</span>
+          <span class="fig-sub" id="quarter-sub"></span>
+        </figcaption>
+        <div class="plot short" id="plot-quarter"></div>
+      </figure>
+      <figure>
+        <figcaption>
+          <span class="fig-title">연간 실적</span>
+          <span class="fig-sub" id="annual-sub"></span>
+        </figcaption>
+        <div class="plot short" id="plot-annual"></div>
+      </figure>
+    </div>
+    <div class="table-wrap" id="annual-table"></div>
     <div class="note" id="financials-note"></div>
   </section>
 

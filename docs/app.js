@@ -90,9 +90,16 @@ function render() {
       return any ? total : null;
     });
   }
-  function rebase(values) {
-    const base = values.find((v) => v != null && v !== 0);
-    if (base === undefined) return values.map(() => null);
+  // 기준 시점을 계열마다 따로 잡으면(각자의 첫 값 = 100) 시작일이 다른 계열끼리
+  // 비교가 성립하지 않습니다. 모든 계열을 같은 달에 맞추고, 그 이전 구간은
+  // 100 아래로 그려지게 둡니다.
+  function rebaseAt(values, baseIdx) {
+    const base = values[baseIdx];
+    if (base == null || base === 0) {
+      const fallback = values.find((v) => v != null && v !== 0);
+      if (fallback === undefined) return values.map(() => null);
+      return values.map((v) => (v == null ? null : (v / fallback) * 100));
+    }
     return values.map((v) => (v == null ? null : (v / base) * 100));
   }
   
@@ -285,13 +292,44 @@ function render() {
     if (q.revenue == null) continue;
     months.forEach((m, i) => { if (m >= q.from && m <= q.to) revenueMonthly[i] = q.revenue; });
   }
+  // 분기 실적이 비어 있으면 연간 실적(자동 수집)을 쓴 계단선으로 대신합니다.
+  const annual = (FINANCIALS.annual || []).slice().sort((a, b) => a.fiscal_year_end.localeCompare(b.fiscal_year_end));
+  const UNIT_LABEL = FINANCIALS.unit_label || "백만 엔";
+  if (!revenueMonthly.some((v) => v != null) && annual.length) {
+    for (const row of annual) {
+      // 결산기가 3월이라 "2026-03" 은 2025-04 ~ 2026-03 을 덮습니다.
+      const [ey, em] = row.fiscal_year_end.split("-").map(Number);
+      const end = `${ey}-${String(em).padStart(2, "0")}`;
+      const startYear = em === 12 ? ey : ey - 1;
+      const start = `${startYear}-${String((em % 12) + 1).padStart(2, "0")}`;
+      months.forEach((m, i) => { if (m >= start && m <= end) revenueMonthly[i] = row.revenue; });
+    }
+  }
   const hasRevenue = revenueMonthly.some((v) => v != null);
   const hasPrice = stockMonthly.some((v) => v != null);
   
-  const indexDatasets = [line("수출 (광통신 3품목, 3M평균)", rebase(coreMma), css("--s1"))];
-  if (hasPrice) indexDatasets.push(line("주가 5802.T", rebase(stockMonthly), css("--stock")));
-  if (hasRevenue) indexDatasets.push(line("매출 (분기)", rebase(revenueMonthly), css("--result"), { stepped: true, borderDash: [4, 3] }));
+  // 세 계열이 모두 값을 갖는 가장 이른 달을 공통 기준으로 씁니다 - 실적이
+  // 가장 늦게 시작하므로 보통 그 시작월이 됩니다.
+  const baseIdx = (() => {
+    for (let i = 0; i < months.length; i++) {
+      if (coreMma[i] == null) continue;
+      if (hasPrice && stockMonthly[i] == null) continue;
+      if (hasRevenue && revenueMonthly[i] == null) continue;
+      return i;
+    }
+    return months.findIndex((_, i) => coreMma[i] != null);
+  })();
+  const baseMonth = months[baseIdx] || months[0];
   
+  const indexDatasets = [line("수출 (광통신 3품목, 3M평균)", rebaseAt(coreMma, baseIdx), css("--s1"))];
+  if (hasPrice) indexDatasets.push(line("주가 5802.T", rebaseAt(stockMonthly, baseIdx), css("--stock")));
+  if (hasRevenue) {
+    const quarterly = quarters.some((q) => q.revenue != null);
+    indexDatasets.push(line(quarterly ? "매출 (분기)" : "매출 (연간)", rebaseAt(revenueMonthly, baseIdx), css("--result"), { stepped: true, borderDash: [4, 3] }));
+  }
+  
+  document.getElementById("index-title").textContent =
+    `${baseMonth.replace("-", "년 ")}월 = 100`;
   document.getElementById("index-sub").textContent =
     "광섬유 · 광섬유 케이블 · 광배선 합계" +
     (hasPrice ? "" : " · 주가 계열은 아직 수집 전이라 표시되지 않습니다");
@@ -326,9 +364,51 @@ function render() {
     "결산기가 3월이라 FY2025Q1 은 2025년 4~6월" + (hasRevenue ? " · 매출은 별도 지수 차트에서 비교" : "");
   makePlot("plot-quarter", qDatasets, { labels: qLabels, yFormat: (v) => fmt.num(v, 0), yTitle: `백만 ${UNIT}`, legend: false });
   
-  document.getElementById("financials-note").innerHTML = hasRevenue
-    ? `<b>분기 실적</b>은 직접 입력한 값입니다. 무료로 열려 있는 기계 판독용 경로가 없어(EDINET v2 API는 발급키 필요, Yahoo 재무 엔드포인트는 차단) 결산단신을 보고 채웁니다.`
-    : `<b>분기 실적은 아직 입력 전입니다.</b> 스미토모전기 분기 실적은 무료로 열려 있는 기계 판독용 경로가 없어(EDINET v2 API는 발급키 필요, Yahoo 재무 엔드포인트는 차단) <code>data/sumitomo_financials.json</code> 의 분기 행에 <code>revenue</code>·<code>operating_income</code> 을 직접 채우는 방식입니다. 채우면 위 지수 차트에 매출 계열이 함께 그려집니다.`;
+  // 매출과 영업이익은 단위가 같으므로 한 축에 둡니다. 회사예상은 실적과
+  // 섞이지 않게 별도 계열(점선 테두리)로 표시합니다.
+  const forecast = FINANCIALS.annual_forecast || null;
+  const annualAll = forecast ? [...annual, forecast] : annual;
+  if (annualAll.length) {
+    document.getElementById("annual-sub").textContent =
+      `${UNIT_LABEL} · ${FINANCIALS.annual_source || ""}` + (forecast ? " · 마지막 연도는 회사예상" : "");
+    makePlot("plot-annual", [
+      bars("매출", annualAll.map((r) => (r.forecast ? null : r.revenue)), css("--s1") + "99", { stack: "a" }),
+      bars("매출 (회사예상)", annualAll.map((r) => (r.forecast ? r.revenue : null)), css("--s1") + "44", { stack: "a" }),
+      bars("영업이익", annualAll.map((r) => (r.forecast ? null : r.operating_income)), css("--s2") + "cc", { stack: "b" }),
+      bars("영업이익 (회사예상)", annualAll.map((r) => (r.forecast ? r.operating_income : null)), css("--s2") + "55", { stack: "b" }),
+    ], {
+      labels: annualAll.map((r) => r.label),
+      yFormat: (v) => fmt.num(v / 1000, 0) + "십억",
+      yTitle: UNIT_LABEL,
+    });
+  
+    const pct1 = (a, b) => (a == null || !b ? "—" : fmt.pct(a / b - 1, 0));
+    const rows = annualAll.map((r, i) => {
+      const prev = i > 0 ? annualAll[i - 1] : null;
+      const margin = r.operating_income && r.revenue ? r.operating_income / r.revenue : null;
+      return `<tr><td>${r.label}${r.forecast ? " <span class=\"tile-hs\">회사예상</span>" : ""}</td>` +
+        `<td>${fmt.num(r.revenue / 1000, 0)}</td>` +
+        `<td class="${dirClass(prev && r.revenue / prev.revenue - 1)}">${pct1(r.revenue, prev && prev.revenue)}</td>` +
+        `<td>${r.operating_income == null ? "—" : fmt.num(r.operating_income / 1000, 0)}</td>` +
+        `<td class="${dirClass(prev && prev.operating_income && r.operating_income / prev.operating_income - 1)}">${pct1(r.operating_income, prev && prev.operating_income)}</td>` +
+        `<td>${margin == null ? "—" : (margin * 100).toFixed(1) + "%"}</td></tr>`;
+    }).join("");
+    document.getElementById("annual-table").innerHTML =
+      `<table><caption>연간 실적 <span class="tile-hs">십억 엔 · 3월 결산</span></caption>` +
+      `<thead><tr><th>결산기</th><th>매출</th><th>YoY</th><th>영업이익</th><th>YoY</th><th>영업이익률</th></tr></thead>` +
+      `<tbody>${rows}</tbody></table>`;
+  } else {
+    document.getElementById("plot-annual").innerHTML =
+      `<div class="plot-fallback">연간 실적을 아직 수집하지 못했습니다.</div>`;
+  }
+  
+  const hasQuarterly = quarters.some((q) => q.revenue != null);
+  document.getElementById("financials-note").innerHTML = hasQuarterly
+    ? `<b>분기 실적</b>은 직접 입력한 값이고, 연간 실적은 자동 수집분입니다.`
+    : `<b>실적은 연간만 자동으로 들어옵니다.</b> 분기 수치는 무료로 열려 있는 기계 판독용 경로가 없습니다 — ` +
+      `EDINET v2 API는 발급키가 필요하고, Yahoo의 재무 엔드포인트는 차단돼 있으며, Yahoo Japan 業績 페이지는 연간 행만 제공합니다. ` +
+      `분기 단위로 보시려면 <code>data/sumitomo_financials.json</code> 의 분기 행에 <code>revenue</code>·<code>operating_income</code> 을 ` +
+      `결산단신에서 옮겨 적으면 됩니다. 채우는 즉시 위 지수 차트의 매출선이 연간 계단에서 분기 계단으로 바뀝니다.`;
   
   // ---- 품목별 ----------------------------------------------------------------
   const legendHost = document.getElementById("cat-legend");

@@ -36,6 +36,11 @@ jobs:
         timeout-minutes: 8
         run: python scripts/fetch_sumitomo_stock.py
 
+      - name: Fetch annual results
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/fetch_sumitomo_financials.py
+
       - name: Keep quarterly-results rows current
         continue-on-error: true
         run: python scripts/ensure_sumitomo_financials.py

@@ -707,5 +707,44 @@
       "source": "manual",
       "note": ""
     }
-  ]
+  ],
+  "annual": [
+    {
+      "fiscal_year_end": "2024-03",
+      "label": "24/03기",
+      "forecast": false,
+      "revenue": 4402814.0,
+      "operating_income": 226618.0,
+      "ordinary_income": 215341.0,
+      "net_income": 149723.0
+    },
+    {
+      "fiscal_year_end": "2025-03",
+      "label": "25/03기",
+      "forecast": false,
+      "revenue": 4679789.0,
+      "operating_income": 320663.0,
+      "ordinary_income": 309496.0,
+      "net_income": 193771.0
+    },
+    {
+      "fiscal_year_end": "2026-03",
+      "label": "26/03기",
+      "forecast": false,
+      "revenue": 5110171.0,
+      "operating_income": 418173.0,
+      "ordinary_income": 431274.0,
+      "net_income": 369508.0
+    }
+  ],
+  "annual_forecast": {
+    "fiscal_year_end": "2027-03",
+    "label": "27/03기",
+    "forecast": true,
+    "revenue": 5400000.0,
+    "operating_income": 450000.0,
+    "ordinary_income": 460000.0,
+    "net_income": 340000.0
+  },
+  "annual_source": "Yahoo Japan 業績 (5802.T)"
 }
