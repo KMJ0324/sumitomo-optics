@@ -1,0 +1,47 @@
+name: Update stock prices
+
+# Yahoo rate-limits by IP and GitHub's shared runner egress is throttled for
+# long stretches, so a once-a-day attempt often comes back empty. The fetch is
+# cheap and idempotent, and one un-throttled window backfills the whole
+# history, so try more often to get more chances at one.
+on:
+  schedule:
+    - cron: "20 */3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stock
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    # The fetch has its own retry deadline, but a server that answers by
+    # dripping bytes can outlive a socket read timeout, so cap the job too.
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+      - run: python scripts/fetch_sumitomo_stock.py
+      - name: Commit updated prices
+        run: |
+          if git diff --quiet -- data docs/data; then
+            echo "no new price data (throttled or already current)"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data docs/data
+          git commit -m "chore: update stock prices [skip ci]"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "push rejected (attempt $attempt); rebasing"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+          done
+          git push

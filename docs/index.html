@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>스미토모전기 광부품 수출 모니터</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" />
+<style>
+  /* ---------------------------------------------------------------
+     Palette: cool blue-grey neutrals - glass, not paper - with the
+     validated categorical series slots. Light is the base; both dark
+     scopes redefine only tokens.
+     --------------------------------------------------------------- */
+  :root {
+    color-scheme: light;
+    --paper: #eaeef3;
+    --surface: #ffffff;
+    --surface-sunk: #f3f6f9;
+    --ink: #0f1720;
+    --ink-2: #4d5a6b;
+    --ink-3: #7f8b9b;
+    --rule: #d7dee7;
+    --rule-strong: #b6c1cf;
+    --grid: #e4e9ef;
+    --accent: #1b5e9e;
+
+    --s1: #2a78d6;
+    --s2: #eb6834;
+    --s3: #1baf7a;
+    --s4: #eda100;
+    --s5: #e87ba4;
+    --stock: #4a3aa7;
+    --result: #52514e;
+
+    --up: #0a7d3f;
+    --down: #c0392b;
+
+    --shadow: 0 1px 2px rgba(15, 23, 32, 0.06), 0 8px 24px -16px rgba(15, 23, 32, 0.28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --paper: #0b1016;
+      --surface: #141b23;
+      --surface-sunk: #101720;
+      --ink: #e9eef4;
+      --ink-2: #a4b1c0;
+      --ink-3: #74808f;
+      --rule: #232d38;
+      --rule-strong: #33404e;
+      --grid: #1d2732;
+      --accent: #6ba8e4;
+
+      --s1: #3987e5;
+      --s2: #d95926;
+      --s3: #199e70;
+      --s4: #c98500;
+      --s5: #d55181;
+      --stock: #9085e9;
+      --result: #a8a69c;
+
+      --up: #35b56a;
+      --down: #ef6a5a;
+
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -16px rgba(0, 0, 0, 0.8);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #0b1016;
+    --surface: #141b23;
+    --surface-sunk: #101720;
+    --ink: #e9eef4;
+    --ink-2: #a4b1c0;
+    --ink-3: #74808f;
+    --rule: #232d38;
+    --rule-strong: #33404e;
+    --grid: #1d2732;
+    --accent: #6ba8e4;
+
+    --s1: #3987e5;
+    --s2: #d95926;
+    --s3: #199e70;
+    --s4: #c98500;
+    --s5: #d55181;
+    --stock: #9085e9;
+    --result: #a8a69c;
+
+    --up: #35b56a;
+    --down: #ef6a5a;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -16px rgba(0, 0, 0, 0.8);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans KR", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    word-break: keep-all;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 24px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* --- masthead ------------------------------------------------- */
+  .masthead { display: flex; flex-direction: column; gap: 14px; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  h1 {
+    font-family: Newsreader, Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .standfirst {
+    margin: 0;
+    max-width: 62ch;
+    color: var(--ink-2);
+    font-size: 15px;
+  }
+  .masthead-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px;
+    color: var(--ink-3);
+    border-top: 1px solid var(--rule);
+    padding-top: 12px;
+  }
+  .masthead-meta b { color: var(--ink-2); font-weight: 500; }
+
+  /* --- section -------------------------------------------------- */
+  section { display: flex; flex-direction: column; gap: 16px; }
+  h2 {
+    font-family: Newsreader, Georgia, serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+    letter-spacing: -0.005em;
+  }
+  .section-head { display: flex; flex-direction: column; gap: 5px; }
+  .section-note { margin: 0; color: var(--ink-2); font-size: 13px; max-width: 74ch; }
+
+  /* --- stat tiles ----------------------------------------------- */
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .tile {
+    background: var(--surface);
+    padding: 15px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .tile-name {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 12.5px; font-weight: 600; color: var(--ink-2);
+  }
+  .swatch { width: 3px; height: 13px; border-radius: 1px; flex: none; }
+  .tile-hs {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.03em;
+  }
+  .tile-value {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 21px; font-weight: 500; letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .tile-value .unit { font-size: 11.5px; color: var(--ink-3); margin-left: 3px; letter-spacing: 0; }
+  .tile-deltas { display: flex; gap: 14px; font-size: 11.5px; font-variant-numeric: tabular-nums; }
+  .tile-deltas span { color: var(--ink-3); }
+  .tile-deltas b { font-weight: 500; font-family: "IBM Plex Mono", ui-monospace, monospace; }
+  .up { color: var(--up); }
+  .down { color: var(--down); }
+  .tile-foot { font-size: 11px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+  /* --- chart figure --------------------------------------------- */
+  figure {
+    margin: 0;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 16px 18px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    box-shadow: var(--shadow);
+  }
+  figcaption { display: flex; flex-direction: column; gap: 3px; margin-bottom: 8px; }
+  .fig-title { font-size: 13.5px; font-weight: 600; }
+  .fig-sub { font-size: 11.5px; color: var(--ink-3); }
+  .plot { position: relative; height: 300px; }
+  .plot.short { height: 232px; }
+  .plot-fallback {
+    height: 100%; display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 0 24px; font-size: 12.5px; color: var(--ink-3);
+  }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; }
+
+  /* --- table ---------------------------------------------------- */
+  .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+  caption {
+    text-align: left; padding: 13px 16px 11px; font-size: 13px; font-weight: 600;
+    border-bottom: 1px solid var(--rule); display: flex; gap: 8px; align-items: baseline;
+  }
+  th, td { padding: 7px 12px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--grid); }
+  th:first-child, td:first-child { text-align: left; }
+  thead th {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-3); font-weight: 400; border-bottom: 1px solid var(--rule-strong);
+  }
+  td { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+  td:first-child { font-family: "IBM Plex Sans KR", sans-serif; }
+  tbody tr:last-child td { border-bottom: none; background: var(--surface-sunk); font-weight: 500; }
+  .bar-cell { position: relative; }
+  .bar-cell .bar {
+    position: absolute; left: 12px; bottom: 3px; height: 2px; border-radius: 1px; opacity: 0.75;
+  }
+
+  /* --- notes ---------------------------------------------------- */
+  .note {
+    background: var(--surface-sunk);
+    border: 1px solid var(--rule);
+    border-left: 2px solid var(--rule-strong);
+    border-radius: 2px;
+    padding: 12px 16px;
+    font-size: 12.5px;
+    color: var(--ink-2);
+  }
+  .note b { color: var(--ink); font-weight: 600; }
+  .note code {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px; background: var(--paper); padding: 1px 5px; border-radius: 2px;
+  }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--ink-2); }
+  .legend span { display: flex; align-items: center; gap: 6px; }
+  .legend i { width: 12px; height: 3px; border-radius: 2px; display: inline-block; }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    font-size: 11.5px;
+    color: var(--ink-3);
+    line-height: 1.75;
+  }
+  footer b { color: var(--ink-2); font-weight: 500; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="masthead">
+    <div class="eyebrow" id="coverage">Japan Customs · Monthly exports</div>
+    <h1>일본 광부품 수출로 읽는 스미토모전기</h1>
+    <p class="standfirst">
+      일본 재무성 관세국에 신고된 광섬유·광케이블·광커넥터·광디바이스·화합물 반도체 기판의
+      월별 수출을 스미토모전기(5802.T) 주가·분기 실적과 같은 축에서 비교합니다.
+    </p>
+    <div class="masthead-meta" id="meta"></div>
+  </header>
+
+  <div class="note" id="unit-note"></div>
+
+  <section>
+    <div class="section-head">
+      <h2>최신 월 요약</h2>
+      <p class="section-note">가장 최근 공표월 기준. 증감률은 전월(MoM)·전년동월(YoY) 대비입니다.</p>
+    </div>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>수출 · 주가 · 실적</h2>
+      <p class="section-note">
+        세 계열의 단위가 서로 달라(수출 USD, 주가 JPY, 매출 백만 엔) 하나의 축에 겹칠 수 없습니다.
+        각 계열의 첫 유효값을 100으로 맞춰 상대 추이만 비교합니다.
+      </p>
+    </div>
+    <figure>
+      <figcaption>
+        <span class="fig-title">2021년 1월 = 100</span>
+        <span class="fig-sub" id="index-sub"></span>
+      </figcaption>
+      <div class="plot" id="plot-index"></div>
+    </figure>
+    <div class="grid-2">
+      <figure>
+        <figcaption>
+          <span class="fig-title">광통신 3품목 수출액</span>
+          <span class="fig-sub">월별 · 3개월 이동평균 · 백만 USD</span>
+        </figcaption>
+        <div class="plot short" id="plot-core"></div>
+      </figure>
+      <figure>
+        <figcaption>
+          <span class="fig-title">스미토모전기 주가</span>
+          <span class="fig-sub" id="price-sub"></span>
+        </figcaption>
+        <div class="plot short" id="plot-price"></div>
+      </figure>
+    </div>
+    <figure>
+      <figcaption>
+        <span class="fig-title">분기 수출 합계</span>
+        <span class="fig-sub" id="quarter-sub"></span>
+      </figcaption>
+      <div class="plot short" id="plot-quarter"></div>
+    </figure>
+    <div class="note" id="financials-note"></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>품목별 수출</h2>
+      <p class="section-note">
+        같은 단위끼리만 한 축에 둡니다 — 금액, 전년동월 대비, 평균 수출단가를 각각 분리했습니다.
+      </p>
+    </div>
+    <div class="legend" id="cat-legend"></div>
+    <div class="grid-2">
+      <figure>
+        <figcaption>
+          <span class="fig-title">월 수출액</span>
+          <span class="fig-sub">3개월 이동평균 · 백만 USD</span>
+        </figcaption>
+        <div class="plot short" id="plot-value"></div>
+      </figure>
+      <figure>
+        <figcaption>
+          <span class="fig-title">전년동월 대비 증감률</span>
+          <span class="fig-sub">3개월 이동평균 기준 · %</span>
+        </figcaption>
+        <div class="plot short" id="plot-yoy"></div>
+      </figure>
+    </div>
+    <figure>
+      <figcaption>
+        <span class="fig-title">평균 수출단가</span>
+        <span class="fig-sub" id="asp-sub"></span>
+      </figcaption>
+      <div class="plot short" id="plot-asp"></div>
+    </figure>
+  </section>
+
+  <section id="dest-section">
+    <div class="section-head">
+      <h2>주요 수출 목적지</h2>
+      <p class="section-note">
+        최근 12개월 수출액 누계 상위 8개국. 비중의 분모는 해당 품목의 전체 수출액이라
+        표에 실린 나라들의 합은 100%보다 작습니다. 증감률은 가장 최근 달 기준입니다.
+      </p>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

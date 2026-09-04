@@ -1,0 +1,50 @@
+{
+  "note": "일본 재무성(Ministry of Finance) 무역통계에서 수집할 수출 품목 정의. HS 코드는 6자리 기준이며, 한 카테고리에 여러 코드를 넣으면 합산됩니다. HS2022 개정으로 세번이 쪼개진 품목은 구/신 코드를 함께 넣어 두면 시점에 따라 알아서 합산됩니다. 이 파일은 사람이 직접 고치는 설정 파일입니다 - 스크립트가 덮어쓰지 않습니다.",
+  "categories": [
+    {
+      "id": "optical_fiber",
+      "label": "광섬유",
+      "label_en": "Optical fibre",
+      "group": "광섬유",
+      "hs": ["900110"],
+      "enabled": true,
+      "caveat": "HS 9001.10은 광섬유·광섬유 다발과 함께 8544.70에 해당하지 않는 일부 광섬유 케이블도 포함합니다."
+    },
+    {
+      "id": "optical_fiber_cable",
+      "label": "광섬유 케이블",
+      "label_en": "Optical fibre cable",
+      "group": "광섬유",
+      "hs": ["854470"],
+      "enabled": true,
+      "caveat": "개별 피복된 광섬유를 다발로 만든 케이블(HS 8544.70)."
+    },
+    {
+      "id": "optical_connector",
+      "label": "광배선(광커넥터)",
+      "label_en": "Optical fibre connectors",
+      "group": "광배선",
+      "hs": ["853670"],
+      "enabled": true,
+      "caveat": "HS 8536.70은 광섬유·광섬유 다발·광케이블용 커넥터입니다. 광배선반·클로저 등 다른 광배선 제품은 별도 세번이 없어 포함되지 않습니다."
+    },
+    {
+      "id": "optical_device",
+      "label": "광디바이스",
+      "label_en": "Photosensitive semiconductor devices / LED",
+      "group": "광디바이스",
+      "hs": ["854141", "854149", "854140"],
+      "enabled": true,
+      "caveat": "감광성 반도체 소자·LED 전체(HS 8541.41/8541.49, HS2022 개정 전 8541.40)라서 포토다이오드·레이저다이오드 외에 일반 LED도 함께 잡히는 넓은 바스켓입니다. 광디바이스 전용 세번은 존재하지 않습니다."
+    },
+    {
+      "id": "inp_substrate",
+      "label": "InP 등 화합물 반도체 기판",
+      "label_en": "Doped semiconductor wafers",
+      "group": "기판",
+      "hs": ["381800"],
+      "enabled": true,
+      "caveat": "HS 3818.00은 전자용으로 도핑된 원소·화합물(디스크·웨이퍼 형태)로, InP 기판을 포함하지만 Si·GaAs 웨이퍼도 함께 포함하는 넓은 세번입니다. InP 단독 세번은 존재하지 않습니다."
+    }
+  ]
+}

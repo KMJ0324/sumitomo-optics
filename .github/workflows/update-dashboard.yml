@@ -1,0 +1,72 @@
+name: Update dashboard
+
+on:
+  schedule:
+    # 매일 09:00 KST (00:00 UTC). 수출 통계는 월 단위라 시각은 중요하지 않고,
+    # 주가만 하루 한 번 이 시점에 함께 갱신됩니다.
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Fetch Japan optical-product export statistics
+        continue-on-error: true
+        timeout-minutes: 20
+        run: python scripts/fetch_jp_trade_stats.py
+
+      - name: Fetch Sumitomo Electric (5802.T) prices
+        continue-on-error: true
+        timeout-minutes: 8
+        run: python scripts/fetch_sumitomo_stock.py
+
+      - name: Keep quarterly-results rows current
+        continue-on-error: true
+        run: python scripts/ensure_sumitomo_financials.py
+
+      - name: Commit updated data
+        run: |
+          if git diff --quiet -- data docs/data; then
+            echo "no data changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data docs/data
+          git commit -m "chore: update dashboard data [skip ci]"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "push rejected (attempt $attempt); rebasing"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+          done
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

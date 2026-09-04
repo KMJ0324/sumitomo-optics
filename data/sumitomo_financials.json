@@ -1,0 +1,711 @@
+{
+  "note": "스미토모전기공업(5802.T) 분기 실적. 자동 수집 경로가 없어 직접 입력하는 파일입니다 - 스크립트는 빈 분기 행만 추가하고 값이 채워진 행은 건드리지 않습니다.",
+  "source": "manual",
+  "currency": "JPY",
+  "unit": "million",
+  "unit_label": "백만 엔",
+  "fiscal_year_end_month": 3,
+  "fiscal_note": "3월 결산. FY2025Q1 = 2025년 4~6월.",
+  "segment_labels": {
+    "infocom": "정보통신",
+    "electronics": "일렉트로닉스",
+    "automotive": "자동차",
+    "environment_energy": "환경에너지",
+    "industrial_materials": "산업소재 외"
+  },
+  "quarters": [
+    {
+      "quarter": "FY2021Q1",
+      "label": "21.04-06",
+      "period_start": "2021-04-01",
+      "period_end": "2021-06-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2021Q2",
+      "label": "21.07-09",
+      "period_start": "2021-07-01",
+      "period_end": "2021-09-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2021Q3",
+      "label": "21.10-12",
+      "period_start": "2021-10-01",
+      "period_end": "2021-12-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2021Q4",
+      "label": "22.01-03",
+      "period_start": "2022-01-01",
+      "period_end": "2022-03-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2022Q1",
+      "label": "22.04-06",
+      "period_start": "2022-04-01",
+      "period_end": "2022-06-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2022Q2",
+      "label": "22.07-09",
+      "period_start": "2022-07-01",
+      "period_end": "2022-09-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2022Q3",
+      "label": "22.10-12",
+      "period_start": "2022-10-01",
+      "period_end": "2022-12-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2022Q4",
+      "label": "23.01-03",
+      "period_start": "2023-01-01",
+      "period_end": "2023-03-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2023Q1",
+      "label": "23.04-06",
+      "period_start": "2023-04-01",
+      "period_end": "2023-06-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2023Q2",
+      "label": "23.07-09",
+      "period_start": "2023-07-01",
+      "period_end": "2023-09-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2023Q3",
+      "label": "23.10-12",
+      "period_start": "2023-10-01",
+      "period_end": "2023-12-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2023Q4",
+      "label": "24.01-03",
+      "period_start": "2024-01-01",
+      "period_end": "2024-03-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2024Q1",
+      "label": "24.04-06",
+      "period_start": "2024-04-01",
+      "period_end": "2024-06-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2024Q2",
+      "label": "24.07-09",
+      "period_start": "2024-07-01",
+      "period_end": "2024-09-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2024Q3",
+      "label": "24.10-12",
+      "period_start": "2024-10-01",
+      "period_end": "2024-12-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2024Q4",
+      "label": "25.01-03",
+      "period_start": "2025-01-01",
+      "period_end": "2025-03-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2025Q1",
+      "label": "25.04-06",
+      "period_start": "2025-04-01",
+      "period_end": "2025-06-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2025Q2",
+      "label": "25.07-09",
+      "period_start": "2025-07-01",
+      "period_end": "2025-09-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2025Q3",
+      "label": "25.10-12",
+      "period_start": "2025-10-01",
+      "period_end": "2025-12-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2025Q4",
+      "label": "26.01-03",
+      "period_start": "2026-01-01",
+      "period_end": "2026-03-31",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    },
+    {
+      "quarter": "FY2026Q1",
+      "label": "26.04-06",
+      "period_start": "2026-04-01",
+      "period_end": "2026-06-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
+    }
+  ]
+}

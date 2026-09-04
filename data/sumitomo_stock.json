@@ -1,0 +1,8334 @@
+{
+  "symbol": "5802.T",
+  "name": "Sumitomo Electric Industries, Ltd.",
+  "currency": "JPY",
+  "source": "auto",
+  "note": "",
+  "daily": [
+    {
+      "date": "20210104",
+      "close": 335.75,
+      "raw_close": 1343.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210105",
+      "close": 335.25,
+      "raw_close": 1341.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210106",
+      "close": 337.0,
+      "raw_close": 1348.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210107",
+      "close": 351.88,
+      "raw_close": 1407.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210108",
+      "close": 372.13,
+      "raw_close": 1488.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210112",
+      "close": 372.5,
+      "raw_close": 1490.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210113",
+      "close": 371.75,
+      "raw_close": 1487.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210114",
+      "close": 373.63,
+      "raw_close": 1494.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210115",
+      "close": 361.75,
+      "raw_close": 1447.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210118",
+      "close": 359.75,
+      "raw_close": 1439.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210119",
+      "close": 363.75,
+      "raw_close": 1455.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210120",
+      "close": 361.38,
+      "raw_close": 1445.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210121",
+      "close": 362.5,
+      "raw_close": 1450.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210122",
+      "close": 362.38,
+      "raw_close": 1449.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210125",
+      "close": 362.25,
+      "raw_close": 1449.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210126",
+      "close": 357.25,
+      "raw_close": 1429.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210127",
+      "close": 366.0,
+      "raw_close": 1464.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210128",
+      "close": 359.63,
+      "raw_close": 1438.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210129",
+      "close": 348.13,
+      "raw_close": 1392.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210201",
+      "close": 355.13,
+      "raw_close": 1420.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210202",
+      "close": 365.88,
+      "raw_close": 1463.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210203",
+      "close": 383.38,
+      "raw_close": 1533.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210204",
+      "close": 391.75,
+      "raw_close": 1567.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210205",
+      "close": 397.25,
+      "raw_close": 1589.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210208",
+      "close": 399.75,
+      "raw_close": 1599.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210209",
+      "close": 401.25,
+      "raw_close": 1605.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210210",
+      "close": 401.63,
+      "raw_close": 1606.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210212",
+      "close": 398.88,
+      "raw_close": 1595.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210215",
+      "close": 400.38,
+      "raw_close": 1601.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210216",
+      "close": 399.75,
+      "raw_close": 1599.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210217",
+      "close": 398.13,
+      "raw_close": 1592.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210218",
+      "close": 389.13,
+      "raw_close": 1556.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210219",
+      "close": 381.0,
+      "raw_close": 1524.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210222",
+      "close": 387.38,
+      "raw_close": 1549.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210224",
+      "close": 385.88,
+      "raw_close": 1543.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210225",
+      "close": 389.5,
+      "raw_close": 1558.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210226",
+      "close": 386.63,
+      "raw_close": 1546.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210301",
+      "close": 401.0,
+      "raw_close": 1604.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210302",
+      "close": 398.88,
+      "raw_close": 1595.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210303",
+      "close": 413.75,
+      "raw_close": 1655.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210304",
+      "close": 410.88,
+      "raw_close": 1643.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210305",
+      "close": 418.63,
+      "raw_close": 1674.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210308",
+      "close": 418.75,
+      "raw_close": 1675.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210309",
+      "close": 424.5,
+      "raw_close": 1698.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210310",
+      "close": 421.13,
+      "raw_close": 1684.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210311",
+      "close": 424.88,
+      "raw_close": 1699.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210312",
+      "close": 424.25,
+      "raw_close": 1697.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210315",
+      "close": 437.88,
+      "raw_close": 1751.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210316",
+      "close": 438.75,
+      "raw_close": 1755.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210317",
+      "close": 439.63,
+      "raw_close": 1758.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210318",
+      "close": 442.88,
+      "raw_close": 1771.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210319",
+      "close": 449.25,
+      "raw_close": 1797.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210322",
+      "close": 430.75,
+      "raw_close": 1723.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210323",
+      "close": 426.88,
+      "raw_close": 1707.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210324",
+      "close": 413.38,
+      "raw_close": 1653.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210325",
+      "close": 425.0,
+      "raw_close": 1700.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210326",
+      "close": 427.0,
+      "raw_close": 1708.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210329",
+      "close": 427.13,
+      "raw_close": 1708.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210330",
+      "close": 424.38,
+      "raw_close": 1697.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210331",
+      "close": 414.5,
+      "raw_close": 1658.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210401",
+      "close": 411.25,
+      "raw_close": 1645.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210402",
+      "close": 412.38,
+      "raw_close": 1649.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210405",
+      "close": 420.25,
+      "raw_close": 1681.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210406",
+      "close": 414.25,
+      "raw_close": 1657.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210407",
+      "close": 420.0,
+      "raw_close": 1680.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210408",
+      "close": 421.38,
+      "raw_close": 1685.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210409",
+      "close": 416.75,
+      "raw_close": 1667.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210412",
+      "close": 414.0,
+      "raw_close": 1656.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210413",
+      "close": 419.88,
+      "raw_close": 1679.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210414",
+      "close": 415.25,
+      "raw_close": 1661.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210415",
+      "close": 419.25,
+      "raw_close": 1677.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210416",
+      "close": 422.75,
+      "raw_close": 1691.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210419",
+      "close": 428.25,
+      "raw_close": 1713.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210420",
+      "close": 418.13,
+      "raw_close": 1672.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210421",
+      "close": 403.88,
+      "raw_close": 1615.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210422",
+      "close": 409.0,
+      "raw_close": 1636.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210423",
+      "close": 406.0,
+      "raw_close": 1624.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210426",
+      "close": 404.63,
+      "raw_close": 1618.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210427",
+      "close": 400.0,
+      "raw_close": 1600.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210428",
+      "close": 405.38,
+      "raw_close": 1621.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210430",
+      "close": 406.5,
+      "raw_close": 1626.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210506",
+      "close": 410.75,
+      "raw_close": 1643.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210507",
+      "close": 411.5,
+      "raw_close": 1646.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210510",
+      "close": 419.38,
+      "raw_close": 1677.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210511",
+      "close": 407.75,
+      "raw_close": 1631.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210512",
+      "close": 402.38,
+      "raw_close": 1609.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210513",
+      "close": 399.63,
+      "raw_close": 1598.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210514",
+      "close": 409.63,
+      "raw_close": 1638.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210517",
+      "close": 399.88,
+      "raw_close": 1599.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210518",
+      "close": 409.38,
+      "raw_close": 1637.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210519",
+      "close": 406.88,
+      "raw_close": 1627.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210520",
+      "close": 407.5,
+      "raw_close": 1630.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210521",
+      "close": 405.0,
+      "raw_close": 1620.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210524",
+      "close": 406.25,
+      "raw_close": 1625.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210525",
+      "close": 410.5,
+      "raw_close": 1642.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210526",
+      "close": 412.5,
+      "raw_close": 1650.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210527",
+      "close": 416.63,
+      "raw_close": 1666.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210528",
+      "close": 425.25,
+      "raw_close": 1701.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210531",
+      "close": 419.13,
+      "raw_close": 1676.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210601",
+      "close": 427.75,
+      "raw_close": 1711.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210602",
+      "close": 433.38,
+      "raw_close": 1733.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210603",
+      "close": 433.63,
+      "raw_close": 1734.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210604",
+      "close": 442.0,
+      "raw_close": 1768.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210607",
+      "close": 437.38,
+      "raw_close": 1749.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210608",
+      "close": 435.38,
+      "raw_close": 1741.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210609",
+      "close": 433.5,
+      "raw_close": 1734.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210610",
+      "close": 432.0,
+      "raw_close": 1728.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210611",
+      "close": 424.0,
+      "raw_close": 1696.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210614",
+      "close": 421.13,
+      "raw_close": 1684.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210615",
+      "close": 423.63,
+      "raw_close": 1694.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210616",
+      "close": 427.88,
+      "raw_close": 1711.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210617",
+      "close": 422.38,
+      "raw_close": 1689.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210618",
+      "close": 415.13,
+      "raw_close": 1660.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210621",
+      "close": 399.25,
+      "raw_close": 1597.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210622",
+      "close": 413.38,
+      "raw_close": 1653.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210623",
+      "close": 410.25,
+      "raw_close": 1641.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210624",
+      "close": 411.38,
+      "raw_close": 1645.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210625",
+      "close": 418.75,
+      "raw_close": 1675.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210628",
+      "close": 420.63,
+      "raw_close": 1682.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210629",
+      "close": 410.13,
+      "raw_close": 1640.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210630",
+      "close": 409.75,
+      "raw_close": 1639.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210701",
+      "close": 410.25,
+      "raw_close": 1641.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210702",
+      "close": 409.88,
+      "raw_close": 1639.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210705",
+      "close": 407.63,
+      "raw_close": 1630.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210706",
+      "close": 405.88,
+      "raw_close": 1623.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210707",
+      "close": 394.25,
+      "raw_close": 1577.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210708",
+      "close": 388.75,
+      "raw_close": 1555.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210709",
+      "close": 386.0,
+      "raw_close": 1544.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210712",
+      "close": 398.88,
+      "raw_close": 1595.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210713",
+      "close": 399.63,
+      "raw_close": 1598.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210714",
+      "close": 392.63,
+      "raw_close": 1570.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210715",
+      "close": 388.75,
+      "raw_close": 1555.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210716",
+      "close": 390.13,
+      "raw_close": 1560.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210719",
+      "close": 383.88,
+      "raw_close": 1535.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210720",
+      "close": 377.0,
+      "raw_close": 1508.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210721",
+      "close": 384.5,
+      "raw_close": 1538.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210726",
+      "close": 392.25,
+      "raw_close": 1569.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210727",
+      "close": 392.75,
+      "raw_close": 1571.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210728",
+      "close": 390.88,
+      "raw_close": 1563.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210729",
+      "close": 393.13,
+      "raw_close": 1572.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210730",
+      "close": 386.88,
+      "raw_close": 1547.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210802",
+      "close": 404.13,
+      "raw_close": 1616.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210803",
+      "close": 400.25,
+      "raw_close": 1601.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210804",
+      "close": 377.38,
+      "raw_close": 1509.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210805",
+      "close": 373.63,
+      "raw_close": 1494.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210806",
+      "close": 374.0,
+      "raw_close": 1496.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210810",
+      "close": 376.13,
+      "raw_close": 1504.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210811",
+      "close": 380.13,
+      "raw_close": 1520.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210812",
+      "close": 381.38,
+      "raw_close": 1525.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210813",
+      "close": 382.5,
+      "raw_close": 1530.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210816",
+      "close": 374.5,
+      "raw_close": 1498.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210817",
+      "close": 373.38,
+      "raw_close": 1493.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210818",
+      "close": 373.88,
+      "raw_close": 1495.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210819",
+      "close": 365.38,
+      "raw_close": 1461.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210820",
+      "close": 347.13,
+      "raw_close": 1388.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210823",
+      "close": 354.25,
+      "raw_close": 1417.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210824",
+      "close": 358.13,
+      "raw_close": 1432.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210825",
+      "close": 360.0,
+      "raw_close": 1440.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210826",
+      "close": 359.63,
+      "raw_close": 1438.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210827",
+      "close": 359.5,
+      "raw_close": 1438.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210830",
+      "close": 367.13,
+      "raw_close": 1468.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210831",
+      "close": 367.63,
+      "raw_close": 1470.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210901",
+      "close": 370.0,
+      "raw_close": 1480.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210902",
+      "close": 368.75,
+      "raw_close": 1475.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210903",
+      "close": 373.5,
+      "raw_close": 1494.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210906",
+      "close": 379.63,
+      "raw_close": 1518.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210907",
+      "close": 384.38,
+      "raw_close": 1537.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210908",
+      "close": 386.5,
+      "raw_close": 1546.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210909",
+      "close": 381.25,
+      "raw_close": 1525.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210910",
+      "close": 384.38,
+      "raw_close": 1537.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210913",
+      "close": 383.13,
+      "raw_close": 1532.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210914",
+      "close": 388.75,
+      "raw_close": 1555.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210915",
+      "close": 381.75,
+      "raw_close": 1527.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210916",
+      "close": 382.38,
+      "raw_close": 1529.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210917",
+      "close": 382.25,
+      "raw_close": 1529.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210921",
+      "close": 373.13,
+      "raw_close": 1492.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210922",
+      "close": 370.63,
+      "raw_close": 1482.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210924",
+      "close": 382.88,
+      "raw_close": 1531.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210927",
+      "close": 383.88,
+      "raw_close": 1535.5,
+      "adjusted": true
+    },
+    {
+      "date": "20210928",
+      "close": 391.0,
+      "raw_close": 1564.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210929",
+      "close": 380.75,
+      "raw_close": 1523.0,
+      "adjusted": true
+    },
+    {
+      "date": "20210930",
+      "close": 374.0,
+      "raw_close": 1496.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211001",
+      "close": 367.0,
+      "raw_close": 1468.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211004",
+      "close": 364.13,
+      "raw_close": 1456.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211005",
+      "close": 366.38,
+      "raw_close": 1465.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211006",
+      "close": 367.5,
+      "raw_close": 1470.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211007",
+      "close": 365.38,
+      "raw_close": 1461.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211008",
+      "close": 371.5,
+      "raw_close": 1486.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211011",
+      "close": 380.63,
+      "raw_close": 1522.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211012",
+      "close": 382.5,
+      "raw_close": 1530.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211013",
+      "close": 387.5,
+      "raw_close": 1550.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211014",
+      "close": 387.38,
+      "raw_close": 1549.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211015",
+      "close": 392.25,
+      "raw_close": 1569.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211018",
+      "close": 394.88,
+      "raw_close": 1579.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211019",
+      "close": 390.5,
+      "raw_close": 1562.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211020",
+      "close": 388.0,
+      "raw_close": 1552.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211021",
+      "close": 382.75,
+      "raw_close": 1531.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211022",
+      "close": 381.5,
+      "raw_close": 1526.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211025",
+      "close": 380.25,
+      "raw_close": 1521.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211026",
+      "close": 385.13,
+      "raw_close": 1540.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211027",
+      "close": 378.63,
+      "raw_close": 1514.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211028",
+      "close": 378.13,
+      "raw_close": 1512.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211029",
+      "close": 376.63,
+      "raw_close": 1506.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211101",
+      "close": 380.5,
+      "raw_close": 1522.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211102",
+      "close": 374.13,
+      "raw_close": 1496.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211104",
+      "close": 380.5,
+      "raw_close": 1522.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211105",
+      "close": 379.0,
+      "raw_close": 1516.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211108",
+      "close": 381.0,
+      "raw_close": 1524.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211109",
+      "close": 373.38,
+      "raw_close": 1493.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211110",
+      "close": 381.38,
+      "raw_close": 1525.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211111",
+      "close": 383.13,
+      "raw_close": 1532.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211112",
+      "close": 389.88,
+      "raw_close": 1559.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211115",
+      "close": 388.13,
+      "raw_close": 1552.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211116",
+      "close": 391.0,
+      "raw_close": 1564.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211117",
+      "close": 384.0,
+      "raw_close": 1536.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211118",
+      "close": 398.5,
+      "raw_close": 1594.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211119",
+      "close": 405.13,
+      "raw_close": 1620.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211122",
+      "close": 406.63,
+      "raw_close": 1626.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211124",
+      "close": 406.13,
+      "raw_close": 1624.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211125",
+      "close": 408.88,
+      "raw_close": 1635.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211126",
+      "close": 397.13,
+      "raw_close": 1588.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211129",
+      "close": 386.38,
+      "raw_close": 1545.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211130",
+      "close": 372.38,
+      "raw_close": 1489.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211201",
+      "close": 375.25,
+      "raw_close": 1501.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211202",
+      "close": 367.0,
+      "raw_close": 1468.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211203",
+      "close": 376.0,
+      "raw_close": 1504.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211206",
+      "close": 375.75,
+      "raw_close": 1503.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211207",
+      "close": 389.38,
+      "raw_close": 1557.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211208",
+      "close": 388.5,
+      "raw_close": 1554.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211209",
+      "close": 380.88,
+      "raw_close": 1523.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211210",
+      "close": 380.63,
+      "raw_close": 1522.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211213",
+      "close": 379.5,
+      "raw_close": 1518.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211214",
+      "close": 375.75,
+      "raw_close": 1503.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211215",
+      "close": 382.13,
+      "raw_close": 1528.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211216",
+      "close": 383.0,
+      "raw_close": 1532.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211217",
+      "close": 382.0,
+      "raw_close": 1528.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211220",
+      "close": 365.25,
+      "raw_close": 1461.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211221",
+      "close": 368.63,
+      "raw_close": 1474.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211222",
+      "close": 364.25,
+      "raw_close": 1457.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211223",
+      "close": 370.38,
+      "raw_close": 1481.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211224",
+      "close": 373.13,
+      "raw_close": 1492.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211227",
+      "close": 369.0,
+      "raw_close": 1476.0,
+      "adjusted": true
+    },
+    {
+      "date": "20211228",
+      "close": 375.38,
+      "raw_close": 1501.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211229",
+      "close": 375.13,
+      "raw_close": 1500.5,
+      "adjusted": true
+    },
+    {
+      "date": "20211230",
+      "close": 374.88,
+      "raw_close": 1499.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220104",
+      "close": 395.25,
+      "raw_close": 1581.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220105",
+      "close": 409.38,
+      "raw_close": 1637.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220106",
+      "close": 404.88,
+      "raw_close": 1619.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220107",
+      "close": 406.5,
+      "raw_close": 1626.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220111",
+      "close": 407.63,
+      "raw_close": 1630.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220112",
+      "close": 418.38,
+      "raw_close": 1673.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220113",
+      "close": 417.5,
+      "raw_close": 1670.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220114",
+      "close": 410.88,
+      "raw_close": 1643.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220117",
+      "close": 415.0,
+      "raw_close": 1660.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220118",
+      "close": 407.75,
+      "raw_close": 1631.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220119",
+      "close": 392.25,
+      "raw_close": 1569.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220120",
+      "close": 394.75,
+      "raw_close": 1579.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220121",
+      "close": 390.0,
+      "raw_close": 1560.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220124",
+      "close": 393.88,
+      "raw_close": 1575.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220125",
+      "close": 385.88,
+      "raw_close": 1543.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220126",
+      "close": 380.0,
+      "raw_close": 1520.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220127",
+      "close": 366.88,
+      "raw_close": 1467.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220128",
+      "close": 374.75,
+      "raw_close": 1499.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220131",
+      "close": 378.13,
+      "raw_close": 1512.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220201",
+      "close": 373.75,
+      "raw_close": 1495.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220202",
+      "close": 381.88,
+      "raw_close": 1527.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220203",
+      "close": 387.25,
+      "raw_close": 1549.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220204",
+      "close": 389.5,
+      "raw_close": 1558.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220207",
+      "close": 390.25,
+      "raw_close": 1561.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220208",
+      "close": 400.5,
+      "raw_close": 1602.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220209",
+      "close": 404.88,
+      "raw_close": 1619.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220210",
+      "close": 403.63,
+      "raw_close": 1614.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220214",
+      "close": 394.88,
+      "raw_close": 1579.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220215",
+      "close": 395.0,
+      "raw_close": 1580.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220216",
+      "close": 403.5,
+      "raw_close": 1614.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220217",
+      "close": 401.75,
+      "raw_close": 1607.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220218",
+      "close": 397.38,
+      "raw_close": 1589.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220221",
+      "close": 395.0,
+      "raw_close": 1580.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220222",
+      "close": 389.5,
+      "raw_close": 1558.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220224",
+      "close": 368.25,
+      "raw_close": 1473.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220225",
+      "close": 377.75,
+      "raw_close": 1511.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220228",
+      "close": 380.63,
+      "raw_close": 1522.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220301",
+      "close": 379.5,
+      "raw_close": 1518.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220302",
+      "close": 367.5,
+      "raw_close": 1470.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220303",
+      "close": 372.75,
+      "raw_close": 1491.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220304",
+      "close": 356.13,
+      "raw_close": 1424.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220307",
+      "close": 324.88,
+      "raw_close": 1299.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220308",
+      "close": 322.38,
+      "raw_close": 1289.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220309",
+      "close": 321.13,
+      "raw_close": 1284.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220310",
+      "close": 336.13,
+      "raw_close": 1344.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220311",
+      "close": 331.38,
+      "raw_close": 1325.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220314",
+      "close": 337.13,
+      "raw_close": 1348.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220315",
+      "close": 338.63,
+      "raw_close": 1354.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220316",
+      "close": 340.63,
+      "raw_close": 1362.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220317",
+      "close": 353.88,
+      "raw_close": 1415.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220318",
+      "close": 357.0,
+      "raw_close": 1428.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220322",
+      "close": 366.0,
+      "raw_close": 1464.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220323",
+      "close": 377.25,
+      "raw_close": 1509.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220324",
+      "close": 381.0,
+      "raw_close": 1524.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220325",
+      "close": 375.63,
+      "raw_close": 1502.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220328",
+      "close": 374.75,
+      "raw_close": 1499.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220329",
+      "close": 376.63,
+      "raw_close": 1506.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220330",
+      "close": 370.63,
+      "raw_close": 1482.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220331",
+      "close": 365.5,
+      "raw_close": 1462.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220401",
+      "close": 365.75,
+      "raw_close": 1463.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220404",
+      "close": 365.63,
+      "raw_close": 1462.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220405",
+      "close": 363.5,
+      "raw_close": 1454.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220406",
+      "close": 352.5,
+      "raw_close": 1410.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220407",
+      "close": 344.25,
+      "raw_close": 1377.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220408",
+      "close": 339.75,
+      "raw_close": 1359.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220411",
+      "close": 340.75,
+      "raw_close": 1363.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220412",
+      "close": 340.25,
+      "raw_close": 1361.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220413",
+      "close": 344.88,
+      "raw_close": 1379.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220414",
+      "close": 348.63,
+      "raw_close": 1394.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220415",
+      "close": 349.38,
+      "raw_close": 1397.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220418",
+      "close": 347.25,
+      "raw_close": 1389.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220419",
+      "close": 351.0,
+      "raw_close": 1404.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220420",
+      "close": 354.38,
+      "raw_close": 1417.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220421",
+      "close": 360.13,
+      "raw_close": 1440.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220422",
+      "close": 354.38,
+      "raw_close": 1417.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220425",
+      "close": 343.63,
+      "raw_close": 1374.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220426",
+      "close": 341.63,
+      "raw_close": 1366.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220427",
+      "close": 336.13,
+      "raw_close": 1344.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220428",
+      "close": 349.63,
+      "raw_close": 1398.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220502",
+      "close": 354.25,
+      "raw_close": 1417.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220506",
+      "close": 366.38,
+      "raw_close": 1465.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220509",
+      "close": 358.5,
+      "raw_close": 1434.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220510",
+      "close": 356.13,
+      "raw_close": 1424.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220511",
+      "close": 354.0,
+      "raw_close": 1416.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220512",
+      "close": 347.75,
+      "raw_close": 1391.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220513",
+      "close": 351.63,
+      "raw_close": 1406.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220516",
+      "close": 348.5,
+      "raw_close": 1394.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220517",
+      "close": 348.88,
+      "raw_close": 1395.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220518",
+      "close": 351.75,
+      "raw_close": 1407.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220519",
+      "close": 346.75,
+      "raw_close": 1387.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220520",
+      "close": 355.0,
+      "raw_close": 1420.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220523",
+      "close": 355.0,
+      "raw_close": 1420.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220524",
+      "close": 353.75,
+      "raw_close": 1415.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220525",
+      "close": 353.75,
+      "raw_close": 1415.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220526",
+      "close": 353.38,
+      "raw_close": 1413.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220527",
+      "close": 356.25,
+      "raw_close": 1425.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220530",
+      "close": 364.63,
+      "raw_close": 1458.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220531",
+      "close": 356.38,
+      "raw_close": 1425.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220601",
+      "close": 372.0,
+      "raw_close": 1488.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220602",
+      "close": 374.5,
+      "raw_close": 1498.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220603",
+      "close": 370.75,
+      "raw_close": 1483.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220606",
+      "close": 369.88,
+      "raw_close": 1479.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220607",
+      "close": 374.5,
+      "raw_close": 1498.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220608",
+      "close": 380.88,
+      "raw_close": 1523.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220609",
+      "close": 381.38,
+      "raw_close": 1525.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220610",
+      "close": 380.0,
+      "raw_close": 1520.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220613",
+      "close": 368.75,
+      "raw_close": 1475.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220614",
+      "close": 365.5,
+      "raw_close": 1462.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220615",
+      "close": 363.38,
+      "raw_close": 1453.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220616",
+      "close": 370.5,
+      "raw_close": 1482.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220617",
+      "close": 362.75,
+      "raw_close": 1451.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220620",
+      "close": 360.0,
+      "raw_close": 1440.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220621",
+      "close": 367.38,
+      "raw_close": 1469.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220622",
+      "close": 365.5,
+      "raw_close": 1462.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220623",
+      "close": 369.0,
+      "raw_close": 1476.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220624",
+      "close": 373.13,
+      "raw_close": 1492.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220627",
+      "close": 379.5,
+      "raw_close": 1518.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220628",
+      "close": 381.75,
+      "raw_close": 1527.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220629",
+      "close": 379.0,
+      "raw_close": 1516.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220630",
+      "close": 374.75,
+      "raw_close": 1499.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220701",
+      "close": 361.5,
+      "raw_close": 1446.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220704",
+      "close": 363.75,
+      "raw_close": 1455.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220705",
+      "close": 364.5,
+      "raw_close": 1458.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220706",
+      "close": 357.38,
+      "raw_close": 1429.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220707",
+      "close": 362.13,
+      "raw_close": 1448.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220708",
+      "close": 364.38,
+      "raw_close": 1457.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220711",
+      "close": 371.5,
+      "raw_close": 1486.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220712",
+      "close": 362.13,
+      "raw_close": 1448.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220713",
+      "close": 364.75,
+      "raw_close": 1459.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220714",
+      "close": 365.38,
+      "raw_close": 1461.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220715",
+      "close": 362.5,
+      "raw_close": 1450.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220719",
+      "close": 372.75,
+      "raw_close": 1491.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220720",
+      "close": 380.38,
+      "raw_close": 1521.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220721",
+      "close": 380.88,
+      "raw_close": 1523.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220722",
+      "close": 380.0,
+      "raw_close": 1520.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220725",
+      "close": 375.75,
+      "raw_close": 1503.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220726",
+      "close": 378.38,
+      "raw_close": 1513.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220727",
+      "close": 377.0,
+      "raw_close": 1508.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220728",
+      "close": 374.5,
+      "raw_close": 1498.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220729",
+      "close": 368.38,
+      "raw_close": 1473.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220801",
+      "close": 375.75,
+      "raw_close": 1503.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220802",
+      "close": 370.5,
+      "raw_close": 1482.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220803",
+      "close": 366.75,
+      "raw_close": 1467.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220804",
+      "close": 388.63,
+      "raw_close": 1554.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220805",
+      "close": 385.63,
+      "raw_close": 1542.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220808",
+      "close": 387.0,
+      "raw_close": 1548.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220809",
+      "close": 390.13,
+      "raw_close": 1560.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220810",
+      "close": 394.38,
+      "raw_close": 1577.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220812",
+      "close": 398.88,
+      "raw_close": 1595.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220815",
+      "close": 399.75,
+      "raw_close": 1599.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220816",
+      "close": 397.0,
+      "raw_close": 1588.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220817",
+      "close": 406.25,
+      "raw_close": 1625.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220818",
+      "close": 401.75,
+      "raw_close": 1607.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220819",
+      "close": 408.0,
+      "raw_close": 1632.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220822",
+      "close": 404.75,
+      "raw_close": 1619.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220823",
+      "close": 400.0,
+      "raw_close": 1600.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220824",
+      "close": 400.0,
+      "raw_close": 1600.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220825",
+      "close": 400.13,
+      "raw_close": 1600.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220826",
+      "close": 404.0,
+      "raw_close": 1616.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220829",
+      "close": 401.0,
+      "raw_close": 1604.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220830",
+      "close": 401.63,
+      "raw_close": 1606.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220831",
+      "close": 400.63,
+      "raw_close": 1602.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220901",
+      "close": 400.0,
+      "raw_close": 1600.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220902",
+      "close": 400.88,
+      "raw_close": 1603.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220905",
+      "close": 396.75,
+      "raw_close": 1587.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220906",
+      "close": 398.38,
+      "raw_close": 1593.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220907",
+      "close": 400.75,
+      "raw_close": 1603.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220908",
+      "close": 411.25,
+      "raw_close": 1645.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220909",
+      "close": 409.13,
+      "raw_close": 1636.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220912",
+      "close": 410.0,
+      "raw_close": 1640.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220913",
+      "close": 409.38,
+      "raw_close": 1637.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220914",
+      "close": 403.5,
+      "raw_close": 1614.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220915",
+      "close": 402.5,
+      "raw_close": 1610.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220916",
+      "close": 401.25,
+      "raw_close": 1605.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220920",
+      "close": 406.0,
+      "raw_close": 1624.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220921",
+      "close": 400.0,
+      "raw_close": 1600.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220922",
+      "close": 400.63,
+      "raw_close": 1602.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220926",
+      "close": 381.38,
+      "raw_close": 1525.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220927",
+      "close": 385.5,
+      "raw_close": 1542.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220928",
+      "close": 379.0,
+      "raw_close": 1516.0,
+      "adjusted": true
+    },
+    {
+      "date": "20220929",
+      "close": 378.88,
+      "raw_close": 1515.5,
+      "adjusted": true
+    },
+    {
+      "date": "20220930",
+      "close": 366.0,
+      "raw_close": 1464.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221003",
+      "close": 373.75,
+      "raw_close": 1495.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221004",
+      "close": 381.75,
+      "raw_close": 1527.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221005",
+      "close": 387.5,
+      "raw_close": 1550.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221006",
+      "close": 390.5,
+      "raw_close": 1562.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221007",
+      "close": 387.13,
+      "raw_close": 1548.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221011",
+      "close": 379.38,
+      "raw_close": 1517.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221012",
+      "close": 376.25,
+      "raw_close": 1505.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221013",
+      "close": 376.0,
+      "raw_close": 1504.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221014",
+      "close": 383.25,
+      "raw_close": 1533.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221017",
+      "close": 381.13,
+      "raw_close": 1524.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221018",
+      "close": 384.0,
+      "raw_close": 1536.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221019",
+      "close": 385.63,
+      "raw_close": 1542.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221020",
+      "close": 382.25,
+      "raw_close": 1529.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221021",
+      "close": 378.13,
+      "raw_close": 1512.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221024",
+      "close": 380.88,
+      "raw_close": 1523.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221025",
+      "close": 389.0,
+      "raw_close": 1556.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221026",
+      "close": 385.75,
+      "raw_close": 1543.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221027",
+      "close": 381.13,
+      "raw_close": 1524.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221028",
+      "close": 379.5,
+      "raw_close": 1518.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221031",
+      "close": 388.5,
+      "raw_close": 1554.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221101",
+      "close": 391.25,
+      "raw_close": 1565.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221102",
+      "close": 398.75,
+      "raw_close": 1595.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221104",
+      "close": 392.75,
+      "raw_close": 1571.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221107",
+      "close": 396.38,
+      "raw_close": 1585.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221108",
+      "close": 400.38,
+      "raw_close": 1601.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221109",
+      "close": 398.25,
+      "raw_close": 1593.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221110",
+      "close": 393.63,
+      "raw_close": 1574.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221111",
+      "close": 401.63,
+      "raw_close": 1606.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221114",
+      "close": 393.5,
+      "raw_close": 1574.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221115",
+      "close": 399.75,
+      "raw_close": 1599.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221116",
+      "close": 399.63,
+      "raw_close": 1598.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221117",
+      "close": 400.0,
+      "raw_close": 1600.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221118",
+      "close": 403.38,
+      "raw_close": 1613.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221121",
+      "close": 402.88,
+      "raw_close": 1611.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221122",
+      "close": 403.0,
+      "raw_close": 1612.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221124",
+      "close": 404.5,
+      "raw_close": 1618.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221125",
+      "close": 402.25,
+      "raw_close": 1609.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221128",
+      "close": 404.63,
+      "raw_close": 1618.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221129",
+      "close": 400.0,
+      "raw_close": 1600.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221130",
+      "close": 400.13,
+      "raw_close": 1600.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221201",
+      "close": 398.0,
+      "raw_close": 1592.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221202",
+      "close": 389.63,
+      "raw_close": 1558.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221205",
+      "close": 384.13,
+      "raw_close": 1536.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221206",
+      "close": 386.0,
+      "raw_close": 1544.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221207",
+      "close": 391.5,
+      "raw_close": 1566.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221208",
+      "close": 390.0,
+      "raw_close": 1560.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221209",
+      "close": 391.5,
+      "raw_close": 1566.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221212",
+      "close": 395.0,
+      "raw_close": 1580.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221213",
+      "close": 396.38,
+      "raw_close": 1585.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221214",
+      "close": 398.13,
+      "raw_close": 1592.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221215",
+      "close": 398.25,
+      "raw_close": 1593.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221216",
+      "close": 392.13,
+      "raw_close": 1568.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221219",
+      "close": 391.38,
+      "raw_close": 1565.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221220",
+      "close": 384.38,
+      "raw_close": 1537.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221221",
+      "close": 375.88,
+      "raw_close": 1503.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221222",
+      "close": 379.75,
+      "raw_close": 1519.0,
+      "adjusted": true
+    },
+    {
+      "date": "20221223",
+      "close": 373.88,
+      "raw_close": 1495.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221226",
+      "close": 379.38,
+      "raw_close": 1517.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221227",
+      "close": 377.88,
+      "raw_close": 1511.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221228",
+      "close": 376.63,
+      "raw_close": 1506.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221229",
+      "close": 374.88,
+      "raw_close": 1499.5,
+      "adjusted": true
+    },
+    {
+      "date": "20221230",
+      "close": 376.13,
+      "raw_close": 1504.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230104",
+      "close": 367.38,
+      "raw_close": 1469.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230105",
+      "close": 367.0,
+      "raw_close": 1468.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230106",
+      "close": 369.75,
+      "raw_close": 1479.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230110",
+      "close": 370.38,
+      "raw_close": 1481.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230111",
+      "close": 375.5,
+      "raw_close": 1502.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230112",
+      "close": 376.38,
+      "raw_close": 1505.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230113",
+      "close": 371.25,
+      "raw_close": 1485.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230116",
+      "close": 364.75,
+      "raw_close": 1459.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230117",
+      "close": 373.25,
+      "raw_close": 1493.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230118",
+      "close": 378.5,
+      "raw_close": 1514.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230119",
+      "close": 372.38,
+      "raw_close": 1489.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230120",
+      "close": 372.63,
+      "raw_close": 1490.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230123",
+      "close": 375.0,
+      "raw_close": 1500.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230124",
+      "close": 381.25,
+      "raw_close": 1525.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230125",
+      "close": 384.25,
+      "raw_close": 1537.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230126",
+      "close": 386.13,
+      "raw_close": 1544.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230127",
+      "close": 385.63,
+      "raw_close": 1542.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230130",
+      "close": 385.75,
+      "raw_close": 1543.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230131",
+      "close": 388.63,
+      "raw_close": 1554.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230201",
+      "close": 388.25,
+      "raw_close": 1553.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230202",
+      "close": 388.0,
+      "raw_close": 1552.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230203",
+      "close": 396.25,
+      "raw_close": 1585.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230206",
+      "close": 404.13,
+      "raw_close": 1616.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230207",
+      "close": 406.75,
+      "raw_close": 1627.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230208",
+      "close": 411.88,
+      "raw_close": 1647.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230209",
+      "close": 410.13,
+      "raw_close": 1640.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230210",
+      "close": 411.0,
+      "raw_close": 1644.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230213",
+      "close": 409.5,
+      "raw_close": 1638.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230214",
+      "close": 412.25,
+      "raw_close": 1649.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230215",
+      "close": 420.13,
+      "raw_close": 1680.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230216",
+      "close": 429.88,
+      "raw_close": 1719.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230217",
+      "close": 422.13,
+      "raw_close": 1688.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230220",
+      "close": 417.38,
+      "raw_close": 1669.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230221",
+      "close": 421.13,
+      "raw_close": 1684.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230222",
+      "close": 418.88,
+      "raw_close": 1675.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230224",
+      "close": 420.38,
+      "raw_close": 1681.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230227",
+      "close": 422.0,
+      "raw_close": 1688.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230228",
+      "close": 418.88,
+      "raw_close": 1675.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230301",
+      "close": 422.5,
+      "raw_close": 1690.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230302",
+      "close": 422.75,
+      "raw_close": 1691.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230303",
+      "close": 426.63,
+      "raw_close": 1706.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230306",
+      "close": 428.0,
+      "raw_close": 1712.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230307",
+      "close": 430.5,
+      "raw_close": 1722.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230308",
+      "close": 430.13,
+      "raw_close": 1720.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230309",
+      "close": 434.25,
+      "raw_close": 1737.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230310",
+      "close": 432.0,
+      "raw_close": 1728.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230313",
+      "close": 418.13,
+      "raw_close": 1672.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230314",
+      "close": 399.38,
+      "raw_close": 1597.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230315",
+      "close": 404.75,
+      "raw_close": 1619.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230316",
+      "close": 400.5,
+      "raw_close": 1602.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230317",
+      "close": 397.5,
+      "raw_close": 1590.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230320",
+      "close": 397.13,
+      "raw_close": 1588.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230322",
+      "close": 404.0,
+      "raw_close": 1616.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230323",
+      "close": 407.75,
+      "raw_close": 1631.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230324",
+      "close": 407.63,
+      "raw_close": 1630.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230327",
+      "close": 410.25,
+      "raw_close": 1641.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230328",
+      "close": 413.5,
+      "raw_close": 1654.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230329",
+      "close": 422.88,
+      "raw_close": 1691.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230330",
+      "close": 419.5,
+      "raw_close": 1678.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230331",
+      "close": 424.25,
+      "raw_close": 1697.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230403",
+      "close": 424.88,
+      "raw_close": 1699.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230404",
+      "close": 425.5,
+      "raw_close": 1702.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230405",
+      "close": 414.88,
+      "raw_close": 1659.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230406",
+      "close": 405.25,
+      "raw_close": 1621.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230407",
+      "close": 409.0,
+      "raw_close": 1636.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230410",
+      "close": 411.75,
+      "raw_close": 1647.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230411",
+      "close": 416.13,
+      "raw_close": 1664.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230412",
+      "close": 420.63,
+      "raw_close": 1682.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230413",
+      "close": 416.38,
+      "raw_close": 1665.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230414",
+      "close": 417.0,
+      "raw_close": 1668.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230417",
+      "close": 419.75,
+      "raw_close": 1679.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230418",
+      "close": 422.25,
+      "raw_close": 1689.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230419",
+      "close": 422.0,
+      "raw_close": 1688.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230420",
+      "close": 422.13,
+      "raw_close": 1688.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230421",
+      "close": 420.63,
+      "raw_close": 1682.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230424",
+      "close": 422.5,
+      "raw_close": 1690.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230425",
+      "close": 420.88,
+      "raw_close": 1683.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230426",
+      "close": 418.5,
+      "raw_close": 1674.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230427",
+      "close": 423.75,
+      "raw_close": 1695.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230428",
+      "close": 431.0,
+      "raw_close": 1724.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230501",
+      "close": 433.88,
+      "raw_close": 1735.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230502",
+      "close": 432.5,
+      "raw_close": 1730.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230508",
+      "close": 433.75,
+      "raw_close": 1735.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230509",
+      "close": 439.38,
+      "raw_close": 1757.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230510",
+      "close": 437.25,
+      "raw_close": 1749.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230511",
+      "close": 433.38,
+      "raw_close": 1733.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230512",
+      "close": 436.38,
+      "raw_close": 1745.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230515",
+      "close": 422.75,
+      "raw_close": 1691.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230516",
+      "close": 418.0,
+      "raw_close": 1672.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230517",
+      "close": 416.13,
+      "raw_close": 1664.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230518",
+      "close": 422.13,
+      "raw_close": 1688.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230519",
+      "close": 423.13,
+      "raw_close": 1692.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230522",
+      "close": 430.5,
+      "raw_close": 1722.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230523",
+      "close": 430.13,
+      "raw_close": 1720.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230524",
+      "close": 427.13,
+      "raw_close": 1708.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230525",
+      "close": 428.25,
+      "raw_close": 1713.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230526",
+      "close": 424.63,
+      "raw_close": 1698.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230529",
+      "close": 426.5,
+      "raw_close": 1706.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230530",
+      "close": 424.75,
+      "raw_close": 1699.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230531",
+      "close": 413.5,
+      "raw_close": 1654.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230601",
+      "close": 408.75,
+      "raw_close": 1635.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230602",
+      "close": 415.5,
+      "raw_close": 1662.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230605",
+      "close": 424.38,
+      "raw_close": 1697.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230606",
+      "close": 423.0,
+      "raw_close": 1692.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230607",
+      "close": 420.63,
+      "raw_close": 1682.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230608",
+      "close": 415.63,
+      "raw_close": 1662.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230609",
+      "close": 421.38,
+      "raw_close": 1685.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230612",
+      "close": 425.38,
+      "raw_close": 1701.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230613",
+      "close": 430.88,
+      "raw_close": 1723.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230614",
+      "close": 440.0,
+      "raw_close": 1760.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230615",
+      "close": 441.75,
+      "raw_close": 1767.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230616",
+      "close": 438.63,
+      "raw_close": 1754.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230619",
+      "close": 434.0,
+      "raw_close": 1736.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230620",
+      "close": 431.25,
+      "raw_close": 1725.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230621",
+      "close": 433.13,
+      "raw_close": 1732.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230622",
+      "close": 430.5,
+      "raw_close": 1722.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230623",
+      "close": 422.13,
+      "raw_close": 1688.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230626",
+      "close": 426.13,
+      "raw_close": 1704.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230627",
+      "close": 423.88,
+      "raw_close": 1695.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230628",
+      "close": 432.63,
+      "raw_close": 1730.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230629",
+      "close": 441.88,
+      "raw_close": 1767.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230630",
+      "close": 439.25,
+      "raw_close": 1757.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230703",
+      "close": 443.5,
+      "raw_close": 1774.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230704",
+      "close": 438.0,
+      "raw_close": 1752.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230705",
+      "close": 437.0,
+      "raw_close": 1748.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230706",
+      "close": 433.38,
+      "raw_close": 1733.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230707",
+      "close": 429.0,
+      "raw_close": 1716.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230710",
+      "close": 426.0,
+      "raw_close": 1704.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230711",
+      "close": 423.0,
+      "raw_close": 1692.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230712",
+      "close": 418.75,
+      "raw_close": 1675.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230713",
+      "close": 419.75,
+      "raw_close": 1679.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230714",
+      "close": 422.0,
+      "raw_close": 1688.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230718",
+      "close": 425.0,
+      "raw_close": 1700.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230719",
+      "close": 435.38,
+      "raw_close": 1741.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230720",
+      "close": 436.13,
+      "raw_close": 1744.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230721",
+      "close": 440.13,
+      "raw_close": 1760.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230724",
+      "close": 445.38,
+      "raw_close": 1781.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230725",
+      "close": 454.38,
+      "raw_close": 1817.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230726",
+      "close": 447.0,
+      "raw_close": 1788.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230727",
+      "close": 445.13,
+      "raw_close": 1780.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230728",
+      "close": 443.5,
+      "raw_close": 1774.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230731",
+      "close": 455.0,
+      "raw_close": 1820.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230801",
+      "close": 462.0,
+      "raw_close": 1848.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230802",
+      "close": 469.38,
+      "raw_close": 1877.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230803",
+      "close": 437.88,
+      "raw_close": 1751.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230804",
+      "close": 433.13,
+      "raw_close": 1732.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230807",
+      "close": 435.0,
+      "raw_close": 1740.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230808",
+      "close": 445.88,
+      "raw_close": 1783.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230809",
+      "close": 444.0,
+      "raw_close": 1776.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230810",
+      "close": 448.63,
+      "raw_close": 1794.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230814",
+      "close": 445.13,
+      "raw_close": 1780.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230815",
+      "close": 445.13,
+      "raw_close": 1780.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230816",
+      "close": 437.0,
+      "raw_close": 1748.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230817",
+      "close": 439.5,
+      "raw_close": 1758.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230818",
+      "close": 439.5,
+      "raw_close": 1758.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230821",
+      "close": 433.88,
+      "raw_close": 1735.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230822",
+      "close": 436.13,
+      "raw_close": 1744.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230823",
+      "close": 439.5,
+      "raw_close": 1758.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230824",
+      "close": 442.63,
+      "raw_close": 1770.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230825",
+      "close": 437.0,
+      "raw_close": 1748.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230828",
+      "close": 440.25,
+      "raw_close": 1761.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230829",
+      "close": 439.88,
+      "raw_close": 1759.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230830",
+      "close": 443.25,
+      "raw_close": 1773.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230831",
+      "close": 446.38,
+      "raw_close": 1785.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230901",
+      "close": 446.75,
+      "raw_close": 1787.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230904",
+      "close": 453.25,
+      "raw_close": 1813.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230905",
+      "close": 454.63,
+      "raw_close": 1818.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230906",
+      "close": 460.0,
+      "raw_close": 1840.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230907",
+      "close": 456.25,
+      "raw_close": 1825.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230908",
+      "close": 445.38,
+      "raw_close": 1781.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230911",
+      "close": 439.13,
+      "raw_close": 1756.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230912",
+      "close": 445.63,
+      "raw_close": 1782.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230913",
+      "close": 448.25,
+      "raw_close": 1793.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230914",
+      "close": 453.5,
+      "raw_close": 1814.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230915",
+      "close": 459.75,
+      "raw_close": 1839.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230919",
+      "close": 466.25,
+      "raw_close": 1865.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230920",
+      "close": 468.38,
+      "raw_close": 1873.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230921",
+      "close": 466.5,
+      "raw_close": 1866.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230922",
+      "close": 459.38,
+      "raw_close": 1837.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230925",
+      "close": 460.75,
+      "raw_close": 1843.0,
+      "adjusted": true
+    },
+    {
+      "date": "20230926",
+      "close": 458.38,
+      "raw_close": 1833.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230927",
+      "close": 460.88,
+      "raw_close": 1843.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230928",
+      "close": 458.63,
+      "raw_close": 1834.5,
+      "adjusted": true
+    },
+    {
+      "date": "20230929",
+      "close": 450.38,
+      "raw_close": 1801.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231002",
+      "close": 450.25,
+      "raw_close": 1801.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231003",
+      "close": 428.88,
+      "raw_close": 1715.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231004",
+      "close": 409.13,
+      "raw_close": 1636.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231005",
+      "close": 414.5,
+      "raw_close": 1658.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231006",
+      "close": 416.38,
+      "raw_close": 1665.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231010",
+      "close": 426.38,
+      "raw_close": 1705.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231011",
+      "close": 427.75,
+      "raw_close": 1711.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231012",
+      "close": 430.5,
+      "raw_close": 1722.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231013",
+      "close": 426.38,
+      "raw_close": 1705.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231016",
+      "close": 422.75,
+      "raw_close": 1691.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231017",
+      "close": 421.75,
+      "raw_close": 1687.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231018",
+      "close": 414.5,
+      "raw_close": 1658.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231019",
+      "close": 406.25,
+      "raw_close": 1625.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231020",
+      "close": 401.5,
+      "raw_close": 1606.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231023",
+      "close": 402.0,
+      "raw_close": 1608.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231024",
+      "close": 397.25,
+      "raw_close": 1589.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231025",
+      "close": 398.75,
+      "raw_close": 1595.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231026",
+      "close": 396.5,
+      "raw_close": 1586.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231027",
+      "close": 404.75,
+      "raw_close": 1619.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231030",
+      "close": 392.88,
+      "raw_close": 1571.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231031",
+      "close": 392.25,
+      "raw_close": 1569.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231101",
+      "close": 404.25,
+      "raw_close": 1617.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231102",
+      "close": 404.25,
+      "raw_close": 1617.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231106",
+      "close": 450.38,
+      "raw_close": 1801.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231107",
+      "close": 456.0,
+      "raw_close": 1824.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231108",
+      "close": 449.38,
+      "raw_close": 1797.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231109",
+      "close": 450.0,
+      "raw_close": 1800.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231110",
+      "close": 449.75,
+      "raw_close": 1799.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231113",
+      "close": 454.0,
+      "raw_close": 1816.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231114",
+      "close": 471.63,
+      "raw_close": 1886.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231115",
+      "close": 471.88,
+      "raw_close": 1887.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231116",
+      "close": 468.5,
+      "raw_close": 1874.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231117",
+      "close": 472.38,
+      "raw_close": 1889.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231120",
+      "close": 457.0,
+      "raw_close": 1828.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231121",
+      "close": 452.38,
+      "raw_close": 1809.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231122",
+      "close": 459.5,
+      "raw_close": 1838.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231124",
+      "close": 467.5,
+      "raw_close": 1870.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231127",
+      "close": 464.5,
+      "raw_close": 1858.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231128",
+      "close": 463.13,
+      "raw_close": 1852.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231129",
+      "close": 458.75,
+      "raw_close": 1835.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231130",
+      "close": 458.5,
+      "raw_close": 1834.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231201",
+      "close": 462.13,
+      "raw_close": 1848.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231204",
+      "close": 456.5,
+      "raw_close": 1826.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231205",
+      "close": 454.13,
+      "raw_close": 1816.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231206",
+      "close": 460.5,
+      "raw_close": 1842.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231207",
+      "close": 452.0,
+      "raw_close": 1808.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231208",
+      "close": 437.63,
+      "raw_close": 1750.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231211",
+      "close": 451.63,
+      "raw_close": 1806.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231212",
+      "close": 451.63,
+      "raw_close": 1806.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231213",
+      "close": 452.25,
+      "raw_close": 1809.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231214",
+      "close": 433.88,
+      "raw_close": 1735.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231215",
+      "close": 441.0,
+      "raw_close": 1764.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231218",
+      "close": 440.63,
+      "raw_close": 1762.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231219",
+      "close": 442.63,
+      "raw_close": 1770.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231220",
+      "close": 449.5,
+      "raw_close": 1798.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231221",
+      "close": 443.38,
+      "raw_close": 1773.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231222",
+      "close": 445.38,
+      "raw_close": 1781.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231225",
+      "close": 446.0,
+      "raw_close": 1784.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231226",
+      "close": 445.13,
+      "raw_close": 1780.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231227",
+      "close": 447.25,
+      "raw_close": 1789.0,
+      "adjusted": true
+    },
+    {
+      "date": "20231228",
+      "close": 448.13,
+      "raw_close": 1792.5,
+      "adjusted": true
+    },
+    {
+      "date": "20231229",
+      "close": 448.88,
+      "raw_close": 1795.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240104",
+      "close": 461.0,
+      "raw_close": 1844.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240105",
+      "close": 459.63,
+      "raw_close": 1838.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240109",
+      "close": 461.25,
+      "raw_close": 1845.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240110",
+      "close": 468.38,
+      "raw_close": 1873.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240111",
+      "close": 476.63,
+      "raw_close": 1906.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240112",
+      "close": 478.0,
+      "raw_close": 1912.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240115",
+      "close": 478.75,
+      "raw_close": 1915.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240116",
+      "close": 473.0,
+      "raw_close": 1892.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240117",
+      "close": 477.5,
+      "raw_close": 1910.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240118",
+      "close": 477.0,
+      "raw_close": 1908.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240119",
+      "close": 477.88,
+      "raw_close": 1911.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240122",
+      "close": 488.0,
+      "raw_close": 1952.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240123",
+      "close": 488.0,
+      "raw_close": 1952.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240124",
+      "close": 483.13,
+      "raw_close": 1932.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240125",
+      "close": 483.38,
+      "raw_close": 1933.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240126",
+      "close": 477.0,
+      "raw_close": 1908.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240129",
+      "close": 488.88,
+      "raw_close": 1955.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240130",
+      "close": 483.63,
+      "raw_close": 1934.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240131",
+      "close": 494.0,
+      "raw_close": 1976.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240201",
+      "close": 487.88,
+      "raw_close": 1951.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240202",
+      "close": 489.63,
+      "raw_close": 1958.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240205",
+      "close": 500.75,
+      "raw_close": 2003.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240206",
+      "close": 514.63,
+      "raw_close": 2058.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240207",
+      "close": 518.38,
+      "raw_close": 2073.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240208",
+      "close": 519.13,
+      "raw_close": 2076.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240209",
+      "close": 519.25,
+      "raw_close": 2077.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240213",
+      "close": 530.5,
+      "raw_close": 2122.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240214",
+      "close": 518.63,
+      "raw_close": 2074.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240215",
+      "close": 524.88,
+      "raw_close": 2099.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240216",
+      "close": 534.38,
+      "raw_close": 2137.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240219",
+      "close": 537.88,
+      "raw_close": 2151.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240220",
+      "close": 537.13,
+      "raw_close": 2148.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240221",
+      "close": 538.63,
+      "raw_close": 2154.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240222",
+      "close": 548.38,
+      "raw_close": 2193.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240226",
+      "close": 551.5,
+      "raw_close": 2206.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240227",
+      "close": 557.0,
+      "raw_close": 2228.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240228",
+      "close": 560.88,
+      "raw_close": 2243.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240229",
+      "close": 555.13,
+      "raw_close": 2220.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240301",
+      "close": 557.75,
+      "raw_close": 2231.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240304",
+      "close": 548.38,
+      "raw_close": 2193.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240305",
+      "close": 556.0,
+      "raw_close": 2224.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240306",
+      "close": 565.75,
+      "raw_close": 2263.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240307",
+      "close": 559.25,
+      "raw_close": 2237.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240308",
+      "close": 564.75,
+      "raw_close": 2259.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240311",
+      "close": 549.38,
+      "raw_close": 2197.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240312",
+      "close": 555.88,
+      "raw_close": 2223.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240313",
+      "close": 558.75,
+      "raw_close": 2235.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240314",
+      "close": 560.88,
+      "raw_close": 2243.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240315",
+      "close": 566.63,
+      "raw_close": 2266.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240318",
+      "close": 575.88,
+      "raw_close": 2303.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240319",
+      "close": 584.0,
+      "raw_close": 2336.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240321",
+      "close": 589.5,
+      "raw_close": 2358.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240322",
+      "close": 594.5,
+      "raw_close": 2378.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240325",
+      "close": 594.0,
+      "raw_close": 2376.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240326",
+      "close": 598.5,
+      "raw_close": 2394.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240327",
+      "close": 602.25,
+      "raw_close": 2409.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240328",
+      "close": 583.75,
+      "raw_close": 2335.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240329",
+      "close": 586.88,
+      "raw_close": 2347.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240401",
+      "close": 569.38,
+      "raw_close": 2277.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240402",
+      "close": 566.75,
+      "raw_close": 2267.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240403",
+      "close": 571.88,
+      "raw_close": 2287.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240404",
+      "close": 577.25,
+      "raw_close": 2309.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240405",
+      "close": 572.75,
+      "raw_close": 2291.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240408",
+      "close": 583.75,
+      "raw_close": 2335.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240409",
+      "close": 602.13,
+      "raw_close": 2408.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240410",
+      "close": 604.25,
+      "raw_close": 2417.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240411",
+      "close": 609.25,
+      "raw_close": 2437.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240412",
+      "close": 615.25,
+      "raw_close": 2461.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240415",
+      "close": 616.75,
+      "raw_close": 2467.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240416",
+      "close": 601.63,
+      "raw_close": 2406.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240417",
+      "close": 597.0,
+      "raw_close": 2388.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240418",
+      "close": 608.38,
+      "raw_close": 2433.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240419",
+      "close": 596.13,
+      "raw_close": 2384.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240422",
+      "close": 600.38,
+      "raw_close": 2401.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240423",
+      "close": 597.25,
+      "raw_close": 2389.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240424",
+      "close": 605.25,
+      "raw_close": 2421.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240425",
+      "close": 595.0,
+      "raw_close": 2380.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240426",
+      "close": 592.38,
+      "raw_close": 2369.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240430",
+      "close": 610.25,
+      "raw_close": 2441.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240501",
+      "close": 604.38,
+      "raw_close": 2417.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240502",
+      "close": 600.63,
+      "raw_close": 2402.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240507",
+      "close": 608.5,
+      "raw_close": 2434.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240508",
+      "close": 599.25,
+      "raw_close": 2397.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240509",
+      "close": 603.5,
+      "raw_close": 2414.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240510",
+      "close": 604.5,
+      "raw_close": 2418.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240513",
+      "close": 594.75,
+      "raw_close": 2379.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240514",
+      "close": 587.38,
+      "raw_close": 2349.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240515",
+      "close": 589.38,
+      "raw_close": 2357.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240516",
+      "close": 587.38,
+      "raw_close": 2349.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240517",
+      "close": 592.75,
+      "raw_close": 2371.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240520",
+      "close": 606.88,
+      "raw_close": 2427.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240521",
+      "close": 604.0,
+      "raw_close": 2416.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240522",
+      "close": 592.0,
+      "raw_close": 2368.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240523",
+      "close": 591.88,
+      "raw_close": 2367.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240524",
+      "close": 593.13,
+      "raw_close": 2372.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240527",
+      "close": 617.38,
+      "raw_close": 2469.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240528",
+      "close": 653.75,
+      "raw_close": 2615.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240529",
+      "close": 639.75,
+      "raw_close": 2559.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240530",
+      "close": 628.75,
+      "raw_close": 2515.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240531",
+      "close": 636.13,
+      "raw_close": 2544.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240603",
+      "close": 644.0,
+      "raw_close": 2576.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240604",
+      "close": 640.75,
+      "raw_close": 2563.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240605",
+      "close": 622.0,
+      "raw_close": 2488.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240606",
+      "close": 628.38,
+      "raw_close": 2513.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240607",
+      "close": 644.5,
+      "raw_close": 2578.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240610",
+      "close": 664.88,
+      "raw_close": 2659.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240611",
+      "close": 673.5,
+      "raw_close": 2694.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240612",
+      "close": 676.0,
+      "raw_close": 2704.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240613",
+      "close": 654.75,
+      "raw_close": 2619.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240614",
+      "close": 659.13,
+      "raw_close": 2636.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240617",
+      "close": 637.25,
+      "raw_close": 2549.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240618",
+      "close": 635.13,
+      "raw_close": 2540.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240619",
+      "close": 634.88,
+      "raw_close": 2539.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240620",
+      "close": 629.63,
+      "raw_close": 2518.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240621",
+      "close": 629.88,
+      "raw_close": 2519.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240624",
+      "close": 626.75,
+      "raw_close": 2507.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240625",
+      "close": 628.13,
+      "raw_close": 2512.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240626",
+      "close": 634.88,
+      "raw_close": 2539.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240627",
+      "close": 622.75,
+      "raw_close": 2491.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240628",
+      "close": 625.63,
+      "raw_close": 2502.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240701",
+      "close": 615.13,
+      "raw_close": 2460.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240702",
+      "close": 616.25,
+      "raw_close": 2465.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240703",
+      "close": 610.25,
+      "raw_close": 2441.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240704",
+      "close": 616.25,
+      "raw_close": 2465.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240705",
+      "close": 599.5,
+      "raw_close": 2398.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240708",
+      "close": 602.88,
+      "raw_close": 2411.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240709",
+      "close": 610.38,
+      "raw_close": 2441.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240710",
+      "close": 625.25,
+      "raw_close": 2501.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240711",
+      "close": 631.0,
+      "raw_close": 2524.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240712",
+      "close": 612.0,
+      "raw_close": 2448.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240716",
+      "close": 619.63,
+      "raw_close": 2478.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240717",
+      "close": 628.25,
+      "raw_close": 2513.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240718",
+      "close": 600.0,
+      "raw_close": 2400.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240719",
+      "close": 602.63,
+      "raw_close": 2410.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240722",
+      "close": 589.88,
+      "raw_close": 2359.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240723",
+      "close": 594.38,
+      "raw_close": 2377.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240724",
+      "close": 581.0,
+      "raw_close": 2324.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240725",
+      "close": 563.13,
+      "raw_close": 2252.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240726",
+      "close": 556.75,
+      "raw_close": 2227.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240729",
+      "close": 574.38,
+      "raw_close": 2297.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240730",
+      "close": 570.75,
+      "raw_close": 2283.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240731",
+      "close": 577.5,
+      "raw_close": 2310.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240801",
+      "close": 554.88,
+      "raw_close": 2219.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240802",
+      "close": 551.25,
+      "raw_close": 2205.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240805",
+      "close": 463.88,
+      "raw_close": 1855.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240806",
+      "close": 524.25,
+      "raw_close": 2097.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240807",
+      "close": 530.13,
+      "raw_close": 2120.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240808",
+      "close": 519.5,
+      "raw_close": 2078.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240809",
+      "close": 532.75,
+      "raw_close": 2131.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240813",
+      "close": 555.63,
+      "raw_close": 2222.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240814",
+      "close": 569.5,
+      "raw_close": 2278.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240815",
+      "close": 595.75,
+      "raw_close": 2383.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240816",
+      "close": 598.38,
+      "raw_close": 2393.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240819",
+      "close": 584.25,
+      "raw_close": 2337.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240820",
+      "close": 598.63,
+      "raw_close": 2394.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240821",
+      "close": 594.38,
+      "raw_close": 2377.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240822",
+      "close": 580.88,
+      "raw_close": 2323.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240823",
+      "close": 591.25,
+      "raw_close": 2365.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240826",
+      "close": 574.75,
+      "raw_close": 2299.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240827",
+      "close": 580.25,
+      "raw_close": 2321.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240828",
+      "close": 582.0,
+      "raw_close": 2328.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240829",
+      "close": 582.75,
+      "raw_close": 2331.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240830",
+      "close": 602.13,
+      "raw_close": 2408.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240902",
+      "close": 617.25,
+      "raw_close": 2469.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240903",
+      "close": 616.5,
+      "raw_close": 2466.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240904",
+      "close": 582.5,
+      "raw_close": 2330.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240905",
+      "close": 584.5,
+      "raw_close": 2338.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240906",
+      "close": 574.5,
+      "raw_close": 2298.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240909",
+      "close": 576.5,
+      "raw_close": 2306.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240910",
+      "close": 572.25,
+      "raw_close": 2289.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240911",
+      "close": 558.25,
+      "raw_close": 2233.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240912",
+      "close": 573.38,
+      "raw_close": 2293.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240913",
+      "close": 565.88,
+      "raw_close": 2263.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240917",
+      "close": 564.0,
+      "raw_close": 2256.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240918",
+      "close": 569.75,
+      "raw_close": 2279.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240919",
+      "close": 583.63,
+      "raw_close": 2334.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240920",
+      "close": 586.38,
+      "raw_close": 2345.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240924",
+      "close": 593.5,
+      "raw_close": 2374.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240925",
+      "close": 588.0,
+      "raw_close": 2352.0,
+      "adjusted": true
+    },
+    {
+      "date": "20240926",
+      "close": 603.88,
+      "raw_close": 2415.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240927",
+      "close": 611.63,
+      "raw_close": 2446.5,
+      "adjusted": true
+    },
+    {
+      "date": "20240930",
+      "close": 573.88,
+      "raw_close": 2295.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241001",
+      "close": 576.25,
+      "raw_close": 2305.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241002",
+      "close": 570.88,
+      "raw_close": 2283.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241003",
+      "close": 579.63,
+      "raw_close": 2318.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241004",
+      "close": 581.88,
+      "raw_close": 2327.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241007",
+      "close": 606.0,
+      "raw_close": 2424.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241008",
+      "close": 596.13,
+      "raw_close": 2384.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241009",
+      "close": 589.13,
+      "raw_close": 2356.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241010",
+      "close": 603.88,
+      "raw_close": 2415.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241011",
+      "close": 594.25,
+      "raw_close": 2377.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241015",
+      "close": 593.0,
+      "raw_close": 2372.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241016",
+      "close": 587.63,
+      "raw_close": 2350.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241017",
+      "close": 583.25,
+      "raw_close": 2333.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241018",
+      "close": 582.25,
+      "raw_close": 2329.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241021",
+      "close": 580.13,
+      "raw_close": 2320.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241022",
+      "close": 579.38,
+      "raw_close": 2317.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241023",
+      "close": 574.88,
+      "raw_close": 2299.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241024",
+      "close": 574.13,
+      "raw_close": 2296.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241025",
+      "close": 572.25,
+      "raw_close": 2289.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241028",
+      "close": 577.75,
+      "raw_close": 2311.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241029",
+      "close": 582.25,
+      "raw_close": 2329.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241030",
+      "close": 593.13,
+      "raw_close": 2372.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241031",
+      "close": 595.63,
+      "raw_close": 2382.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241101",
+      "close": 583.0,
+      "raw_close": 2332.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241105",
+      "close": 644.75,
+      "raw_close": 2579.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241106",
+      "close": 668.38,
+      "raw_close": 2673.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241107",
+      "close": 645.75,
+      "raw_close": 2583.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241108",
+      "close": 650.88,
+      "raw_close": 2603.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241111",
+      "close": 675.63,
+      "raw_close": 2702.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241112",
+      "close": 681.13,
+      "raw_close": 2724.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241113",
+      "close": 675.88,
+      "raw_close": 2703.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241114",
+      "close": 720.0,
+      "raw_close": 2880.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241115",
+      "close": 711.25,
+      "raw_close": 2845.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241118",
+      "close": 703.88,
+      "raw_close": 2815.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241119",
+      "close": 713.63,
+      "raw_close": 2854.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241120",
+      "close": 721.5,
+      "raw_close": 2886.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241121",
+      "close": 739.88,
+      "raw_close": 2959.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241122",
+      "close": 749.0,
+      "raw_close": 2996.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241125",
+      "close": 745.13,
+      "raw_close": 2980.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241126",
+      "close": 741.25,
+      "raw_close": 2965.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241127",
+      "close": 717.0,
+      "raw_close": 2868.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241128",
+      "close": 717.25,
+      "raw_close": 2869.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241129",
+      "close": 721.5,
+      "raw_close": 2886.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241202",
+      "close": 737.25,
+      "raw_close": 2949.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241203",
+      "close": 753.0,
+      "raw_close": 3012.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241204",
+      "close": 746.0,
+      "raw_close": 2984.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241205",
+      "close": 763.0,
+      "raw_close": 3052.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241206",
+      "close": 732.75,
+      "raw_close": 2931.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241209",
+      "close": 733.88,
+      "raw_close": 2935.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241210",
+      "close": 731.13,
+      "raw_close": 2924.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241211",
+      "close": 732.13,
+      "raw_close": 2928.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241212",
+      "close": 726.13,
+      "raw_close": 2904.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241213",
+      "close": 721.25,
+      "raw_close": 2885.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241216",
+      "close": 717.0,
+      "raw_close": 2868.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241217",
+      "close": 710.13,
+      "raw_close": 2840.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241218",
+      "close": 715.38,
+      "raw_close": 2861.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241219",
+      "close": 702.38,
+      "raw_close": 2809.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241220",
+      "close": 700.13,
+      "raw_close": 2800.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241223",
+      "close": 699.13,
+      "raw_close": 2796.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241224",
+      "close": 694.38,
+      "raw_close": 2777.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241225",
+      "close": 702.13,
+      "raw_close": 2808.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241226",
+      "close": 709.25,
+      "raw_close": 2837.0,
+      "adjusted": true
+    },
+    {
+      "date": "20241227",
+      "close": 721.13,
+      "raw_close": 2884.5,
+      "adjusted": true
+    },
+    {
+      "date": "20241230",
+      "close": 713.38,
+      "raw_close": 2853.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250106",
+      "close": 704.25,
+      "raw_close": 2817.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250107",
+      "close": 702.13,
+      "raw_close": 2808.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250108",
+      "close": 706.5,
+      "raw_close": 2826.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250109",
+      "close": 692.5,
+      "raw_close": 2770.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250110",
+      "close": 685.38,
+      "raw_close": 2741.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250114",
+      "close": 669.5,
+      "raw_close": 2678.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250115",
+      "close": 684.5,
+      "raw_close": 2738.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250116",
+      "close": 678.63,
+      "raw_close": 2714.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250117",
+      "close": 672.75,
+      "raw_close": 2691.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250120",
+      "close": 679.25,
+      "raw_close": 2717.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250121",
+      "close": 679.88,
+      "raw_close": 2719.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250122",
+      "close": 727.0,
+      "raw_close": 2908.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250123",
+      "close": 764.25,
+      "raw_close": 3057.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250124",
+      "close": 754.5,
+      "raw_close": 3018.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250127",
+      "close": 714.13,
+      "raw_close": 2856.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250128",
+      "close": 672.5,
+      "raw_close": 2690.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250129",
+      "close": 691.38,
+      "raw_close": 2765.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250130",
+      "close": 706.88,
+      "raw_close": 2827.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250131",
+      "close": 728.13,
+      "raw_close": 2912.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250203",
+      "close": 696.25,
+      "raw_close": 2785.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250204",
+      "close": 752.25,
+      "raw_close": 3009.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250205",
+      "close": 743.88,
+      "raw_close": 2975.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250206",
+      "close": 727.63,
+      "raw_close": 2910.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250207",
+      "close": 717.63,
+      "raw_close": 2870.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250210",
+      "close": 710.75,
+      "raw_close": 2843.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250212",
+      "close": 741.0,
+      "raw_close": 2964.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250213",
+      "close": 730.75,
+      "raw_close": 2923.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250214",
+      "close": 726.75,
+      "raw_close": 2907.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250217",
+      "close": 717.25,
+      "raw_close": 2869.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250218",
+      "close": 719.13,
+      "raw_close": 2876.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250219",
+      "close": 708.63,
+      "raw_close": 2834.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250220",
+      "close": 694.13,
+      "raw_close": 2776.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250221",
+      "close": 683.63,
+      "raw_close": 2734.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250225",
+      "close": 660.63,
+      "raw_close": 2642.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250226",
+      "close": 657.0,
+      "raw_close": 2628.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250227",
+      "close": 680.63,
+      "raw_close": 2722.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250228",
+      "close": 654.63,
+      "raw_close": 2618.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250303",
+      "close": 660.13,
+      "raw_close": 2640.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250304",
+      "close": 638.13,
+      "raw_close": 2552.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250305",
+      "close": 647.63,
+      "raw_close": 2590.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250306",
+      "close": 659.75,
+      "raw_close": 2639.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250307",
+      "close": 669.38,
+      "raw_close": 2677.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250310",
+      "close": 656.25,
+      "raw_close": 2625.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250311",
+      "close": 629.88,
+      "raw_close": 2519.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250312",
+      "close": 660.25,
+      "raw_close": 2641.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250313",
+      "close": 653.5,
+      "raw_close": 2614.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250314",
+      "close": 663.75,
+      "raw_close": 2655.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250317",
+      "close": 660.63,
+      "raw_close": 2642.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250318",
+      "close": 669.75,
+      "raw_close": 2679.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250319",
+      "close": 678.88,
+      "raw_close": 2715.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250321",
+      "close": 695.38,
+      "raw_close": 2781.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250324",
+      "close": 697.88,
+      "raw_close": 2791.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250325",
+      "close": 696.0,
+      "raw_close": 2784.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250326",
+      "close": 691.25,
+      "raw_close": 2765.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250327",
+      "close": 674.63,
+      "raw_close": 2698.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250328",
+      "close": 654.75,
+      "raw_close": 2619.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250331",
+      "close": 616.5,
+      "raw_close": 2466.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250401",
+      "close": 601.25,
+      "raw_close": 2405.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250402",
+      "close": 603.13,
+      "raw_close": 2412.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250403",
+      "close": 567.13,
+      "raw_close": 2268.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250404",
+      "close": 521.88,
+      "raw_close": 2087.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250407",
+      "close": 437.5,
+      "raw_close": 1750.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250408",
+      "close": 502.0,
+      "raw_close": 2008.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250409",
+      "close": 467.0,
+      "raw_close": 1868.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250410",
+      "close": 537.38,
+      "raw_close": 2149.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250411",
+      "close": 512.38,
+      "raw_close": 2049.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250414",
+      "close": 510.13,
+      "raw_close": 2040.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250415",
+      "close": 537.0,
+      "raw_close": 2148.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250416",
+      "close": 515.5,
+      "raw_close": 2062.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250417",
+      "close": 518.75,
+      "raw_close": 2075.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250418",
+      "close": 514.0,
+      "raw_close": 2056.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250421",
+      "close": 499.38,
+      "raw_close": 1997.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250422",
+      "close": 503.25,
+      "raw_close": 2013.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250423",
+      "close": 520.25,
+      "raw_close": 2081.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250424",
+      "close": 546.0,
+      "raw_close": 2184.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250425",
+      "close": 555.38,
+      "raw_close": 2221.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250428",
+      "close": 564.13,
+      "raw_close": 2256.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250430",
+      "close": 572.25,
+      "raw_close": 2289.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250501",
+      "close": 587.0,
+      "raw_close": 2348.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250502",
+      "close": 584.88,
+      "raw_close": 2339.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250507",
+      "close": 592.63,
+      "raw_close": 2370.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250508",
+      "close": 600.0,
+      "raw_close": 2400.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250509",
+      "close": 610.38,
+      "raw_close": 2441.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250512",
+      "close": 615.5,
+      "raw_close": 2462.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250513",
+      "close": 658.13,
+      "raw_close": 2632.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250514",
+      "close": 664.13,
+      "raw_close": 2656.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250515",
+      "close": 663.88,
+      "raw_close": 2655.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250516",
+      "close": 663.75,
+      "raw_close": 2655.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250519",
+      "close": 651.5,
+      "raw_close": 2606.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250520",
+      "close": 663.38,
+      "raw_close": 2653.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250521",
+      "close": 656.13,
+      "raw_close": 2624.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250522",
+      "close": 673.25,
+      "raw_close": 2693.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250523",
+      "close": 705.75,
+      "raw_close": 2823.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250526",
+      "close": 706.75,
+      "raw_close": 2827.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250527",
+      "close": 715.38,
+      "raw_close": 2861.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250528",
+      "close": 722.38,
+      "raw_close": 2889.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250529",
+      "close": 762.0,
+      "raw_close": 3048.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250530",
+      "close": 759.0,
+      "raw_close": 3036.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250602",
+      "close": 753.5,
+      "raw_close": 3014.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250603",
+      "close": 742.38,
+      "raw_close": 2969.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250604",
+      "close": 748.5,
+      "raw_close": 2994.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250605",
+      "close": 738.5,
+      "raw_close": 2954.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250606",
+      "close": 743.13,
+      "raw_close": 2972.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250609",
+      "close": 754.25,
+      "raw_close": 3017.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250610",
+      "close": 749.13,
+      "raw_close": 2996.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250611",
+      "close": 729.88,
+      "raw_close": 2919.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250612",
+      "close": 719.13,
+      "raw_close": 2876.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250613",
+      "close": 701.25,
+      "raw_close": 2805.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250616",
+      "close": 716.5,
+      "raw_close": 2866.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250617",
+      "close": 729.88,
+      "raw_close": 2919.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250618",
+      "close": 731.88,
+      "raw_close": 2927.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250619",
+      "close": 727.38,
+      "raw_close": 2909.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250620",
+      "close": 715.5,
+      "raw_close": 2862.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250623",
+      "close": 704.5,
+      "raw_close": 2818.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250624",
+      "close": 725.75,
+      "raw_close": 2903.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250625",
+      "close": 731.63,
+      "raw_close": 2926.5,
+      "adjusted": true
+    },
+    {
+      "date": "20250626",
+      "close": 757.0,
+      "raw_close": 3028.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250627",
+      "close": 778.25,
+      "raw_close": 3113.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250630",
+      "close": 773.75,
+      "raw_close": 3095.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250701",
+      "close": 780.25,
+      "raw_close": 3121.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250702",
+      "close": 764.25,
+      "raw_close": 3057.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250703",
+      "close": 774.5,
+      "raw_close": 3098.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250704",
+      "close": 777.5,
+      "raw_close": 3110.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250707",
+      "close": 756.25,
+      "raw_close": 3025.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250708",
+      "close": 816.5,
+      "raw_close": 3266.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250709",
+      "close": 802.25,
+      "raw_close": 3209.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250710",
+      "close": 803.25,
+      "raw_close": 3213.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250711",
+      "close": 791.5,
+      "raw_close": 3166.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250714",
+      "close": 792.5,
+      "raw_close": 3170.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250715",
+      "close": 817.75,
+      "raw_close": 3271.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250716",
+      "close": 815.75,
+      "raw_close": 3263.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250717",
+      "close": 831.5,
+      "raw_close": 3326.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250718",
+      "close": 833.5,
+      "raw_close": 3334.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250722",
+      "close": 840.25,
+      "raw_close": 3361.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250723",
+      "close": 865.0,
+      "raw_close": 3460.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250724",
+      "close": 892.5,
+      "raw_close": 3570.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250725",
+      "close": 886.75,
+      "raw_close": 3547.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250728",
+      "close": 875.75,
+      "raw_close": 3503.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250729",
+      "close": 877.25,
+      "raw_close": 3509.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250730",
+      "close": 901.0,
+      "raw_close": 3604.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250731",
+      "close": 939.5,
+      "raw_close": 3758.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250801",
+      "close": 935.25,
+      "raw_close": 3741.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250804",
+      "close": 933.75,
+      "raw_close": 3735.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250805",
+      "close": 979.5,
+      "raw_close": 3918.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250806",
+      "close": 996.25,
+      "raw_close": 3985.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250807",
+      "close": 993.25,
+      "raw_close": 3973.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250808",
+      "close": 982.0,
+      "raw_close": 3928.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250812",
+      "close": 988.0,
+      "raw_close": 3952.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250813",
+      "close": 1006.25,
+      "raw_close": 4025.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250814",
+      "close": 983.5,
+      "raw_close": 3934.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250815",
+      "close": 1012.5,
+      "raw_close": 4050.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250818",
+      "close": 1009.25,
+      "raw_close": 4037.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250819",
+      "close": 990.75,
+      "raw_close": 3963.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250820",
+      "close": 969.25,
+      "raw_close": 3877.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250821",
+      "close": 977.75,
+      "raw_close": 3911.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250822",
+      "close": 999.25,
+      "raw_close": 3997.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250825",
+      "close": 1018.5,
+      "raw_close": 4074.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250826",
+      "close": 1005.75,
+      "raw_close": 4023.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250827",
+      "close": 1014.0,
+      "raw_close": 4056.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250828",
+      "close": 1031.75,
+      "raw_close": 4127.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250829",
+      "close": 1050.75,
+      "raw_close": 4203.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250901",
+      "close": 1022.0,
+      "raw_close": 4088.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250902",
+      "close": 1015.0,
+      "raw_close": 4060.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250903",
+      "close": 1021.25,
+      "raw_close": 4085.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250904",
+      "close": 1025.5,
+      "raw_close": 4102.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250905",
+      "close": 1035.0,
+      "raw_close": 4140.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250908",
+      "close": 1059.0,
+      "raw_close": 4236.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250909",
+      "close": 1028.5,
+      "raw_close": 4114.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250910",
+      "close": 1072.75,
+      "raw_close": 4291.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250911",
+      "close": 1058.75,
+      "raw_close": 4235.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250912",
+      "close": 1045.25,
+      "raw_close": 4181.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250916",
+      "close": 1067.75,
+      "raw_close": 4271.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250917",
+      "close": 1035.0,
+      "raw_close": 4140.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250918",
+      "close": 1052.5,
+      "raw_close": 4210.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250919",
+      "close": 1046.0,
+      "raw_close": 4184.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250922",
+      "close": 1039.75,
+      "raw_close": 4159.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250924",
+      "close": 1054.75,
+      "raw_close": 4219.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250925",
+      "close": 1075.25,
+      "raw_close": 4301.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250926",
+      "close": 1063.5,
+      "raw_close": 4254.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250929",
+      "close": 1061.25,
+      "raw_close": 4245.0,
+      "adjusted": true
+    },
+    {
+      "date": "20250930",
+      "close": 1054.5,
+      "raw_close": 4218.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251001",
+      "close": 1032.25,
+      "raw_close": 4129.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251002",
+      "close": 1049.25,
+      "raw_close": 4197.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251003",
+      "close": 1050.0,
+      "raw_close": 4200.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251006",
+      "close": 1089.75,
+      "raw_close": 4359.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251007",
+      "close": 1116.25,
+      "raw_close": 4465.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251008",
+      "close": 1133.25,
+      "raw_close": 4533.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251009",
+      "close": 1157.5,
+      "raw_close": 4630.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251010",
+      "close": 1133.75,
+      "raw_close": 4535.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251014",
+      "close": 1082.25,
+      "raw_close": 4329.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251015",
+      "close": 1109.25,
+      "raw_close": 4437.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251016",
+      "close": 1136.0,
+      "raw_close": 4544.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251017",
+      "close": 1114.5,
+      "raw_close": 4458.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251020",
+      "close": 1144.25,
+      "raw_close": 4577.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251021",
+      "close": 1133.5,
+      "raw_close": 4534.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251022",
+      "close": 1123.5,
+      "raw_close": 4494.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251023",
+      "close": 1132.5,
+      "raw_close": 4530.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251024",
+      "close": 1152.5,
+      "raw_close": 4610.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251027",
+      "close": 1192.5,
+      "raw_close": 4770.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251028",
+      "close": 1189.5,
+      "raw_close": 4758.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251029",
+      "close": 1248.5,
+      "raw_close": 4994.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251030",
+      "close": 1324.75,
+      "raw_close": 5299.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251031",
+      "close": 1412.5,
+      "raw_close": 5650.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251104",
+      "close": 1515.5,
+      "raw_close": 6062.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251105",
+      "close": 1475.5,
+      "raw_close": 5902.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251106",
+      "close": 1551.75,
+      "raw_close": 6207.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251107",
+      "close": 1463.75,
+      "raw_close": 5855.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251110",
+      "close": 1507.5,
+      "raw_close": 6030.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251111",
+      "close": 1465.0,
+      "raw_close": 5860.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251112",
+      "close": 1488.75,
+      "raw_close": 5955.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251113",
+      "close": 1593.75,
+      "raw_close": 6375.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251114",
+      "close": 1574.25,
+      "raw_close": 6297.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251117",
+      "close": 1633.25,
+      "raw_close": 6533.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251118",
+      "close": 1485.25,
+      "raw_close": 5941.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251119",
+      "close": 1485.5,
+      "raw_close": 5942.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251120",
+      "close": 1597.0,
+      "raw_close": 6388.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251121",
+      "close": 1424.5,
+      "raw_close": 5698.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251125",
+      "close": 1515.5,
+      "raw_close": 6062.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251126",
+      "close": 1512.75,
+      "raw_close": 6051.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251127",
+      "close": 1522.25,
+      "raw_close": 6089.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251128",
+      "close": 1535.25,
+      "raw_close": 6141.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251201",
+      "close": 1582.5,
+      "raw_close": 6330.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251202",
+      "close": 1641.25,
+      "raw_close": 6565.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251203",
+      "close": 1709.75,
+      "raw_close": 6839.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251204",
+      "close": 1680.0,
+      "raw_close": 6720.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251205",
+      "close": 1668.75,
+      "raw_close": 6675.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251208",
+      "close": 1735.25,
+      "raw_close": 6941.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251209",
+      "close": 1777.25,
+      "raw_close": 7109.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251210",
+      "close": 1734.0,
+      "raw_close": 6936.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251211",
+      "close": 1667.75,
+      "raw_close": 6671.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251212",
+      "close": 1664.75,
+      "raw_close": 6659.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251215",
+      "close": 1658.0,
+      "raw_close": 6632.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251216",
+      "close": 1560.5,
+      "raw_close": 6242.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251217",
+      "close": 1580.25,
+      "raw_close": 6321.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251218",
+      "close": 1520.0,
+      "raw_close": 6080.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251219",
+      "close": 1575.75,
+      "raw_close": 6303.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251222",
+      "close": 1690.25,
+      "raw_close": 6761.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251223",
+      "close": 1652.0,
+      "raw_close": 6608.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251224",
+      "close": 1625.5,
+      "raw_close": 6502.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251225",
+      "close": 1635.0,
+      "raw_close": 6540.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251226",
+      "close": 1563.75,
+      "raw_close": 6255.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251229",
+      "close": 1584.0,
+      "raw_close": 6336.0,
+      "adjusted": true
+    },
+    {
+      "date": "20251230",
+      "close": 1581.25,
+      "raw_close": 6325.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260105",
+      "close": 1677.5,
+      "raw_close": 6710.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260106",
+      "close": 1631.75,
+      "raw_close": 6527.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260107",
+      "close": 1661.75,
+      "raw_close": 6647.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260108",
+      "close": 1589.0,
+      "raw_close": 6356.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260109",
+      "close": 1576.0,
+      "raw_close": 6304.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260113",
+      "close": 1619.75,
+      "raw_close": 6479.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260114",
+      "close": 1619.75,
+      "raw_close": 6479.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260115",
+      "close": 1679.0,
+      "raw_close": 6716.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260116",
+      "close": 1707.0,
+      "raw_close": 6828.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260119",
+      "close": 1687.5,
+      "raw_close": 6750.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260120",
+      "close": 1649.25,
+      "raw_close": 6597.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260121",
+      "close": 1672.5,
+      "raw_close": 6690.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260122",
+      "close": 1677.25,
+      "raw_close": 6709.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260123",
+      "close": 1681.25,
+      "raw_close": 6725.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260126",
+      "close": 1636.75,
+      "raw_close": 6547.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260127",
+      "close": 1669.75,
+      "raw_close": 6679.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260128",
+      "close": 1752.5,
+      "raw_close": 7010.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260129",
+      "close": 1715.0,
+      "raw_close": 6860.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260130",
+      "close": 1681.0,
+      "raw_close": 6724.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260202",
+      "close": 1701.0,
+      "raw_close": 6804.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260203",
+      "close": 1913.75,
+      "raw_close": 7655.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260204",
+      "close": 1958.25,
+      "raw_close": 7833.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260205",
+      "close": 1851.75,
+      "raw_close": 7407.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260206",
+      "close": 1885.0,
+      "raw_close": 7540.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260209",
+      "close": 2091.75,
+      "raw_close": 8367.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260210",
+      "close": 2182.0,
+      "raw_close": 8728.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260212",
+      "close": 2192.5,
+      "raw_close": 8770.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260213",
+      "close": 2148.25,
+      "raw_close": 8593.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260216",
+      "close": 2163.25,
+      "raw_close": 8653.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260217",
+      "close": 2162.75,
+      "raw_close": 8651.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260218",
+      "close": 2206.5,
+      "raw_close": 8826.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260219",
+      "close": 2330.0,
+      "raw_close": 9320.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260220",
+      "close": 2437.0,
+      "raw_close": 9748.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260224",
+      "close": 2597.5,
+      "raw_close": 10390.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260225",
+      "close": 2678.75,
+      "raw_close": 10715.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260226",
+      "close": 2560.0,
+      "raw_close": 10240.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260227",
+      "close": 2593.75,
+      "raw_close": 10375.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260302",
+      "close": 2716.25,
+      "raw_close": 10865.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260303",
+      "close": 2581.25,
+      "raw_close": 10325.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260304",
+      "close": 2486.25,
+      "raw_close": 9945.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260305",
+      "close": 2493.75,
+      "raw_close": 9975.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260306",
+      "close": 2474.25,
+      "raw_close": 9897.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260309",
+      "close": 2281.25,
+      "raw_close": 9125.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260310",
+      "close": 2482.75,
+      "raw_close": 9931.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260311",
+      "close": 2678.75,
+      "raw_close": 10715.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260312",
+      "close": 2591.25,
+      "raw_close": 10365.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260313",
+      "close": 2597.5,
+      "raw_close": 10390.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260316",
+      "close": 2537.5,
+      "raw_close": 10150.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260317",
+      "close": 2381.25,
+      "raw_close": 9525.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260318",
+      "close": 2501.25,
+      "raw_close": 10005.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260319",
+      "close": 2487.0,
+      "raw_close": 9948.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260323",
+      "close": 2303.5,
+      "raw_close": 9214.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260324",
+      "close": 2375.5,
+      "raw_close": 9502.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260325",
+      "close": 2552.5,
+      "raw_close": 10210.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260326",
+      "close": 2471.25,
+      "raw_close": 9885.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260327",
+      "close": 2370.0,
+      "raw_close": 9480.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260330",
+      "close": 2250.0,
+      "raw_close": 9000.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260331",
+      "close": 2095.0,
+      "raw_close": 8380.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260401",
+      "close": 2317.25,
+      "raw_close": 9269.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260402",
+      "close": 2276.0,
+      "raw_close": 9104.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260403",
+      "close": 2350.0,
+      "raw_close": 9400.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260406",
+      "close": 2385.5,
+      "raw_close": 9542.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260407",
+      "close": 2297.75,
+      "raw_close": 9191.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260408",
+      "close": 2578.75,
+      "raw_close": 10315.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260409",
+      "close": 2602.5,
+      "raw_close": 10410.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260410",
+      "close": 2645.0,
+      "raw_close": 10580.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260413",
+      "close": 2481.5,
+      "raw_close": 9926.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260414",
+      "close": 2518.75,
+      "raw_close": 10075.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260415",
+      "close": 2387.75,
+      "raw_close": 9551.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260416",
+      "close": 2535.0,
+      "raw_close": 10140.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260417",
+      "close": 2494.0,
+      "raw_close": 9976.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260420",
+      "close": 2494.0,
+      "raw_close": 9976.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260421",
+      "close": 2575.0,
+      "raw_close": 10300.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260422",
+      "close": 2675.0,
+      "raw_close": 10700.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260423",
+      "close": 2551.25,
+      "raw_close": 10205.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260424",
+      "close": 2503.75,
+      "raw_close": 10015.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260427",
+      "close": 2515.0,
+      "raw_close": 10060.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260428",
+      "close": 2547.5,
+      "raw_close": 10190.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260430",
+      "close": 2547.5,
+      "raw_close": 10190.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260501",
+      "close": 2475.0,
+      "raw_close": 9900.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260507",
+      "close": 2836.25,
+      "raw_close": 11345.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260508",
+      "close": 2826.25,
+      "raw_close": 11305.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260511",
+      "close": 2802.5,
+      "raw_close": 11210.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260512",
+      "close": 2912.5,
+      "raw_close": 11650.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260513",
+      "close": 3193.75,
+      "raw_close": 12775.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260514",
+      "close": 3026.25,
+      "raw_close": 12105.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260515",
+      "close": 2745.0,
+      "raw_close": 10980.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260518",
+      "close": 2845.0,
+      "raw_close": 11380.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260519",
+      "close": 2710.0,
+      "raw_close": 10840.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260520",
+      "close": 2631.25,
+      "raw_close": 10525.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260521",
+      "close": 2682.5,
+      "raw_close": 10730.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260522",
+      "close": 2955.0,
+      "raw_close": 11820.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260525",
+      "close": 3066.25,
+      "raw_close": 12265.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260526",
+      "close": 2985.0,
+      "raw_close": 11940.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260527",
+      "close": 3003.75,
+      "raw_close": 12015.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260528",
+      "close": 2988.75,
+      "raw_close": 11955.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260529",
+      "close": 3146.25,
+      "raw_close": 12585.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260601",
+      "close": 3295.0,
+      "raw_close": 13180.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260602",
+      "close": 3253.75,
+      "raw_close": 13015.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260603",
+      "close": 3491.25,
+      "raw_close": 13965.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260604",
+      "close": 3366.25,
+      "raw_close": 13465.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260605",
+      "close": 3252.5,
+      "raw_close": 13010.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260608",
+      "close": 3035.0,
+      "raw_close": 12140.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260609",
+      "close": 3010.0,
+      "raw_close": 12040.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260610",
+      "close": 2657.5,
+      "raw_close": 10630.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260611",
+      "close": 2562.5,
+      "raw_close": 10250.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260612",
+      "close": 2742.5,
+      "raw_close": 10970.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260615",
+      "close": 2882.5,
+      "raw_close": 11530.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260616",
+      "close": 3080.0,
+      "raw_close": 12320.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260617",
+      "close": 3075.0,
+      "raw_close": 12300.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260618",
+      "close": 3050.0,
+      "raw_close": 12200.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260619",
+      "close": 3371.25,
+      "raw_close": 13485.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260622",
+      "close": 3375.0,
+      "raw_close": 13500.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260623",
+      "close": 3148.75,
+      "raw_close": 12595.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260624",
+      "close": 3056.25,
+      "raw_close": 12225.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260625",
+      "close": 3060.0,
+      "raw_close": 12240.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260626",
+      "close": 2983.75,
+      "raw_close": 11935.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260629",
+      "close": 2894.5,
+      "raw_close": 2894.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260630",
+      "close": 2927.0,
+      "raw_close": 2927.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260701",
+      "close": 2834.0,
+      "raw_close": 2834.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260702",
+      "close": 2688.5,
+      "raw_close": 2688.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260703",
+      "close": 2664.0,
+      "raw_close": 2664.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260706",
+      "close": 2592.5,
+      "raw_close": 2592.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260707",
+      "close": 2443.0,
+      "raw_close": 2443.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260708",
+      "close": 2361.5,
+      "raw_close": 2361.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260709",
+      "close": 2401.0,
+      "raw_close": 2401.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260710",
+      "close": 2582.0,
+      "raw_close": 2582.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260713",
+      "close": 2486.0,
+      "raw_close": 2486.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260714",
+      "close": 2458.5,
+      "raw_close": 2458.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260715",
+      "close": 2532.0,
+      "raw_close": 2532.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260716",
+      "close": 2397.5,
+      "raw_close": 2397.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260717",
+      "close": 2249.0,
+      "raw_close": 2249.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260721",
+      "close": 2336.5,
+      "raw_close": 2336.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260722",
+      "close": 2451.0,
+      "raw_close": 2451.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260723",
+      "close": 2512.0,
+      "raw_close": 2512.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260724",
+      "close": 2469.0,
+      "raw_close": 2469.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260727",
+      "close": 2355.0,
+      "raw_close": 2355.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260728",
+      "close": 2187.5,
+      "raw_close": 2187.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260729",
+      "close": 2072.0,
+      "raw_close": 2072.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260730",
+      "close": 2109.5,
+      "raw_close": 2109.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260731",
+      "close": 2184.0,
+      "raw_close": 2184.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260803",
+      "close": 2062.5,
+      "raw_close": 2062.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260804",
+      "close": 2161.5,
+      "raw_close": 2161.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260805",
+      "close": 2371.5,
+      "raw_close": 2371.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260806",
+      "close": 2158.5,
+      "raw_close": 2158.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260807",
+      "close": 2129.5,
+      "raw_close": 2129.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260810",
+      "close": 2161.0,
+      "raw_close": 2161.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260812",
+      "close": 2270.0,
+      "raw_close": 2270.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260813",
+      "close": 2334.5,
+      "raw_close": 2334.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260814",
+      "close": 2386.0,
+      "raw_close": 2386.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260817",
+      "close": 2473.0,
+      "raw_close": 2473.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260818",
+      "close": 2419.5,
+      "raw_close": 2419.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260819",
+      "close": 2210.0,
+      "raw_close": 2210.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260820",
+      "close": 2218.5,
+      "raw_close": 2218.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260821",
+      "close": 2178.5,
+      "raw_close": 2178.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260824",
+      "close": 2151.5,
+      "raw_close": 2151.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260825",
+      "close": 2199.5,
+      "raw_close": 2199.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260826",
+      "close": 2211.5,
+      "raw_close": 2211.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260827",
+      "close": 2255.0,
+      "raw_close": 2255.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260828",
+      "close": 2180.0,
+      "raw_close": 2180.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260831",
+      "close": 2221.0,
+      "raw_close": 2221.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260901",
+      "close": 2209.0,
+      "raw_close": 2209.0,
+      "adjusted": true
+    },
+    {
+      "date": "20260902",
+      "close": 2155.5,
+      "raw_close": 2155.5,
+      "adjusted": true
+    },
+    {
+      "date": "20260903",
+      "close": 2103.0,
+      "raw_close": 2103.0,
+      "adjusted": true
+    }
+  ],
+  "provider": "yahoo_jp",
+  "updated_at": "2026-09-04T06:43:04+00:00",
+  "adjusted": true
+}
