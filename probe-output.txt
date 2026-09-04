@@ -1,43 +1,26 @@
-=== 사이트 인덱스에서 페이지 찾기 ===
-  japan-trade 링크: ['/japan-trade-standalone-5881c0.html', '/japan-trade-standalone-ae17be.html', '/japan-trade-standalone_1-92f1d9.html', '/japan-trade-standalone_2-055f3a.html']
+페이지 4개: ['japan-trade-standalone-5881c0.html', 'japan-trade-standalone-ae17be.html', 'japan-trade-standalone_1-92f1d9.html', 'japan-trade-standalone_2-055f3a.html']
 
-EMBEDDED keys: 11 -> ['catalog.json', 'data/exp-853224000.json', 'data/exp-854232921.json', 'data/exp-910221000.json', 'data/exp-900110100.json', 'data/exp-950300000.json', 'data/exp-854470100.json', 'data/exp-854470910.json', 'data/exp-910211000.json', 'data/exp-910212000.json', 'data/exp-950440000.json']
+    japan-trade-standalone-5881c0.html: 7개 코드
+    japan-trade-standalone-ae17be.html: 0개 코드
+    japan-trade-standalone_1-92f1d9.html: 3개 코드
+    japan-trade-standalone_2-055f3a.html: 4개 코드
 
-=== 900110100  (data/exp-900110100.json) ===
-  top keys: ['code', 'name', 'direction', 'impkbn', 'rank_year', 'updated_at', 'latest_ym', 'months', 'data', 'groups']
-    name: 미가공 광섬유·번들 — 유리제(후지쿠라/스미토모)
-    code: 900110100
-    latest_ym: 2026/07
-    months: 115
-  rows=115  first={'ym': '2017/01', 'year': 2017, 'month': 1, 'value_bn': 1.967039, 'kg': 147414.0, 'yoy': None}
-  last 2 = [{'ym': '2026/06', 'year': 2026, 'month': 6, 'value_bn': 3.873753, 'kg': 163747.0, 'yoy': 56.20104}, {'ym': '2026/07', 'year': 2026, 'month': 7, 'value_bn': 3.792047, 'kg': 119219.0, 'yoy': 42.240843}]
-    2026/06: value_bn=3.873753 kg=163747.0 -> value_bn/kg=23656.9 (엔 가정 시 엔/kg)
-    2026/07: value_bn=3.792047 kg=119219.0 -> value_bn/kg=31807.4 (엔 가정 시 엔/kg)
-  groups.order=['미국', '중국', 'Romania', '프랑스', '독일', '기타']
-  groups.series['미국'][-1] = {'ym': '2026/07', 'year': 2026, 'month': 7, 'value_bn': 1.208368}
+총 14개 코드:
 
-=== 854470100  (data/exp-854470100.json) ===
-  top keys: ['code', 'name', 'direction', 'impkbn', 'rank_year', 'updated_at', 'latest_ym', 'months', 'data', 'groups']
-    name: 완성 광파이버 케이블 — 유리제(후지쿠라/스미토모)
-    code: 854470100
-    latest_ym: 2026/07
-    months: 115
-  rows=115  first={'ym': '2017/01', 'year': 2017, 'month': 1, 'value_bn': 0.852482, 'kg': 224345.0, 'yoy': None}
-  last 2 = [{'ym': '2026/06', 'year': 2026, 'month': 6, 'value_bn': 8.006645, 'kg': 1153879.0, 'yoy': 129.321617}, {'ym': '2026/07', 'year': 2026, 'month': 7, 'value_bn': 3.566574, 'kg': 524981.0, 'yoy': 6.426995}]
-    2026/06: value_bn=8.006645 kg=1153879.0 -> value_bn/kg=6938.9 (엔 가정 시 엔/kg)
-    2026/07: value_bn=3.566574 kg=524981.0 -> value_bn/kg=6793.7 (엔 가정 시 엔/kg)
-  groups.order=['미국', '멕시코', '중국', '영국', '폴란드', '기타']
-  groups.series['미국'][-1] = {'ym': '2026/07', 'year': 2026, 'month': 7, 'value_bn': 2.112505}
+  851821000  단일형 스피커                                                2026/07 115개월 최신    0.599십억엔
+  853224000  MLCC                                                   2026/07 115개월 최신   85.360십억엔
+  854232921  NAND                                                   2026/07 115개월 최신  185.384십억엔
+  854470100  완성 광파이버 케이블 — 유리제(후지쿠라/스미토모)                           2026/07 115개월 최신    3.567십억엔
+  854470910  완성 광파이버 케이블 — 접속자(커넥터) 부착(후지쿠라/스미토모)                   2026/07 115개월 최신    0.137십억엔
+  900110100  미가공 광섬유·번들 — 유리제(후지쿠라/스미토모)                            2026/07 115개월 최신    3.792십억엔
+  900653000  35mm필름카메라                                              2026/07 115개월 최신    0.312십억엔
+  910211000  전기식쿼츠아날로그표시만(세이코씨티즌카시오)                                2026/07 115개월 최신    1.786십억엔
+  910212000  전기식,디지털표시만(카시오중심)                                      2026/07 115개월 최신    0.330십억엔
+  910221000  기계식자동감기(세이코, 시티즌)                                      2026/07 115개월 최신    3.421십억엔
+  950300000  완구                                                     2026/07 112개월 최신    6.835십억엔
+  950440000  카드                                                     2026/07 115개월 최신   25.628십억엔
+  960830000  만년필 등 펜                                                2026/07 115개월 최신    0.534십억엔
+  960840000  샤프펜슬                                                   2026/07 115개월 최신    0.777십억엔
 
-=== 854470910  (data/exp-854470910.json) ===
-  top keys: ['code', 'name', 'direction', 'impkbn', 'rank_year', 'updated_at', 'latest_ym', 'months', 'data', 'groups']
-    name: 완성 광파이버 케이블 — 접속자(커넥터) 부착(후지쿠라/스미토모)
-    code: 854470910
-    latest_ym: 2026/07
-    months: 115
-  rows=115  first={'ym': '2017/01', 'year': 2017, 'month': 1, 'value_bn': 0.206519, 'kg': 2859.0, 'yoy': None}
-  last 2 = [{'ym': '2026/06', 'year': 2026, 'month': 6, 'value_bn': 0.134712, 'kg': 4243.0, 'yoy': 40.342543}, {'ym': '2026/07', 'year': 2026, 'month': 7, 'value_bn': 0.137371, 'kg': 8326.0, 'yoy': 40.354946}]
-    2026/06: value_bn=0.134712 kg=4243.0 -> value_bn/kg=31749.2 (엔 가정 시 엔/kg)
-    2026/07: value_bn=0.137371 kg=8326.0 -> value_bn/kg=16499.0 (엔 가정 시 엔/kg)
-  groups.order=['미국', '홍콩', '베트남', '중국', '독일', '기타']
-  groups.series['미국'][-1] = {'ym': '2026/07', 'year': 2026, 'month': 7, 'value_bn': 0.031175}
+=== 화합물 반도체/기판 관련 코드 탐색 ===
+  (3818 계열 없음)
