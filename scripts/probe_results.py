@@ -1,56 +1,68 @@
-"""Throwaway probe: what does must-charts.pages.dev serve, and at what
-granularity?
+"""Throwaway probe: the must-charts catalog and one data file.
 
-The anchors the user pointed at (#exp-854470100, #exp-854470910) are 9-digit
-Japanese statistical codes - the sub-splits of HS 8544.70 that Japan Customs
-actually reports. That is finer than the 6-digit HS this dashboard pulls from
-Comtrade, and a source carrying them is likely working from MOF's own release
-(and therefore in yen). Worth knowing exactly what is behind the page before
-deciding whether to switch.
+The page embeds a catalog of 9-digit Japanese statistical codes with
+per-code JSON files (data/exp-*.json). Confirm the catalog is fetchable on
+its own, what optical codes it carries, what `value_bn` is denominated in,
+and - the question that decides how far this can go - whether anything in
+it breaks out 税関 (customs office), since Sumitomo ships through Yokohama.
 """
+import json
 import re
 
 import requests
 
-URLS = [
-    "https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9",
-    "https://must-charts.pages.dev/",
-]
-BROWSER = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-}
+BASE = "https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9"
+BROWSER = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/125.0 Safari/537.36"}
+
+
+def get(url):
+    r = requests.get(url, headers=BROWSER, timeout=45)
+    print(f"[{r.status_code}] {len(r.content):>9} B  {url}")
+    return r
 
 
 def main():
-    for url in URLS:
-        print("=" * 74)
-        print(f"[GET] {url}")
+    for path in ("/catalog.json", "/data/exp-854470100.json"):
         try:
-            r = requests.get(url, headers=BROWSER, timeout=45)
+            get(BASE + path)
         except Exception as err:  # noqa: BLE001
             print(f"    EXC {err}")
-            continue
-        print(f"    HTTP {r.status_code}  {len(r.content)} bytes  ct={r.headers.get('content-type')}")
-        if r.status_code != 200:
-            continue
-        text = r.text
 
-        codes = sorted(set(re.findall(r"\b(\d{9})\b", text)))
-        print(f"    9-digit codes: {len(codes)} -> {codes[:16]}")
-        for term in ("円", "千円", "JPY", "USD", "kg", "数量", "金額", "value", "quantity", "月"):
-            print(f"      {term!r}: {text.count(term)}")
+    r = get(BASE + "/catalog.json")
+    if r.status_code == 200:
+        try:
+            cat = r.json()
+            items = cat if isinstance(cat, list) else cat.get("items") or cat.get("charts") or []
+            print(f"\ncatalog entries: {len(items)}")
+            for it in items:
+                if not isinstance(it, dict):
+                    continue
+                code = str(it.get("code", ""))
+                if code.startswith(("8544", "9001", "8536", "8541", "3818")):
+                    print(f"  {it.get('id')}  {code}  {it.get('name')}  "
+                          f"dir={it.get('direction')} latest={it.get('latest_ym')} months={it.get('months')} "
+                          f"file={it.get('file')} tags={[t.get('label') for t in it.get('tags', [])]}")
+            print("\n  (전체 코드 목록)")
+            print("   ", [str(i.get("code")) for i in items if isinstance(i, dict)][:40])
+        except Exception as err:  # noqa: BLE001
+            print(f"  catalog parse: {err}: {r.text[:200]}")
 
-        # 데이터가 페이지에 박혀 있는지, 아니면 별도 파일을 부르는지
-        srcs = sorted(set(re.findall(r'(?:src|href)="([^"]+\.(?:js|json|csv))"', text)))
-        print(f"    asset refs: {srcs[:10]}")
-        for m in list(re.finditer(r'(?:fetch|import)\(["\']([^"\']+)["\']', text))[:8]:
-            print(f"      fetches: {m.group(1)}")
-        # 인라인 JSON 흔적
-        for key in ('"data"', '"series"', '"months"', '"value"', '854470'):
-            i = text.find(key)
-            if i > 0:
-                print(f"    ~{key}: {re.sub(r'\\s+', ' ', text[max(0,i-90):i+200])}")
+    d = get(BASE + "/data/exp-854470100.json")
+    if d.status_code == 200:
+        j = d.json()
+        print("\ntop-level keys:", list(j.keys()))
+        for k in ("code", "name", "unit", "unit_label", "value_unit", "direction", "latest_ym", "months", "source", "note", "updated_at"):
+            if k in j:
+                print(f"  {k}: {j[k]}")
+        rows = j.get("data", [])
+        print(f"  data rows: {len(rows)}; first={rows[0] if rows else None}")
+        print(f"  last 3: {rows[-3:]}")
+        g = j.get("groups", {})
+        print(f"  groups keys: {list(g.keys())[:6]}; order={g.get('order')}")
+        # 세관 관련 필드가 있는지
+        flat = json.dumps(j, ensure_ascii=False)
+        for term in ("税関", "세관", "customs", "yokohama", "横浜", "요코하마", "port"):
+            print(f"  {term!r}: {flat.count(term)}")
 
 
 if __name__ == "__main__":
