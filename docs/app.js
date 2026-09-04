@@ -19,13 +19,16 @@ let EXPORTS, STOCK, FINANCIALS;
 async function boot() {
   try {
     // 9단위(엔) 자료가 있으면 그쪽을 쓰고, 없으면 HS 6단위(달러)로 물러납니다.
-    const [jpy, usd, stock, fin] = await Promise.all([
+    const [estat, jpy, usd, stock, fin] = await Promise.all([
+      loadJSON("data/jp_trade_exports_estat.json", null),
       loadJSON("data/jp_trade_exports_jpy.json", null),
       loadJSON("data/jp_trade_exports.json", null),
       loadJSON("data/sumitomo_stock.json", { daily: [] }),
       loadJSON("data/sumitomo_financials.json", { quarters: [] }),
     ]);
-    EXPORTS = (jpy && jpy.categories && Object.keys(jpy.categories).length) ? jpy : usd;
+    // 재무성 원자료(9단위·엔·세관별) > 9단위 재배포(엔) > HS 6단위(달러)
+    const usable = (d) => d && d.categories && Object.keys(d.categories).length;
+    EXPORTS = usable(estat) ? estat : usable(jpy) ? jpy : usd;
     STOCK = stock;
     FINANCIALS = fin;
     if (!EXPORTS) throw new Error("수출 데이터 파일이 없습니다");

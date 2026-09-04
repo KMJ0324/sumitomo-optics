@@ -26,6 +26,13 @@ jobs:
           python-version: "3.12"
       - run: pip install -r scripts/requirements.txt
 
+      - name: Fetch Japan exports from e-Stat (9-digit, yen, customs split)
+        continue-on-error: true
+        timeout-minutes: 25
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+        run: python scripts/fetch_estat_trade.py
+
       - name: Fetch Japan optical exports (9-digit, yen)
         continue-on-error: true
         timeout-minutes: 10

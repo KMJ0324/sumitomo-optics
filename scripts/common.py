@@ -16,6 +16,7 @@ SYNCED_FILES = (
     "jp_trade_categories.json",
     "jp_trade_exports.json",
     "jp_trade_exports_jpy.json",
+    "jp_trade_exports_estat.json",
     "sumitomo_stock.json",
     "sumitomo_financials.json",
 )
