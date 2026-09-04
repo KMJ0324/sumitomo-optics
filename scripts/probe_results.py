@@ -1,33 +1,50 @@
-"""Throwaway probe: the full code list across every standalone build.
+"""Throwaway probe: does Japan split HS 3818.00 at nine digits?
 
-3818.00 lumps all doped wafers together - silicon dominates it, so an InP
-surge is invisible inside it. If the source carries a finer sub-code (or any
-compound-semiconductor line), that is the fix; if not, the honest answer is
-that this series cannot show InP and should say so or go.
+The user wants silicon wafers out of the substrate line. That is only
+possible if Japan's export statistical schedule breaks 3818.00 into
+sub-codes (e.g. silicon vs other). The schedule itself is published on
+customs.go.jp, so ask it directly rather than guessing. Chapter 38 for a
+few recent years, since the schedule is reissued annually.
 """
-import sys
+import re
 
-sys.path.insert(0, "scripts")
 import requests
 
-from fetch_jp_trade_9digit import collect_blocks, discover_pages
+BROWSER = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/125.0 Safari/537.36"}
+CANDIDATES = [
+    "https://www.customs.go.jp/yusyutu/2026_1/data/j_38.htm",
+    "https://www.customs.go.jp/yusyutu/2025_4/data/j_38.htm",
+    "https://www.customs.go.jp/yusyutu/2025_1/data/j_38.htm",
+    "https://www.customs.go.jp/yusyutu/index.htm",
+]
 
-session = requests.Session()
-urls = discover_pages(session)
-print(f"페이지 {len(urls)}개: {[u.rsplit('/', 1)[-1] for u in urls]}\n")
-blocks = collect_blocks(session, urls)
-print(f"\n총 {len(blocks)}개 코드:\n")
-for code in sorted(blocks):
-    b = blocks[code]
-    rows = b.get("data", [])
-    last = rows[-1] if rows else {}
-    print(f"  {code}  {b.get('name','')[:52]:54s} {b.get('latest_ym')} "
-          f"{len(rows):3d}개월 최신 {last.get('value_bn', 0):8.3f}십억엔")
 
-print("\n=== 화합물 반도체/기판 관련 코드 탐색 ===")
-for code, b in sorted(blocks.items()):
-    name = b.get("name", "")
-    if code.startswith("3818") or any(k in name for k in ("기판", "웨이퍼", "InP", "인듐", "화합물", "반도체")):
-        print(f"  후보: {code} {name}")
-else:
-    print("  (3818 계열 없음)" if not any(c.startswith("3818") for c in blocks) else "")
+def main():
+    for url in CANDIDATES:
+        print("=" * 74)
+        print(f"[GET] {url}")
+        try:
+            r = requests.get(url, headers=BROWSER, timeout=45)
+        except Exception as err:  # noqa: BLE001
+            print(f"    EXC {err}")
+            continue
+        r.encoding = r.apparent_encoding or "utf-8"
+        print(f"    HTTP {r.status_code} {len(r.content)}B enc={r.encoding}")
+        if r.status_code != 200:
+            continue
+        text = r.text
+        if "index.htm" in url:
+            links = sorted(set(re.findall(r'href="([^"]*yusyutu[^"]*)"', text)))[:12]
+            print(f"    yusyutu 링크: {links}")
+            continue
+
+        i = text.find("3818")
+        print(f"    '3818' 등장: {text.count('3818')}회")
+        if i > 0:
+            flat = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text[max(0, i - 1200):i + 2500]))
+            print("    --- 3818 주변 ---")
+            print("    " + flat[:1800])
+
+
+if __name__ == "__main__":
+    main()

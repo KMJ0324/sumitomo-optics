@@ -1,8 +1,7 @@
-name: Temp - probe results sources
+name: Temp - probe
 on:
   push:
-    paths:
-      - "scripts/probe_results.py"
+    paths: ["scripts/probe_results.py"]
 permissions:
   contents: write
 jobs:
@@ -12,12 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+        with: { python-version: "3.12" }
       - run: pip install -r scripts/requirements.txt
       - run: python scripts/probe_results.py 2>&1 | tee probe-output.txt
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add probe-output.txt
-          git commit -m "probe output [skip ci]" && git push || echo "nothing to commit"
+          git add probe-output.txt && git commit -m "probe output [skip ci]" && git push || echo none
