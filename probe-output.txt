@@ -1,17 +1,41 @@
-========================================================================
-[yahoo-perf-q] https://finance.yahoo.co.jp/quote/5802.T/performance?styl=quarter
-    HTTP 200 185501B final=https://finance.yahoo.co.jp/quote/5802.T/performance?styl=quarter
-  (yahoo-perf-q: 분기 표 없음)
-========================================================================
-[yahoo-perf-qb] https://finance.yahoo.co.jp/quote/5802.T/performance?styl=qb
-    HTTP 200 185455B final=https://finance.yahoo.co.jp/quote/5802.T/performance?styl=qb
-  (yahoo-perf-qb: 분기 표 없음)
-========================================================================
-[ir-en] https://sumitomoelectric.com/ir/library/results
-    HTTP 404 136283B final=https://sumitomoelectric.com/ir/library/results
-========================================================================
-[ir-en2] https://sumitomoelectric.com/ir/financial-data
-    HTTP 404 136281B final=https://sumitomoelectric.com/ir/financial-data
-========================================================================
-[ir-jp] https://sumitomoelectric.com/jp/ir/library/results
-    HTTP 404 155328B final=https://sumitomoelectric.com/jp/ir/library/results
+==========================================================================
+[GET] https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9
+    HTTP 200  563290 bytes  ct=text/html; charset=utf-8
+    9-digit codes: 10 -> ['853224000', '854232921', '854470100', '854470910', '900110100', '910211000', '910212000', '910221000', '950300000', '950440000']
+      '円': 0
+      '千円': 0
+      'JPY': 0
+      'USD': 0
+      'kg': 1214
+      '数量': 0
+      '金額': 0
+      'value': 8077
+      'quantity': 0
+      '月': 0
+    asset refs: []
+      fetches: catalog.json?v=
+      fetches: api/requests?v=
+      fetches: catalog.json?v=
+      fetches: api/requests
+    ~"data": ":"1","rank_year":2025,"updated_at":"2026-09-04 08:37","latest_ym":"2026/07","months":115,"data":[{"ym":"2017/01","year":2017,"month":1,"value_bn":23.982613,"kg":335770.0,"yoy":null},{"ym":"2017/02","year":2017,"month":2,"value_bn":23.57756,"kg":347971.0,"yoy":null},{"ym":"2017/03","year":
+    ~"series": 60205,"kg":477212.0,"yoy":33.516458}],"groups":{"order":["중국","대만","홍콩","미국","네덜란드","기타"],"series":{"중국":[{"ym":"2017/01","year":2017,"month":1,"value_bn":7.303295},{"ym":"2017/02","year":2017,"month":2,"value_bn":7.367185},{"ym":"2017/03","year":2017,"month":3,"value_bn":8.227859},{"ym":"
+    ~"months": 000","code":"853224000","name":"MLCC","direction":"수출","impkbn":"1","latest_ym":"2026/07","months":115,"rank_year":2025,"updated_at":"2026-09-04 08:37","file":"data/exp-853224000.json","tags":[{"code":"6762","label":"TDK"},{"code":"6976","label":"타이요유덴"},{"code":"6981","label":"무라타"}]},{"i
+    ~854470: son","tags":[{"code":"7832","label":"반다이남코"},{"code":"7867","label":"타카라토미"}]},{"id":"exp-854470100","code":"854470100","name":"완성 광파이버 케이블 — 유리제(후지쿠라/스미토모)","direction":"수출","impkbn":"1","latest_ym":"2026/07","months":115,"rank_year":2025,"updated_at":"2026-09-04 09:58","file":"data/exp-8
+==========================================================================
+[GET] https://must-charts.pages.dev/
+    HTTP 200  1485439 bytes  ct=text/html; charset=utf-8
+    9-digit codes: 0 -> []
+      '円': 0
+      '千円': 0
+      'JPY': 0
+      'USD': 0
+      'kg': 48
+      '数量': 0
+      '金額': 0
+      'value': 6
+      'quantity': 0
+      '月': 0
+    asset refs: []
+    ~854470: zon-64d1a8.html",t:"sitwhang tmtbreakout tmtb-eod-wrap-the-leopold-lowamazon",c:"시황지",d:1785447016},
+{n:"/ytmag_UCICRehoZjq3ZtAWgRJX118A_l0avxvTeNWQ-5d83b9.html",t:"ytmag UCICRehoZjq3ZtAWgRJX118A l0avxvTeNWQ",c:"유튜브매거진",d:1785442640},
+{n:"/ytmag_UCICRehoZjq3ZtAWgRJX118A_2vSQ3Cmkxkk-310a7b.
