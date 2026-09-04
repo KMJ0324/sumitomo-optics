@@ -1,12 +1,9 @@
-"""Throwaway probe: the right Chart.js URL, and the shape of Yahoo Japan's
-quarterly results table.
+"""Throwaway probe (round 2): is quarterly results data reachable anywhere?
 
-The cdnjs path this project shipped 404s, so nothing charts. jsDelivr is the
-host the sibling dashboard already uses successfully - confirm it, and ask
-cdnjs's API what it actually calls the file, so the choice is informed.
-
-Then dump the performance page's 業績 tables so the results parser can be
-written against real markup rather than a guess.
+Yahoo Japan's performance page carries only four annual rows. Comparing
+monthly exports against an annual step line is coarse, so check whether the
+quarterly figures live behind a query param, or whether Sumitomo's own IR
+site publishes a machine-readable file.
 """
 import re
 
@@ -18,49 +15,56 @@ BROWSER = {
     "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
 }
 
-CANDIDATES = [
-    "https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.min.js",
+URLS = [
+    ("yahoo-perf-q", "https://finance.yahoo.co.jp/quote/5802.T/performance?styl=quarter"),
+    ("yahoo-perf-qb", "https://finance.yahoo.co.jp/quote/5802.T/performance?styl=qb"),
+    ("ir-en", "https://sumitomoelectric.com/ir/library/results"),
+    ("ir-en2", "https://sumitomoelectric.com/ir/financial-data"),
+    ("ir-jp", "https://sumitomoelectric.com/jp/ir/library/results"),
 ]
 
 
-def main():
-    for url in CANDIDATES:
-        try:
-            r = requests.get(url, timeout=40)
-            print(f"[{r.status_code}] {len(r.content):>8} B  {url}")
-        except Exception as err:  # noqa: BLE001
-            print(f"[EXC] {url}: {err}")
-
-    try:
-        j = requests.get("https://api.cdnjs.com/libraries/Chart.js?fields=version,files", timeout=40).json()
-        files = [f for f in j.get("files", []) if f.endswith(".js") and "umd" in f or f in ("chart.min.js",)]
-        print(f"\ncdnjs latest={j.get('version')} umd-ish files={files[:8]}")
-    except Exception as err:  # noqa: BLE001
-        print(f"cdnjs API: {err}")
-
-    print("\n" + "=" * 72)
-    r = requests.get("https://finance.yahoo.co.jp/quote/5802.T/performance", headers=BROWSER, timeout=40)
-    print(f"performance HTTP {r.status_code} {len(r.content)}B")
-    text = r.text
-
-    # 표를 통째로 뜯어 헤더와 앞쪽 행들을 보여줍니다.
-    for ti, table in enumerate(re.findall(r"<table[^>]*>(.*?)</table>", text, re.S | re.I)):
+def dump_tables(text, label):
+    found = 0
+    for table in re.findall(r"<table[^>]*>(.*?)</table>", text, re.S | re.I):
         rows = re.findall(r"<tr[^>]*>(.*?)</tr>", table, re.S | re.I)
-        if len(rows) < 2:
-            continue
         parsed = []
-        for row in rows[:9]:
+        for row in rows[:8]:
             cells = [re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", c)).strip()
                      for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, re.S | re.I)]
             if cells:
                 parsed.append(cells)
-        if not parsed or not any("期" in " ".join(p) for p in parsed):
+        joined = " ".join(" ".join(p) for p in parsed)
+        # 분기 표시가 들어 있는 표만
+        if not re.search(r"(第[1-4一二三四]四半期|1Q|2Q|3Q|Q1|Q2|四半期)", joined):
             continue
-        print(f"\n--- table #{ti} ({len(rows)} rows)")
+        found += 1
+        print(f"  --- {label} quarterly-ish table")
         for p in parsed:
-            print("   ", " | ".join(p)[:200])
+            print("     ", " | ".join(p)[:190])
+        if found >= 2:
+            break
+    if not found:
+        print(f"  ({label}: 분기 표 없음)")
+
+
+def main():
+    for name, url in URLS:
+        print("=" * 72)
+        print(f"[{name}] {url}")
+        try:
+            r = requests.get(url, headers=BROWSER, timeout=40, allow_redirects=True)
+        except Exception as err:  # noqa: BLE001
+            print(f"    EXC {err}")
+            continue
+        print(f"    HTTP {r.status_code} {len(r.content)}B final={r.url}")
+        if r.status_code != 200:
+            continue
+        dump_tables(r.text, name)
+        # IR 페이지라면 데이터 파일 링크가 있는지
+        links = re.findall(r'href="([^"]+\.(?:xlsx?|csv|pdf))"', r.text, re.I)
+        if links:
+            print(f"    data-ish links ({len(links)}): {links[:6]}")
 
 
 if __name__ == "__main__":
