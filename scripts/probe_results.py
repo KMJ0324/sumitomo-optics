@@ -1,70 +1,56 @@
-"""Throwaway probe (round 2): is quarterly results data reachable anywhere?
+"""Throwaway probe: what does must-charts.pages.dev serve, and at what
+granularity?
 
-Yahoo Japan's performance page carries only four annual rows. Comparing
-monthly exports against an annual step line is coarse, so check whether the
-quarterly figures live behind a query param, or whether Sumitomo's own IR
-site publishes a machine-readable file.
+The anchors the user pointed at (#exp-854470100, #exp-854470910) are 9-digit
+Japanese statistical codes - the sub-splits of HS 8544.70 that Japan Customs
+actually reports. That is finer than the 6-digit HS this dashboard pulls from
+Comtrade, and a source carrying them is likely working from MOF's own release
+(and therefore in yen). Worth knowing exactly what is behind the page before
+deciding whether to switch.
 """
 import re
 
 import requests
 
+URLS = [
+    "https://must-charts.pages.dev/japan-trade-standalone_1-92f1d9",
+    "https://must-charts.pages.dev/",
+]
 BROWSER = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
 }
-
-URLS = [
-    ("yahoo-perf-q", "https://finance.yahoo.co.jp/quote/5802.T/performance?styl=quarter"),
-    ("yahoo-perf-qb", "https://finance.yahoo.co.jp/quote/5802.T/performance?styl=qb"),
-    ("ir-en", "https://sumitomoelectric.com/ir/library/results"),
-    ("ir-en2", "https://sumitomoelectric.com/ir/financial-data"),
-    ("ir-jp", "https://sumitomoelectric.com/jp/ir/library/results"),
-]
-
-
-def dump_tables(text, label):
-    found = 0
-    for table in re.findall(r"<table[^>]*>(.*?)</table>", text, re.S | re.I):
-        rows = re.findall(r"<tr[^>]*>(.*?)</tr>", table, re.S | re.I)
-        parsed = []
-        for row in rows[:8]:
-            cells = [re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", c)).strip()
-                     for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, re.S | re.I)]
-            if cells:
-                parsed.append(cells)
-        joined = " ".join(" ".join(p) for p in parsed)
-        # 분기 표시가 들어 있는 표만
-        if not re.search(r"(第[1-4一二三四]四半期|1Q|2Q|3Q|Q1|Q2|四半期)", joined):
-            continue
-        found += 1
-        print(f"  --- {label} quarterly-ish table")
-        for p in parsed:
-            print("     ", " | ".join(p)[:190])
-        if found >= 2:
-            break
-    if not found:
-        print(f"  ({label}: 분기 표 없음)")
 
 
 def main():
-    for name, url in URLS:
-        print("=" * 72)
-        print(f"[{name}] {url}")
+    for url in URLS:
+        print("=" * 74)
+        print(f"[GET] {url}")
         try:
-            r = requests.get(url, headers=BROWSER, timeout=40, allow_redirects=True)
+            r = requests.get(url, headers=BROWSER, timeout=45)
         except Exception as err:  # noqa: BLE001
             print(f"    EXC {err}")
             continue
-        print(f"    HTTP {r.status_code} {len(r.content)}B final={r.url}")
+        print(f"    HTTP {r.status_code}  {len(r.content)} bytes  ct={r.headers.get('content-type')}")
         if r.status_code != 200:
             continue
-        dump_tables(r.text, name)
-        # IR 페이지라면 데이터 파일 링크가 있는지
-        links = re.findall(r'href="([^"]+\.(?:xlsx?|csv|pdf))"', r.text, re.I)
-        if links:
-            print(f"    data-ish links ({len(links)}): {links[:6]}")
+        text = r.text
+
+        codes = sorted(set(re.findall(r"\b(\d{9})\b", text)))
+        print(f"    9-digit codes: {len(codes)} -> {codes[:16]}")
+        for term in ("円", "千円", "JPY", "USD", "kg", "数量", "金額", "value", "quantity", "月"):
+            print(f"      {term!r}: {text.count(term)}")
+
+        # 데이터가 페이지에 박혀 있는지, 아니면 별도 파일을 부르는지
+        srcs = sorted(set(re.findall(r'(?:src|href)="([^"]+\.(?:js|json|csv))"', text)))
+        print(f"    asset refs: {srcs[:10]}")
+        for m in list(re.finditer(r'(?:fetch|import)\(["\']([^"\']+)["\']', text))[:8]:
+            print(f"      fetches: {m.group(1)}")
+        # 인라인 JSON 흔적
+        for key in ('"data"', '"series"', '"months"', '"value"', '854470'):
+            i = text.find(key)
+            if i > 0:
+                print(f"    ~{key}: {re.sub(r'\\s+', ' ', text[max(0,i-90):i+200])}")
 
 
 if __name__ == "__main__":
