@@ -403,6 +403,27 @@ function render() {
       `주가 계열이 아직 채워지지 않았습니다.<br />수집 워크플로가 한 번 성공하면 10년치가 한꺼번에 들어옵니다.</div>`;
   }
   
+  // 기판과 주가를 한 화면에서 - 단위가 달라(십억 엔 vs 엔/주) 한 축에 겹칠 수
+  // 없으므로 둘만 따로 지수화합니다. 4개 계열이 섞인 위 차트보다 이 둘의
+  // 관계가 훨씬 또렷하게 보입니다.
+  const spFig = document.getElementById("fig-substrate-price");
+  if (substrateMma && hasPrice && spFig) {
+    const spBase = (() => {
+      for (let i = 0; i < months.length; i++) {
+        if (substrateMma[i] != null && stockMonthly[i] != null) return i;
+      }
+      return 0;
+    })();
+    document.getElementById("substrate-price-sub").textContent =
+      `${months[spBase].replace("-", "년 ")}월 = 100 · 단위가 서로 달라 지수로만 비교합니다`;
+    makePlot("plot-substrate-price", [
+      line("화합물 기판, 실리콘 제외 (3M평균)", rebaseAt(substrateMma, spBase), substrate.color, { borderWidth: 2.2 }),
+      line("주가 5802.T", rebaseAt(stockMonthly, spBase), css("--stock")),
+    ], { labels, yFormat: (v) => fmt.num(v, 0), yTitle: "지수 (로그 눈금)", logScale: true });
+  } else if (spFig) {
+    spFig.hidden = true;
+  }
+  
   const qLabels = quarters.map((q) => q.label || q.quarter);
   const qDatasets = [bars(`수출 합계 (${SCALE_LABEL})`, quarters.map((q) => (q.exportValue == null ? null : q.exportValue / SCALE)), css("--s1") + "99")];
   document.getElementById("quarter-sub").textContent =
