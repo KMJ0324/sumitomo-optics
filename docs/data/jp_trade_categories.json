@@ -6,7 +6,9 @@
       "label": "광섬유",
       "label_en": "Optical fibre",
       "group": "광섬유",
-      "hs": ["900110"],
+      "hs": [
+        "900110"
+      ],
       "enabled": true,
       "caveat": "HS 9001.10은 광섬유·광섬유 다발과 함께 8544.70에 해당하지 않는 일부 광섬유 케이블도 포함합니다."
     },
@@ -15,7 +17,9 @@
       "label": "광섬유 케이블",
       "label_en": "Optical fibre cable",
       "group": "광섬유",
-      "hs": ["854470"],
+      "hs": [
+        "854470"
+      ],
       "enabled": true,
       "caveat": "개별 피복된 광섬유를 다발로 만든 케이블(HS 8544.70)."
     },
@@ -24,7 +28,9 @@
       "label": "광배선(광커넥터)",
       "label_en": "Optical fibre connectors",
       "group": "광배선",
-      "hs": ["853670"],
+      "hs": [
+        "853670"
+      ],
       "enabled": true,
       "caveat": "HS 8536.70은 광섬유·광섬유 다발·광케이블용 커넥터입니다. 광배선반·클로저 등 다른 광배선 제품은 별도 세번이 없어 포함되지 않습니다."
     },
@@ -33,7 +39,11 @@
       "label": "광디바이스",
       "label_en": "Photosensitive semiconductor devices / LED",
       "group": "광디바이스",
-      "hs": ["854141", "854149", "854140"],
+      "hs": [
+        "854141",
+        "854149",
+        "854140"
+      ],
       "enabled": true,
       "caveat": "감광성 반도체 소자·LED 전체(HS 8541.41/8541.49, HS2022 개정 전 8541.40)라서 포토다이오드·레이저다이오드 외에 일반 LED도 함께 잡히는 넓은 바스켓입니다. 광디바이스 전용 세번은 존재하지 않습니다."
     },
@@ -42,7 +52,9 @@
       "label": "InP 등 화합물 반도체 기판",
       "label_en": "Doped semiconductor wafers",
       "group": "기판",
-      "hs": ["381800"],
+      "hs": [
+        "381800"
+      ],
       "enabled": true,
       "caveat": "HS 3818.00은 전자용으로 도핑된 원소·화합물(디스크·웨이퍼 형태)로, InP 기판을 포함하지만 Si·GaAs 웨이퍼도 함께 포함하는 넓은 세번입니다. InP 단독 세번은 존재하지 않습니다."
     }
