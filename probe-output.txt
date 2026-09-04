@@ -1,0 +1,13 @@
+==========================================================================
+[GET] https://www.customs.go.jp/yusyutu/2026_1/data/j_38.htm
+    HTTP 404 196B enc=ascii
+==========================================================================
+[GET] https://www.customs.go.jp/yusyutu/2025_4/data/j_38.htm
+    HTTP 404 196B enc=ascii
+==========================================================================
+[GET] https://www.customs.go.jp/yusyutu/2025_1/data/j_38.htm
+    HTTP 404 196B enc=ascii
+==========================================================================
+[GET] https://www.customs.go.jp/yusyutu/index.htm
+    HTTP 200 15034B enc=SHIFT_JIS
+    yusyutu 링크: []
