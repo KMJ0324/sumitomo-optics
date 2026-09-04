@@ -18,11 +18,17 @@ let EXPORTS, STOCK, FINANCIALS;
 
 async function boot() {
   try {
-    [EXPORTS, STOCK, FINANCIALS] = await Promise.all([
-      loadJSON("data/jp_trade_exports.json"),
+    // 9단위(엔) 자료가 있으면 그쪽을 쓰고, 없으면 HS 6단위(달러)로 물러납니다.
+    const [jpy, usd, stock, fin] = await Promise.all([
+      loadJSON("data/jp_trade_exports_jpy.json", null),
+      loadJSON("data/jp_trade_exports.json", null),
       loadJSON("data/sumitomo_stock.json", { daily: [] }),
       loadJSON("data/sumitomo_financials.json", { quarters: [] }),
     ]);
+    EXPORTS = (jpy && jpy.categories && Object.keys(jpy.categories).length) ? jpy : usd;
+    STOCK = stock;
+    FINANCIALS = fin;
+    if (!EXPORTS) throw new Error("수출 데이터 파일이 없습니다");
   } catch (err) {
     document.querySelector(".shell").innerHTML =
       `<div class="note"><b>데이터를 불러오지 못했습니다.</b> ${err.message}<br />` +
@@ -43,7 +49,10 @@ function render() {
   // 파생값 계산. 원자료는 월별 금액과 중량뿐이고, 이동평균·증감률·평균단가는
   // 전부 여기서 만듭니다.
   // ---------------------------------------------------------------------------
-  const CORE = ["optical_fiber", "optical_fiber_cable", "optical_connector"];
+  // 9단위(엔) 데이터가 있으면 그 세 품목이 곧 광통신 핵심이고, 없으면
+  // HS 6단위(달러) 쪽 세 품목으로 물러납니다.
+  const CORE_9DIGIT = ["raw_fiber", "finished_cable", "connectorised_cable"];
+  const CORE_HS6 = ["optical_fiber", "optical_fiber_cable", "optical_connector"];
   const SERIES_VARS = ["--s1", "--s2", "--s3", "--s4", "--s5"];
   
   const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -52,6 +61,11 @@ function render() {
   const catColor = (id) => css(SERIES_VARS[catIds.indexOf(id) % SERIES_VARS.length]);
   
   const UNIT = EXPORTS.value_unit_label || "USD";
+  const IS_YEN = (EXPORTS.value_unit || "") === "JPY";
+  // 엔은 자릿수가 커서 십억 단위로, 달러는 백만 단위로 읽습니다.
+  const SCALE = IS_YEN ? 1e9 : 1e6;
+  const SCALE_LABEL = IS_YEN ? `십억 ${UNIT}` : `백만 ${UNIT}`;
+  const CORE = (EXPORTS.categories && EXPORTS.categories.finished_cable) ? CORE_9DIGIT : CORE_HS6;
   
   const months = (() => {
     const set = new Set();
@@ -135,7 +149,7 @@ function render() {
   }
   
   const fmt = {
-    m: (v, d = 1) => (v == null ? "—" : (v / 1e6).toLocaleString("ko-KR", { maximumFractionDigits: d })),
+    m: (v, d = 1) => (v == null ? "—" : (v / SCALE).toLocaleString("ko-KR", { maximumFractionDigits: d })),
     pct: (v, d = 1) => (v == null || !isFinite(v) ? "—" : `${v >= 0 ? "+" : ""}${(v * 100).toLocaleString("ko-KR", { maximumFractionDigits: d })}%`),
     num: (v, d = 1) => (v == null ? "—" : v.toLocaleString("ko-KR", { maximumFractionDigits: d })),
     month: (m) => `${m.slice(2, 4)}.${m.slice(5, 7)}`,
@@ -244,7 +258,7 @@ function render() {
     el.innerHTML =
       `<div class="tile-name"><span class="swatch" style="background:${c.color}"></span>${c.label}</div>` +
       `<div class="tile-hs">HS ${c.hs.join(" · ")}</div>` +
-      `<div class="tile-value">${fmt.m(c.values[i])}<span class="unit">백만 ${UNIT}</span></div>` +
+      `<div class="tile-value">${fmt.m(c.values[i])}<span class="unit">${SCALE_LABEL}</span></div>` +
       `<div class="tile-deltas">` +
         `<span>MoM <b class="${dirClass(mom)}">${fmt.pct(mom, 0)}</b></span>` +
         `<span>YoY <b class="${dirClass(y)}">${fmt.pct(y, 0)}</b></span>` +
@@ -341,9 +355,9 @@ function render() {
   });
   
   makePlot("plot-core", [
-    bars(`월 수출액 (백만 ${UNIT})`, coreTotal.map((v) => (v == null ? null : v / 1e6)), css("--s1") + "40"),
-    line("3개월 이동평균", coreMma.map((v) => (v == null ? null : v / 1e6)), css("--s1")),
-  ], { labels, yFormat: (v) => fmt.num(v, 0), yTitle: `백만 ${UNIT}` });
+    bars(`월 수출액 (${SCALE_LABEL})`, coreTotal.map((v) => (v == null ? null : v / SCALE)), css("--s1") + "40"),
+    line("3개월 이동평균", coreMma.map((v) => (v == null ? null : v / SCALE)), css("--s1")),
+  ], { labels, yFormat: (v) => fmt.num(v, 0), yTitle: SCALE_LABEL });
   
   document.getElementById("price-sub").textContent = hasPrice
     ? `월말 종가 · ${STOCK.currency || "JPY"} · ${STOCK.provider === "yahoo_jp" ? "Yahoo Japan, 무수정 종가" : "Yahoo Finance, 액면분할 반영 종가"}`
@@ -359,10 +373,10 @@ function render() {
   }
   
   const qLabels = quarters.map((q) => q.label || q.quarter);
-  const qDatasets = [bars(`수출 합계 (백만 ${UNIT})`, quarters.map((q) => (q.exportValue == null ? null : q.exportValue / 1e6)), css("--s1") + "99")];
+  const qDatasets = [bars(`수출 합계 (${SCALE_LABEL})`, quarters.map((q) => (q.exportValue == null ? null : q.exportValue / SCALE)), css("--s1") + "99")];
   document.getElementById("quarter-sub").textContent =
     "결산기가 3월이라 FY2025Q1 은 2025년 4~6월" + (hasRevenue ? " · 매출은 별도 지수 차트에서 비교" : "");
-  makePlot("plot-quarter", qDatasets, { labels: qLabels, yFormat: (v) => fmt.num(v, 0), yTitle: `백만 ${UNIT}`, legend: false });
+  makePlot("plot-quarter", qDatasets, { labels: qLabels, yFormat: (v) => fmt.num(v, 0), yTitle: SCALE_LABEL, legend: false });
   
   // 매출과 영업이익은 단위가 같으므로 한 축에 둡니다. 회사예상은 실적과
   // 섞이지 않게 별도 계열(점선 테두리)로 표시합니다.
@@ -419,8 +433,8 @@ function render() {
     legendHost.append(s);
   }
   
-  makePlot("plot-value", catIds.map((id) => line(cats[id].label, mma(cats[id].values).map((v) => (v == null ? null : v / 1e6)), cats[id].color)), {
-    labels, yFormat: (v) => fmt.num(v, 0), yTitle: `백만 ${UNIT}`, legend: false,
+  makePlot("plot-value", catIds.map((id) => line(cats[id].label, mma(cats[id].values).map((v) => (v == null ? null : v / SCALE)), cats[id].color)), {
+    labels, yFormat: (v) => fmt.num(v, 0), yTitle: SCALE_LABEL, legend: false,
   });
   makePlot("plot-yoy", catIds.map((id) => line(cats[id].label, cats[id].yoy.map((v) => (v == null ? null : v * 100)), cats[id].color)), {
     labels, yFormat: (v) => `${fmt.num(v, 0)}%`, yTitle: "YoY", legend: false,

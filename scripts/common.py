@@ -15,6 +15,7 @@ DOCS_DATA_DIR = ROOT / "docs" / "data"
 SYNCED_FILES = (
     "jp_trade_categories.json",
     "jp_trade_exports.json",
+    "jp_trade_exports_jpy.json",
     "sumitomo_stock.json",
     "sumitomo_financials.json",
 )

@@ -26,7 +26,12 @@ jobs:
           python-version: "3.12"
       - run: pip install -r scripts/requirements.txt
 
-      - name: Fetch Japan optical-product export statistics
+      - name: Fetch Japan optical exports (9-digit, yen)
+        continue-on-error: true
+        timeout-minutes: 10
+        run: python scripts/fetch_jp_trade_9digit.py
+
+      - name: Fetch Japan optical exports (HS 6-digit, USD fallback)
         continue-on-error: true
         timeout-minutes: 20
         run: python scripts/fetch_jp_trade_stats.py
