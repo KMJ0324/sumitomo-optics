@@ -60,10 +60,11 @@ function render() {
   
   const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   
-  const catIds = Object.keys(EXPORTS.categories);
-  // 규모가 자릿수 단위로 다른 계열은 같은 축에 두면 나머지를 바닥에 깔아버립니다.
-  // 타일과 표에는 남기고 공유 축 차트에서만 뺍니다.
-  const chartIds = catIds.filter((id) => !EXPORTS.categories[id].reference_only);
+  // reference_only 계열(실리콘 웨이퍼)은 화면에 전혀 올리지 않습니다. 규모가
+  // 자릿수 단위로 달라 어디에 놓든 옆의 수치를 눌러버립니다 - 데이터 파일에는
+  // 남아 있으니 비교가 필요하면 거기서 꺼내 쓰면 됩니다.
+  const catIds = Object.keys(EXPORTS.categories).filter((id) => !EXPORTS.categories[id].reference_only);
+  const chartIds = catIds;
   const catColor = (id) => css(SERIES_VARS[catIds.indexOf(id) % SERIES_VARS.length]);
   
   const UNIT = EXPORTS.value_unit_label || "USD";
@@ -343,7 +344,16 @@ function render() {
   })();
   const baseMonth = months[baseIdx] || months[0];
   
+  // 화합물 기판은 광통신 3품목과 성격이 달라 합계에 넣지 않고 별도 계열로 둡니다.
+  // 요코하마 통관 비중이 0.5%에 불과해 세관으로 좁히는 것도 의미가 없어,
+  // 이 품목만큼은 전국 수치가 제 값입니다.
+  const substrate = cats.compound_substrate || null;
+  const substrateMma = substrate ? mma(substrate.values) : null;
+  
   const indexDatasets = [line("수출 (광통신 3품목, 3M평균)", rebaseAt(coreMma, baseIdx), css("--s1"))];
+  if (substrateMma) {
+    indexDatasets.push(line("화합물 기판, 실리콘 제외 (3M평균)", rebaseAt(substrateMma, baseIdx), substrate.color, { borderDash: [6, 3] }));
+  }
   if (hasPrice) indexDatasets.push(line("주가 5802.T", rebaseAt(stockMonthly, baseIdx), css("--stock")));
   if (hasRevenue) {
     const quarterly = quarters.some((q) => q.revenue != null);
@@ -353,7 +363,7 @@ function render() {
   document.getElementById("index-title").textContent =
     `${baseMonth.replace("-", "년 ")}월 = 100`;
   document.getElementById("index-sub").textContent =
-    "광섬유 · 광섬유 케이블 · 광배선 합계" +
+    "수출 실선 = 광섬유 · 광섬유 케이블 · 광배선 합계, 점선 = 화합물 기판(실리콘 제외)" +
     (hasPrice ? "" : " · 주가 계열은 아직 수집 전이라 표시되지 않습니다");
   makePlot("plot-index", indexDatasets, {
     labels,
@@ -362,10 +372,23 @@ function render() {
     logScale: true,
   });
   
+  document.getElementById("core-sub").textContent = `월별 · 3개월 이동평균 · ${SCALE_LABEL}`;
   makePlot("plot-core", [
     bars(`월 수출액 (${SCALE_LABEL})`, coreTotal.map((v) => (v == null ? null : v / SCALE)), css("--s1") + "40"),
     line("3개월 이동평균", coreMma.map((v) => (v == null ? null : v / SCALE)), css("--s1")),
   ], { labels, yFormat: (v) => fmt.num(v, 0), yTitle: SCALE_LABEL });
+  
+  if (substrate) {
+    document.getElementById("substrate-sub").textContent =
+      `월별 · 3개월 이동평균 · ${SCALE_LABEL} · HS 3818.00-900`;
+    makePlot("plot-substrate", [
+      bars(`월 수출액 (${SCALE_LABEL})`, substrate.values.map((v) => (v == null ? null : v / SCALE)), substrate.color + "40"),
+      line("3개월 이동평균", substrateMma.map((v) => (v == null ? null : v / SCALE)), substrate.color),
+    ], { labels, yFormat: (v) => fmt.num(v, 1), yTitle: SCALE_LABEL });
+  } else {
+    const fig = document.getElementById("fig-substrate");
+    if (fig) fig.hidden = true;
+  }
   
   document.getElementById("price-sub").textContent = hasPrice
     ? `월말 종가 · ${STOCK.currency || "JPY"} · ${STOCK.provider === "yahoo_jp" ? "Yahoo Japan, 무수정 종가" : "Yahoo Finance, 액면분할 반영 종가"}`
@@ -435,15 +458,26 @@ function render() {
   // ---- 품목별 ----------------------------------------------------------------
   // 안 담는 품목을 밝혀 둡니다 - 라벨만 그럴듯하고 실제로는 다른 것을 재는
   // 계열을 얹느니, 왜 없는지를 적는 편이 낫습니다.
-  document.getElementById("scope-note").innerHTML = IS_YEN
-    ? `<b>광디바이스와 InP 기판은 담지 않았습니다.</b> 둘 다 전용 세번이 없어서입니다 — ` +
-      `광디바이스는 HS 8541.41/49(감광성 반도체·LED 전체)에 묻혀 일반 LED가 금액의 대부분을 차지하고, ` +
-      `InP 기판은 HS 3818.00(전자용 도핑 웨이퍼 전체)에 들어가는데 이 세번은 신에쓰·SUMCO의 실리콘 ` +
-      `웨이퍼가 압도합니다. 월 수천억 원대인 실리콘 물량 안에서 InP의 증감은 읽히지 않으므로, ` +
-      `"InP 수출"이라는 이름을 붙여 그리는 것은 사실과 다릅니다. ` +
-      `9단위 통계에는 두 품목을 가르는 코드가 있을 수 있으나 지금 쓰는 소스에는 3818 계열이 없습니다.`
-    : `<b>광디바이스와 기판 계열은 넓은 바스켓입니다.</b> 광디바이스는 감광성 반도체·LED 전체이고, ` +
-      `기판은 전자용 도핑 웨이퍼 전체라 실리콘이 대부분입니다. 각 품목의 유의점은 아래 표 밑에 적혀 있습니다.`;
+  document.getElementById("scope-note").innerHTML = (() => {
+    const hasSubstrate = !!cats.compound_substrate;
+    const parts = [];
+    if (hasSubstrate) {
+      parts.push(
+        `<b>기판은 실리콘을 빼고 담았습니다.</b> HS 3818.00은 9단위에서 -100(けい素のもの, 신에쓰·SUMCO의 ` +
+        `실리콘 웨이퍼)과 -900(その他のもの)으로 갈립니다. 여기 그리는 것은 -900, 즉 InP·GaAs·GaN 화합물 ` +
+        `기판입니다. 합쳐진 6단위로는 실리콘이 13배 규모라 화합물 기판의 증감이 전혀 보이지 않았습니다. ` +
+        `실리콘 계열은 화면에서 뺐습니다 - 규모가 달라 어디에 놓든 옆 수치를 눌러버려서, 수집만 해두고 <code>jp_trade_exports_estat.json</code> 에 남겨 둡니다.`);
+    } else {
+      parts.push(
+        `<b>InP 기판은 담지 못했습니다.</b> HS 3818.00(전자용 도핑 웨이퍼 전체)에 들어가는데 이 세번은 ` +
+        `신에쓰·SUMCO의 실리콘 웨이퍼가 압도해 InP의 증감이 읽히지 않습니다. 9단위 코드 381800900이 ` +
+        `실리콘을 제외한 계열이지만 현재 소스에 없습니다.`);
+    }
+    parts.push(
+      `<b>광디바이스는 여전히 담지 못합니다.</b> 전용 세번이 없어 HS 8541.41/49(감광성 반도체·LED 전체)에 ` +
+      `묻히고, 그 안에서는 일반 LED가 금액의 대부분을 차지합니다.`);
+    return parts.join("<br /><br />");
+  })();
   
   const legendHost = document.getElementById("cat-legend");
   for (const id of chartIds) {
