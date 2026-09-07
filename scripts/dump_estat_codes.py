@@ -52,7 +52,18 @@ def main():
                 codes.append({"code": code, "name": str(i.get("@name", ""))})
 
     codes.sort(key=lambda d: d["code"])
-    save_json(OUT_PATH, {"table": table, "title": title, "prefixes": list(prefixes), "codes": codes})
+    save_json(
+        OUT_PATH,
+        {
+            "table": table,
+            "title": title,
+            "prefixes": list(prefixes),
+            # 이 표의 cat01 은 @name 도 코드 숫자라, 품목명은 메타데이터에
+            # 들어 있지 않습니다. 이름이 필요하면 輸出統計品目表를 봐야 합니다.
+            "note": "e-Stat returns the code itself as the cat01 label; names live in the 輸出統計品目表.",
+            "codes": codes,
+        },
+    )
     for c in codes:
         print(f"  {c['code']}  {c['name']}")
     print(f"{len(codes)} codes -> {OUT_PATH}")
