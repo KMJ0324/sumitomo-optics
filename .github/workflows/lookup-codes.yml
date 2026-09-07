@@ -1,0 +1,40 @@
+name: Lookup export codes
+
+# 수동 전용. "이 품목을 따로 뽑을 수 있나"를 확인할 때 돌립니다.
+# 결과(data/estat_code_index.json)를 커밋해 두어 다음부터는 조회 없이 봅니다.
+on:
+  workflow_dispatch:
+    inputs:
+      prefixes:
+        description: "HS prefixes, space separated"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  lookup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+      - name: Dump codes
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+        run: python scripts/dump_estat_codes.py ${{ inputs.prefixes }}
+      - name: Commit the index
+        run: |
+          if git diff --quiet -- data; then
+            echo "unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/estat_code_index.json
+          git commit -m "chore: refresh e-Stat export code index [skip ci]"
+          git pull --rebase origin "$GITHUB_REF_NAME" || git rebase --abort || true
+          git push
