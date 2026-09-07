@@ -31,6 +31,7 @@ import time
 import requests
 
 from common import DATA_DIR, load_json, save_json, sync_to_docs
+from jp_country_names import to_korean
 
 CATEGORIES_PATH = DATA_DIR / "jp_trade_categories.json"
 OUT_PATH = DATA_DIR / "jp_trade_exports_estat.json"
@@ -121,9 +122,9 @@ class Estat:
             items = c.get("CLASS", [])
             items = items if isinstance(items, list) else [items]
             for i in items:
-                # "103_大韓民国" 형태에서 이름만 취합니다
-                nm = str(i.get("@name", ""))
-                names[str(i.get("@code"))] = nm.split("_", 1)[-1] or nm
+                # "103_大韓民国" 형태에서 이름만 떼어 한국어로 옮깁니다.
+                # 대응표에 없으면 일본어가 그대로 남아 눈에 띕니다.
+                names[str(i.get("@code"))] = to_korean(str(i.get("@name", "")))
 
         rows = root.get("STATISTICAL_DATA", {}).get("DATA_INF", {}).get("VALUE", [])
         rows = rows if isinstance(rows, list) else [rows]
