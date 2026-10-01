@@ -14035,7 +14035,7 @@
       }
     }
   },
-  "updated_at": "2026-09-30T03:35:08+00:00",
+  "updated_at": "2026-10-01T03:38:21+00:00",
   "source": "UN Comtrade (일본 재무성 관세국 신고자료 재배포)",
   "source_url": "https://comtradeapi.un.org",
   "reporter": "Japan (392)",
@@ -14047,5 +14047,5 @@
     "first_month": "2021-01",
     "last_month": "2026-07"
   },
-  "pending_months": 2
+  "pending_months": 3
 }

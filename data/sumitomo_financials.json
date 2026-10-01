@@ -706,6 +706,39 @@
       },
       "source": "manual",
       "note": ""
+    },
+    {
+      "quarter": "FY2026Q2",
+      "label": "26.07-09",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "revenue": null,
+      "operating_income": null,
+      "net_income": null,
+      "segments": {
+        "infocom": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "electronics": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "automotive": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "environment_energy": {
+          "revenue": null,
+          "operating_income": null
+        },
+        "industrial_materials": {
+          "revenue": null,
+          "operating_income": null
+        }
+      },
+      "source": "manual",
+      "note": ""
     }
   ],
   "annual": [
@@ -747,5 +780,5 @@
     "net_income": 340000.0
   },
   "annual_source": "Yahoo Japan 業績 (5802.T)",
-  "annual_updated_at": "2026-09-30T03:39:20+00:00"
+  "annual_updated_at": "2026-10-01T03:42:32+00:00"
 }
