@@ -774,11 +774,11 @@
     "fiscal_year_end": "2027-03",
     "label": "27/03기",
     "forecast": true,
-    "revenue": 5400000.0,
-    "operating_income": 450000.0,
-    "ordinary_income": 460000.0,
-    "net_income": 340000.0
+    "revenue": 5750000.0,
+    "operating_income": 500000.0,
+    "ordinary_income": 515000.0,
+    "net_income": 370000.0
   },
   "annual_source": "Yahoo Japan 業績 (5802.T)",
-  "annual_updated_at": "2026-10-30T04:03:28+00:00"
+  "annual_updated_at": "2026-10-31T03:47:38+00:00"
 }
