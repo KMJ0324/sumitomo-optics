@@ -8572,9 +8572,15 @@
       "close": 1360.0,
       "raw_close": 1360.0,
       "adjusted": true
+    },
+    {
+      "date": "20261109",
+      "close": 1435.5,
+      "raw_close": 1435.5,
+      "adjusted": true
     }
   ],
   "provider": "yahoo_jp",
-  "updated_at": "2026-11-09T03:31:10+00:00",
+  "updated_at": "2026-11-09T09:31:04+00:00",
   "adjusted": true
 }
